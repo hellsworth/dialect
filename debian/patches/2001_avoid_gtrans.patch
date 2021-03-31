@@ -1,0 +1,21 @@
+Description: avoid Google translate plugin
+ Debian does not currently include needed Python module googletrans,
+ and even if available it is questionalbe if its API requires paid subscription
+ or is a privacy concern.
+Author: Jonas Smedegaard <dr@jones.dk>
+Bug: https://github.com/gi-lom/dialect/issues/143
+Last-Update: 2021-03-31
+---
+This patch header follows DEP-3: http://dep.debian.net/deps/dep3/
+--- a/src/translators/__init__.py
++++ b/src/translators/__init__.py
+@@ -1,7 +1,7 @@
+-from dialect.translators.gtrans import GTranslator
++#from dialect.translators.gtrans import GTranslator
+ from dialect.translators.libretrans import LibreTranslator
+ 
+ TRANSLATORS = [
+-    GTranslator,
++#    GTranslator,
+     LibreTranslator,
+ ]

@@ -1,0 +1,6 @@
+dialect (1.2.0-1) experimental; urgency=low
+
+  * initial Release;
+    closes: Bug#986184
+
+ -- Jonas Smedegaard <dr@jones.dk>  Wed, 31 Mar 2021 13:16:46 +0200

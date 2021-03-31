@@ -1,0 +1,252 @@
+Files:
+ README.md
+ build-aux/flatpak/com.github.gi_lom.dialect.json
+ build-aux/flatpak/pypi-dependencies.json
+ build-aux/meson/postinstall.py
+ data/com.github.gi_lom.dialect-symbolic.svg
+ data/com.github.gi_lom.dialect.Devel.svg
+ data/com.github.gi_lom.dialect.Source.svg
+ data/com.github.gi_lom.dialect.desktop.in
+ data/com.github.gi_lom.dialect.gschema.xml
+ data/com.github.gi_lom.dialect.metainfo.xml.in
+ data/com.github.gi_lom.dialect.svg
+ data/meson.build
+ data/resources/dialect.gresource.xml
+ data/resources/lang-selector.ui
+ data/resources/menu.ui
+ data/resources/meson.build
+ data/resources/preferences.ui
+ data/resources/shortcuts-window.ui
+ data/resources/style.css
+ data/resources/window.ui
+ meson.build
+ po/LINGUAS
+ po/POTFILES
+ po/meson.build
+ preview-2.png
+ preview-mobile.png
+ preview.png
+ src/meson.build
+ src/search_provider/com.github.gi_lom.dialect.SearchProvider.ini
+ src/search_provider/com.github.gi_lom.dialect.SearchProvider.service.in
+ src/search_provider/meson.build
+ src/translators/__init__.py
+ src/translators/meson.build
+Copyright:
+  NONE
+License: UNKNOWN
+ FIXME
+
+Files:
+ po/de.po
+ po/dialect.pot
+ po/id.po
+ po/it.po
+ po/ru.po
+ po/sv.po
+ po/tr.po
+Copyright:
+  2020, gi-lom"
+  YEAR THE PACKAGE'S COPYRIGHT HOLDER
+License: UNKNOWN
+ FIXME
+
+Files:
+ src/lang_selector.py
+ src/preferences.py
+ src/translators/basetrans.py
+ src/translators/gtrans.py
+ src/translators/libretrans.py
+Copyright:
+  2020-2021, Mufeed Ali
+  2020-2021, Rafael Mardojai CM
+  2021, Mufeed Ali
+  2021, Rafael Mardojai CM
+License: UNKNOWN
+ FIXME
+
+Files:
+ src/define.py
+ src/main.py
+ src/window.py
+Copyright:
+  2020, gi-lom
+  2020-2021, Mufeed Ali
+  2020-2021, Rafael Mardojai CM
+License: UNKNOWN
+ FIXME
+
+Files:
+ LICENSE
+Copyright:
+  -like laws that apply to other kinds of
+  2007, Free Software Foundation, Inc. <https:fsf.org/>
+  <year> <name of author>
+  able work licensed under this
+  are not
+  disclaimer" for the program, if necessary.
+  ed material outside their relationship with you.
+  if you do
+  permission, other than the making of an
+  permission.
+  treaty adopted on 20 December 1996, or
+License: GPL-3
+ FIXME
+
+Files:
+ po/hr.po
+Copyright:
+  2020
+  2020, gi-lom"
+  YEAR THE PACKAGE'S COPYRIGHT HOLDER
+License: UNKNOWN
+ FIXME
+
+Files:
+ po/pt_BR.po
+Copyright:
+  2020, gi-lom
+  2020, gi-lom"
+  5.000 caracteres"
+  m de que o recurso esteja habilitado nas configuraÃ§Ãµes do GNOME."
+  m habilitarÃ¡ ou desabilitarÃ¡ o provedor de "
+  para reduzir a possibilidade de abuso de API. Certifique-se "
+  uma instÃ¢ncia {backend} vÃ¡lida"
+License: UNKNOWN
+ FIXME
+
+Files:
+ po/hu.po
+Copyright:
+  2020, Dialect authors
+  2020, gi-lom"
+  g lesz az Ãºj sorhoz hasznÃ¡lva."
+  ldÃ¡ny"
+  ldÃ¡nyt hasznÃ¡lhat"
+  lyezett a GNOME BeÃ¡llÃ­tÃ¡sokban."
+  lÃ©s lehetÅsÃ©gÃ©t. GyÅzÅdjÃ¶n "
+  lÃ©se"
+  ma tÃ¶rtÃ©nt. "
+  ma tÃ¶rtÃ©nt. ÃjraprÃ³bÃ¡lja?"
+  ma."
+  nyek"
+  pÃ©s"
+  rhetÅ "
+  rhetÅ fordÃ­tÃ¡si szolgÃ¡ltatÃ¡sok kÃ¶zÃ¼l."
+  rszolgÃ¡ltatÃ¡s betÃ¶ltÃ©se sikertelen"
+  rtelmezettre"
+  rve!"
+  rvÃ©nyes {backend} pÃ©ldÃ¡ny"
+  s megjelenÃ­tÃ©se"
+  s"
+  s: Az IP-cÃ­me API-val valÃ³ visszaÃ©lÃ©s miatt kitiltÃ¡sra kerÃ¼lhet."
+  sszolgÃ¡ltatÃ³"
+  sszolgÃ¡ltatÃ³t is be- vagy "
+  sszolgÃ¡ltatÃ³val rendelkezik. Az ÃlÅ fordÃ­tÃ¡sok "
+  szlelhetÅ hÃ¡lÃ³zati kapcsolat."
+  sâ¦"
+  t mÃ³d"
+  t."
+  vjegye"
+License: UNKNOWN
+ FIXME
+
+Files:
+ src/search_provider/search_provider.in
+Copyright:
+  2020, Nikita Kravets
+  2020, Rafael Mardojai CM
+  2020, gi-lom
+  2021, Mufeed Ali
+License: UNKNOWN
+ FIXME
+
+Files:
+ src/dialect.in
+Copyright:
+  2020, Rafael Mardojai CM
+  2020, gi-lom
+License: UNKNOWN
+ FIXME
+
+Files:
+ po/es.po
+Copyright:
+  2020, THE dialect'S COPYRIGHT HOLDER
+  2020, gi-lom"
+  habilitada en la configuraciÃ³n de GNOME."
+  n "
+  n habilitarÃ¡ o deshabilitarÃ¡ el proveedor "
+  ntalo de nuevo."
+License: UNKNOWN
+ FIXME
+
+Files:
+ po/nl.po
+Copyright:
+  2020, gi-lom"
+  YEAR THE PACKAGE'S COPYRIGHT HOLDER
+  Ã©n van de beschikbare taaldiensten."
+License: UNKNOWN
+ FIXME
+
+Files:
+ po/fa.po
+Copyright:
+  2020, gi-lom"
+  YEAR THE PACKAGE'S COPYRIGHT HOLDER
+  Ø§Ø± Ø²Ø¨Ø§Ù"
+  Ø§Ø± Ú¯Ø±ÙØªÙ Ù
+  Ø§Ø±"
+  Ø¨Ø±ÙØ§Ù
+  Øª ÛÚ© ÙØ±Ø§ÙÙ
+  Øª"
+  Ø±Ø¯Ù Ú¯Ø±Ø¯Ø§ÙØ´ Ø²ÙØ¯Ù Ø§ÛÙØ¬Ø§Ø "
+  Ø³Øª Ø®ÙØ±Ø¯. "
+  Ø³Øª Ø®ÙØ±Ø¯Ù Ø§Ø³Øª"
+  Ù
+  ÙØ±Ø§ÙÙ
+  ÙÛØ¯"
+  ÙØ¯. Ø§ÛÙ Ø¨Ø±Ø§Û Ú©Ø§ÙØ´ Ø´Ø§ÛØ´ "
+  ÙÛØ¯."
+  ÙØ´Ø´ Ø´ÙØ¯Ø"
+  ÙØ´Ø´"
+  ÙØ´ÛØ¯."
+  Ù¾Ø§ÛÙØ¯Ø§Ù Ù¾Ø§ÛØ´+Ø¶ Ø¨Ø±Ø§Û Ø¨Ø±ÙÙØ±ÙØª Ø§ÙØ²ÙØ¯Ù Ø´Ø¯"
+  Ù¾ÙØ¬Ø±Ù Ù¾Ø§ÛÙØ¯Ø§Ù Ø§ÙØ²ÙØ¯Ù Ø´Ø¯"
+  Ù¾ÛØ´Ø±ÙØªâÙØ§Û ÛÙØ¢Û"
+  Ù¾ÛâØ±Ø§ÛØª Û²Û°Û²Û° gi-lom"
+  ÚØ¨Ú©Ø§Ø±Ø¨Ø³ØªÙ Ø§ÙÛâÙ¾ÛâØ¢Û Ø¨Ø³ØªÙ Ø´ÙØ¯."
+  ÚØ¨Ú©Ø§Ø±Ø¨Ø³ØªÙ Ø§ÙÛâÙ¾ÛâØ¢Û Ø¨Ú©Ø§Ø± Ú¯Ø±ÙØªÙ Ù
+  Û Ø§ÙØ²ÙØ¯Ù Ø´Ø¯"
+  ÛØ¯Ù"
+License: UNKNOWN
+ FIXME
+
+Files:
+ data/resources/about.ui
+Copyright:
+  2020, gi-lom</property>
+License: UNKNOWN
+ FIXME
+
+Files:
+ debian/*
+Copyright:
+  NONE
+License: UNKNOWN
+ FIXME
+
+Files:
+ debian/copyright-check
+Copyright:
+  --deb-machine --recursive --lines 0), "--check", $opt{check}, "--ignore", $opt{ignore}, "--" );'
+  -protected Debian files
+  2020-2021, Jonas Smedegaard <dr@jones.dk>
+  2020-2021, Purism, SPC
+  K / /mg;'
+  protected nor stating copyright or licensing
+  years for each copyright holder
+License: GPL-3+
+ FIXME
+
