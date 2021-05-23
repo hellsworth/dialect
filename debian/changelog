@@ -1,3 +1,16 @@
+dialect (1.3.0-1) unstable; urgency=medium
+
+  [ upstream ]
+  * new release
+
+  [ Jonas Smedegaard ]
+  * copyright info: update coverage
+  * drop patch 2001 obsoleted by upstream changes
+  * avoid installing Google Translate plugin,
+    and update TODO note about it
+
+ -- Jonas Smedegaard <dr@jones.dk>  Sun, 23 May 2021 09:10:55 +0200
+
 dialect (1.2.0-1) experimental; urgency=low
 
   * initial Release;
