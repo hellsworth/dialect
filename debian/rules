@@ -13,6 +13,8 @@ override_dh_auto_build:
 override_dh_auto_test:
 	cd debian/build && ninja test
 
+# TODO: separately package and suggest Google translate plugin
 override_dh_auto_install:
 	cd debian/build && DESTDIR=${CURDIR}/debian/dialect ninja install
 	chmod -x debian/dialect/usr/share/dialect/dialect/main.py
+	rm -f debian/dialect/usr/share/dialect/dialect/translators/gtrans.py

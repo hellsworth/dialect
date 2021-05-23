@@ -1,3 +1,2 @@
-  * maybe enable Google Translate plugin
-    (i.e. drop patch 1001 and uncomment TTS feature in description)
+  * separately package and suggest Google Translate plugin
     when Python module googletrans is in Debian
