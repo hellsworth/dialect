@@ -39,7 +39,7 @@
                     <property name="visible">True</property>
                     <property name="can-focus">False</property>
                     <property name="wrap">True</property>
-                    <property name="label" translatable="yes">Loading...</property>
+                    <property name="label" translatable="yes">Loading…</property>
                     <attributes>
                       <attribute name="scale" value="2"/>
                       <attribute name="weight" value="bold"/>
@@ -80,7 +80,7 @@
                     <property name="visible">True</property>
                     <property name="can-focus">False</property>
                     <property name="wrap">True</property>
-                    <property name="label" translatable="yes">Failed loading translator backend</property>
+                    <property name="label" translatable="yes">Could not load the translator service</property>
                     <attributes>
                       <attribute name="scale" value="1.5"/>
                       <attribute name="weight" value="bold"/>
@@ -190,6 +190,7 @@
                             <property name="visible">True</property>
                             <property name="can-focus">True</property>
                             <property name="receives-default">True</property>
+                            <property name="action-name">app.switch</property>
                             <property name="tooltip-text" translatable="yes">Switch languages</property>
                             <child>
                               <object class="GtkImage">
@@ -267,9 +268,9 @@
                     <child>
                       <object class="GtkButton" id="return_btn">
                         <property name="visible">True</property>
-                        <property name="sensitive">False</property>
                         <property name="can-focus">True</property>
                         <property name="receives-default">True</property>
+                        <property name="action-name">app.back</property>
                         <property name="tooltip-text" translatable="yes">Previous translation</property>
                         <child>
                           <object class="GtkImage">
@@ -286,9 +287,9 @@
                     <child>
                       <object class="GtkButton" id="forward_btn">
                         <property name="visible">True</property>
-                        <property name="sensitive">False</property>
                         <property name="can-focus">True</property>
                         <property name="receives-default">True</property>
+                        <property name="action-name">app.forward</property>
                         <property name="tooltip-text" translatable="yes">Next translation</property>
                         <child>
                           <object class="GtkImage">
@@ -387,7 +388,6 @@
                                     <child>
                                       <object class="GtkLabel" id="src_pron_label">
                                         <property name="visible">True</property>
-                                        <property name="can-focus">False</property>
                                         <property name="margin-top">4</property>
                                         <property name="margin-bottom">4</property>
                                         <property name="margin-start">9</property>
@@ -395,6 +395,7 @@
                                         <property name="xalign">0</property>
                                         <property name="wrap">True</property>
                                         <property name="wrap-mode">word-char</property>
+                                        <property name="selectable">True</property>
                                         <style>
                                           <class name="dim-label"/>
                                         </style>
@@ -447,9 +448,9 @@
                                 <child>
                                   <object class="GtkButton" id="clear_btn">
                                     <property name="visible">True</property>
-                                    <property name="sensitive">False</property>
                                     <property name="can-focus">True</property>
                                     <property name="receives-default">True</property>
+                                    <property name="action-name">app.clear</property>
                                     <property name="tooltip-text" translatable="yes">Clear</property>
                                     <child>
                                       <object class="GtkImage">
@@ -465,6 +466,7 @@
                                     <property name="visible">True</property>
                                     <property name="can-focus">True</property>
                                     <property name="receives-default">True</property>
+                                    <property name="action-name">app.paste</property>
                                     <property name="tooltip-text" translatable="yes">Paste</property>
                                     <child>
                                       <object class="GtkImage">
@@ -478,9 +480,9 @@
                                 <child>
                                   <object class="GtkButton" id="src_voice_btn">
                                     <property name="visible">True</property>
-                                    <property name="sensitive">False</property>
                                     <property name="can-focus">True</property>
                                     <property name="receives-default">True</property>
+                                    <property name="action-name">app.listen-src</property>
                                     <property name="tooltip-text" translatable="yes">Listen</property>
                                     <child>
                                       <placeholder/>
@@ -571,7 +573,6 @@
                                     <child>
                                       <object class="GtkLabel" id="dest_pron_label">
                                         <property name="visible">True</property>
-                                        <property name="can-focus">False</property>
                                         <property name="margin-top">4</property>
                                         <property name="margin-bottom">4</property>
                                         <property name="margin-start">9</property>
@@ -579,6 +580,7 @@
                                         <property name="xalign">0</property>
                                         <property name="wrap">True</property>
                                         <property name="wrap-mode">word-char</property>
+                                        <property name="selectable">True</property>
                                         <style>
                                           <class name="dim-label"/>
                                         </style>
@@ -600,7 +602,7 @@
                                   <object class="GtkSpinner" id="trans_spinner">
                                     <property name="visible">True</property>
                                     <property name="can-focus">False</property>
-                                    <property name="tooltip-text" translatable="yes">Translation in progress...</property>
+                                    <property name="tooltip-text" translatable="yes">Translating…</property>
                                     <property name="margin-start">8</property>
                                   </object>
                                 </child>
@@ -608,7 +610,7 @@
                                   <object class="GtkImage" id="trans_warning">
                                     <property name="visible">True</property>
                                     <property name="can-focus">False</property>
-                                    <property name="tooltip-text" translatable="yes">Translation seems to have failed</property>
+                                    <property name="tooltip-text" translatable="yes">Could not translate the text</property>
                                     <property name="margin-start">8</property>
                                     <property name="icon-name">dialog-warning-symbolic</property>
                                   </object>
@@ -616,9 +618,9 @@
                                 <child>
                                   <object class="GtkButton" id="dest_voice_btn">
                                     <property name="visible">True</property>
-                                    <property name="sensitive">False</property>
                                     <property name="can-focus">True</property>
                                     <property name="receives-default">True</property>
+                                    <property name="action-name">app.listen-dest</property>
                                     <property name="tooltip-text" translatable="yes">Listen</property>
                                     <child>
                                       <placeholder/>
@@ -631,9 +633,9 @@
                                 <child>
                                   <object class="GtkButton" id="copy_btn">
                                     <property name="visible">True</property>
-                                    <property name="sensitive">False</property>
                                     <property name="can-focus">True</property>
                                     <property name="receives-default">True</property>
+                                    <property name="action-name">app.copy</property>
                                     <property name="tooltip-text" translatable="yes">Copy</property>
                                     <child>
                                       <object class="GtkImage">
@@ -724,6 +726,7 @@
                                     <property name="can-focus">True</property>
                                     <property name="receives-default">True</property>
                                     <property name="tooltip-text" translatable="yes">Switch languages</property>
+                                    <property name="action-name">app.switch</property>
                                     <child>
                                       <object class="GtkImage">
                                         <property name="visible">True</property>

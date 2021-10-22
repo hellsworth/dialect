@@ -1,25 +1,27 @@
 # Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
 # This file is distributed under the same license as the dialect package.
-# Bedirhan Tuhana GAYRETLİ <v30xythedev@gmail.com>, 2020.
+# Bedirhan Tuhana GAYRETLİ <noteqnil@gmail.com>, 2021
 #
 msgid ""
 msgstr ""
 "Project-Id-Version: dialect\n"
-"Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2021-04-27 08:53-0500\n"
-"PO-Revision-Date: 2021-04-27 18:42+0300\n"
-"Last-Translator: Bedirhan Tuhana GAYRETLİ <v30xythedev@gmail.com>\n"
-"Language-Team: Turkish <LL@li.org>\n"
+"Report-Msgid-Bugs-To: https://github.com/dialect-app/po/issues\n"
+"POT-Creation-Date: 2021-10-16 23:00+0530\n"
+"PO-Revision-Date: 2021-09-20 22:36+0000\n"
+"Last-Translator: Oğuz Ersen <oguzersen@protonmail.com>\n"
+"Language-Team: Turkish <https://hosted.weblate.org/projects/dialect/dialect/"
+"tr/>\n"
 "Language: tr\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"X-Generator: Poedit 2.4.2\n"
+"Plural-Forms: nplurals=2; plural=n != 1;\n"
+"X-Generator: Weblate 4.9-dev\n"
 
 #. Translators: Do not translate the app name!
 #: data/com.github.gi_lom.dialect.desktop.in:8
-#: data/com.github.gi_lom.dialect.metainfo.xml.in:6 data/resources/window.ui:66
-#: src/main.py:53 src/main.py:88
+#: data/com.github.gi_lom.dialect.metainfo.xml.in:6 data/resources/about.ui:10
+#: data/resources/window.ui:66 dialect/main.py:56 dialect/main.py:93
 msgid "Dialect"
 msgstr "Dialect"
 
@@ -31,7 +33,7 @@ msgstr "Diller arasında çevir"
 #. Translators: These are search terms to find this application. Do NOT translate or localize the semicolons. The list MUST also end with a semicolon.
 #: data/com.github.gi_lom.dialect.desktop.in:13
 msgid "translate;translation;"
-msgstr "çevir;çeviri;"
+msgstr "translate;translation;çevir;çeviri;"
 
 #: data/com.github.gi_lom.dialect.metainfo.xml.in:9 data/resources/about.ui:12
 msgid "A translation app for GNOME."
@@ -43,15 +45,15 @@ msgstr "Özellikler:"
 
 #: data/com.github.gi_lom.dialect.metainfo.xml.in:16
 msgid "Translation based on an unofficial API for Google Translate"
-msgstr "GNOME için Google Çeviri tabanlı çeviri uygulaması"
+msgstr "Resmi olmayan bir Google Translate API'si tabanlı çeviri"
 
 #: data/com.github.gi_lom.dialect.metainfo.xml.in:17
 msgid ""
 "Translation based on the LibreTranslate API, allowing you use any instance "
 "available online"
 msgstr ""
-"LibreTranslate API tabanlı çeviri, çevrimiçi olarak mevcut herhangi bir "
-"örneği kullanmanıza izin verir"
+"LibreTranslate API tabanlı çeviri, herhangi bir çevrim içi örneği "
+"kullanmanıza izin verir"
 
 #: data/com.github.gi_lom.dialect.metainfo.xml.in:18
 msgid "Text to speech"
@@ -63,32 +65,34 @@ msgstr "Çeviri geçmişi"
 
 #: data/com.github.gi_lom.dialect.metainfo.xml.in:20
 msgid "Automatic language detection"
-msgstr "Otomatik dil denetleme"
+msgstr "Otomatik dil algılama"
 
 #: data/com.github.gi_lom.dialect.metainfo.xml.in:21
 msgid "Clipboard buttons"
-msgstr "Pano butonları"
+msgstr "Pano düğmeleri"
 
-#: data/com.github.gi_lom.dialect.metainfo.xml.in:26
+#: data/com.github.gi_lom.dialect.metainfo.xml.in:27
 msgid "The Dialect Authors"
 msgstr "Dialect Yaratıcıları"
 
 #: data/resources/about.ui:11
-msgid "Copyright 2020-2021 The Dialect Authors"
-msgstr "Telif Hakkı 2020-2021 Dialect Yaratıcıları"
+msgid "Copyright 2020–⁠2021 The Dialect Authors"
+msgstr "Telif Hakkı 2020–⁠2021 Dialect Yaratıcıları"
 
 #: data/resources/about.ui:14
-msgid "Github page"
-msgstr "Github sayfası"
+msgid "GitHub page"
+msgstr "GitHub sayfası"
 
 #. Replace me with your names.
 #: data/resources/about.ui:19
 msgid "translator-credits"
-msgstr "Bedirhan Tuhana"
+msgstr ""
+"Bedirhan Tuhana GAYRETLİ <noteqnil@gmail.com>\n"
+"Oğuz Ersen"
 
 #: data/resources/menu.ui:7
 msgid "Show Pronunciation"
-msgstr "Telaffuzunu göster"
+msgstr "Telaffuzunu Göster"
 
 #: data/resources/menu.ui:14
 msgid "Preferences"
@@ -116,7 +120,7 @@ msgstr "Davranış"
 
 #: data/resources/preferences.ui:39
 msgid "Live Translation"
-msgstr "Anında Çeviri"
+msgstr "Canlı Çeviri"
 
 #: data/resources/preferences.ui:40
 msgid "Warning: Your IP address may get banned for API abuse."
@@ -127,16 +131,16 @@ msgid "Translation Shortcut"
 msgstr "Çeviri Kısayolu"
 
 #: data/resources/preferences.ui:55
-msgid "Unselected choice will be used for line break."
-msgstr "Seçilmemiş seçim satır sonu için kullanılacaktır."
+msgid "The unselected choice will be used for line break."
+msgstr "Seçili olmayan seçim satır sonu için kullanılacaktır."
 
 #: data/resources/preferences.ui:61
 msgid "Default to Auto"
-msgstr "Otomatik Olarak Varsayılan"
+msgstr "Varsayılan Olarak Otomatik"
 
 #: data/resources/preferences.ui:62
-msgid "Use \"Auto\" as the default language on every launch"
-msgstr "Her başlatmada varsayılan dil olarak \"Otomatik\" kullan"
+msgid "Use \"Auto\" as the default language"
+msgstr "Varsayılan dil olarak \"Otomatik\" kullan"
 
 #: data/resources/preferences.ui:76
 msgid "Translator"
@@ -151,8 +155,8 @@ msgid "Translator Instance"
 msgstr "Çevirmen Örneği"
 
 #: data/resources/preferences.ui:84
-msgid "Specify URL of translation service."
-msgstr "Çeviri servisinin URL adresini belirtin."
+msgid "Enter a translation service URL."
+msgstr "Bir çeviri hizmeti URL'si girin."
 
 #: data/resources/preferences.ui:109
 msgid "Edit"
@@ -167,57 +171,114 @@ msgid "Save"
 msgstr "Kaydet"
 
 #: data/resources/preferences.ui:175
-msgid "Text to Speech"
+msgid "Text-to-Speech"
 msgstr "Metinden Sese"
 
 #: data/resources/preferences.ui:176
-msgid "Use Google for Text to Speech functionality."
-msgstr "Metinden Sese için Google kullanın."
+msgid "Use Google for TTS."
+msgstr "Metinden Sese için Google kullan."
 
 #: data/resources/preferences.ui:192
 msgid "Search Provider"
-msgstr "Arama sağlayıcısı"
+msgstr "Arama Sağlayıcısı"
 
 #: data/resources/preferences.ui:193
 msgid ""
-"Dialect has a GNOME Search Provider. Enabling or disabling Live Translation "
-"here will also enable or disable the GNOME Search Provider. This is to "
-"reduce the possibility of API abuse. Also make sure that the feature is "
-"enabled in GNOME Settings."
+"To reduce API abuse, the GNOME search provider in Dialect is turned off when "
+"Live translation is. Ensure the search provider is also turned on in the "
+"GNOME Settings."
 msgstr ""
-"Dialect'in bir GNOME Arama Sağlayıcısı vardır. Canlı Çeviri'yi burada "
-"etkinleştirmek veya devre dışı bırakmak, GNOME Arama Sağlayıcısını da "
-"etkinleştirir veya devre dışı bırakır. Bu, API kötüye kullanım olasılığını "
-"azaltmak içindir. Ayrıca, özelliğin GNOME Ayarlarında etkinleştirildiğinden "
-"emin olun."
+"API kötüye kullanımını azaltmak için, Canlı çeviri açıkken Dialect'teki "
+"GNOME arama sağlayıcısı kapatılır. Arama sağlayıcısının GNOME ayarlarında da "
+"açık olduğundan emin olun."
 
 #: data/resources/shortcuts-window.ui:13
 msgctxt "shortcuts window"
-msgid "General"
-msgstr "Genel"
+msgid "Translator"
+msgstr "Çevirmen"
 
 #: data/resources/shortcuts-window.ui:17
-msgctxt "shortcuts window"
-msgid "Preferences"
-msgstr "Tercihler"
-
-#: data/resources/shortcuts-window.ui:24
 msgctxt "shortcuts window"
 msgid "Translate"
 msgstr "Çevir"
 
+#: data/resources/shortcuts-window.ui:24
+msgctxt "shortcuts window"
+msgid "Switch Languages"
+msgstr "Dili Değiştir"
+
 #: data/resources/shortcuts-window.ui:31
+msgctxt "shortcuts window"
+msgid "Clear source text"
+msgstr "Kaynak metni temizle"
+
+#: data/resources/shortcuts-window.ui:38
+msgctxt "shortcuts window"
+msgid "Copy translation"
+msgstr "Çeviriyi kopyala"
+
+#: data/resources/shortcuts-window.ui:45
+msgctxt "shortcuts window"
+msgid "Show Pronunciation"
+msgstr "Telaffuzunu Göster"
+
+#: data/resources/shortcuts-window.ui:54
+msgctxt "shortcuts window"
+msgid "Text-to-Speech"
+msgstr "Metinden Sese"
+
+#: data/resources/shortcuts-window.ui:58
+msgctxt "shortcuts window"
+msgid "Listen to source text"
+msgstr "Kaynak metni dinle"
+
+#: data/resources/shortcuts-window.ui:65
+msgctxt "shortcuts window"
+msgid "Listen to translation"
+msgstr "Çeviriyi dinle"
+
+#: data/resources/shortcuts-window.ui:74
+msgctxt "shortcuts window"
+msgid "Navigation"
+msgstr "Gezinme"
+
+#: data/resources/shortcuts-window.ui:78
+msgctxt "shortcuts window"
+msgid "Go back in history"
+msgstr "Geçmişte geri git"
+
+#: data/resources/shortcuts-window.ui:85
+msgctxt "shortcuts window"
+msgid "Go forward in history"
+msgstr "Geçmişte ileri git"
+
+#: data/resources/shortcuts-window.ui:94
+msgctxt "shortcuts window"
+msgid "General"
+msgstr "Genel"
+
+#: data/resources/shortcuts-window.ui:98
+msgctxt "shortcuts window"
+msgid "Preferences"
+msgstr "Tercihler"
+
+#: data/resources/shortcuts-window.ui:105
+msgctxt "shortcut window"
+msgid "Shortcuts"
+msgstr "Kısayollar"
+
+#: data/resources/shortcuts-window.ui:112
 msgctxt "shortcuts window"
 msgid "Quit"
 msgstr "Çıkış"
 
 #: data/resources/window.ui:42
-msgid "Loading..."
-msgstr "Yükleniyor..."
+msgid "Loading…"
+msgstr "Yükleniyor…"
 
 #: data/resources/window.ui:83
-msgid "Failed loading translator backend"
-msgstr "Çeviri arka işlemi yüklenemedi"
+msgid "Could not load the translator service"
+msgstr "Çeviri hizmeti yüklenemedi"
 
 #: data/resources/window.ui:108
 msgid "Retry"
@@ -227,60 +288,60 @@ msgstr "Yeniden dene"
 msgid "Open preferences"
 msgstr "Tercihleri aç"
 
-#: data/resources/window.ui:193 data/resources/window.ui:726
+#: data/resources/window.ui:194 data/resources/window.ui:728
 msgid "Switch languages"
 msgstr "Dili değiştir"
 
-#: data/resources/window.ui:273
+#: data/resources/window.ui:274
 msgid "Previous translation"
 msgstr "Önceki çeviri"
 
-#: data/resources/window.ui:292
+#: data/resources/window.ui:293
 msgid "Next translation"
 msgstr "Sonraki çeviri"
 
-#: data/resources/window.ui:453
+#: data/resources/window.ui:454
 msgid "Clear"
 msgstr "Temizle"
 
-#: data/resources/window.ui:468
+#: data/resources/window.ui:470
 msgid "Paste"
 msgstr "Yapıştır"
 
-#: data/resources/window.ui:484 data/resources/window.ui:622
+#: data/resources/window.ui:486 data/resources/window.ui:624
 msgid "Listen"
 msgstr "Dinle"
 
-#: data/resources/window.ui:492
+#: data/resources/window.ui:494
 msgid "Translate"
 msgstr "Çevir"
 
-#: data/resources/window.ui:603
-msgid "Translation in progress..."
-msgstr "Çeviriliyor..."
+#: data/resources/window.ui:605
+msgid "Translating…"
+msgstr "Çevriliyor…"
 
-#: data/resources/window.ui:611
-msgid "Translation seems to have failed"
-msgstr "Görünüşe göre çeviri başarısız oldu"
+#: data/resources/window.ui:613
+msgid "Could not translate the text"
+msgstr "Metin çevrilemedi"
 
-#: data/resources/window.ui:637
+#: data/resources/window.ui:639
 msgid "Copy"
 msgstr "Kopyala"
 
-#: data/resources/window.ui:817
+#: data/resources/window.ui:820
 msgid "No network connection detected."
 msgstr "Ağ bağlantısı algılanmadı."
 
-#: src/preferences.py:250
+#: dialect/preferences.py:251
 #, python-brace-format
 msgid "Not a valid {backend} instance"
 msgstr "Geçerli bir {backend} örneği değil"
 
-#: src/window.py:229
+#: dialect/window.py:234
 msgid "A network issue has occured. Retry?"
-msgstr "Ağ sorunu oluştu. Yeniden dene?"
+msgstr "Ağ sorunu oluştu. Yeniden denensin mi?"
 
-#: src/window.py:233
+#: dialect/window.py:238
 msgid ""
 "A network issue has occured.\n"
 "Please try again."
@@ -288,79 +349,492 @@ msgstr ""
 "Ağ sorunu oluştu.\n"
 "Lütfen tekrar deneyin."
 
-#: src/window.py:507 src/window.py:511
+#: dialect/window.py:498 dialect/window.py:502
 msgid "Auto"
 msgstr "Otomatik"
 
-#: src/window.py:784
+#: dialect/window.py:775
 msgid "5000 characters limit reached!"
-msgstr "5000 karakter limiti aşıldı!"
+msgstr "5000 karakter sınırına ulaşıldı!"
 
-#: src/window.py:876
+#: dialect/window.py:877
 msgid ""
 "Translation failed.\n"
 "Please check for network issues."
 msgstr ""
 "Çeviri başarısız oldu.\n"
-"Lütfen ağınızı kontrol edin."
+"Lütfen ağ sorunlarını denetleyin."
 
-#: src/window.py:892
+#: dialect/window.py:893
 msgid "Did you mean: "
-msgstr "Şunu mu demek istediniz: "
+msgstr "Bunu mu demek istediniz: "
+
+#: dialect/translators/__init__.py:26
+msgid "Afrikaans"
+msgstr "Afrikaanca"
+
+#: dialect/translators/__init__.py:27
+msgid "Albanian"
+msgstr "Arnavutça"
+
+#: dialect/translators/__init__.py:28
+msgid "Amharic"
+msgstr "Amharca"
+
+#: dialect/translators/__init__.py:29
+msgid "Arabic"
+msgstr "Arapça"
+
+#: dialect/translators/__init__.py:30
+msgid "Armenian"
+msgstr "Ermenice"
+
+#: dialect/translators/__init__.py:31
+msgid "Azerbaijani"
+msgstr "Azerbaycan dili"
+
+#: dialect/translators/__init__.py:32
+msgid "Basque"
+msgstr "Baskça"
+
+#: dialect/translators/__init__.py:33
+msgid "Belarusian"
+msgstr "Belarusça"
+
+#: dialect/translators/__init__.py:34
+msgid "Bengali"
+msgstr "Bengalce"
+
+#: dialect/translators/__init__.py:35
+msgid "Bosnian"
+msgstr "Boşnakça"
+
+#: dialect/translators/__init__.py:36
+msgid "Bulgarian"
+msgstr "Bulgarca"
+
+#: dialect/translators/__init__.py:37
+msgid "Catalan"
+msgstr "Katalanca"
+
+#: dialect/translators/__init__.py:38
+msgid "Cebuano"
+msgstr "Sebuano dili"
+
+#: dialect/translators/__init__.py:39
+msgid "Chichewa"
+msgstr "Nyanja"
+
+#: dialect/translators/__init__.py:40
+msgid "Chinese"
+msgstr "Çince"
+
+#: dialect/translators/__init__.py:41
+msgid "Chinese (Simplified)"
+msgstr "Basitleştirilmiş Çince"
+
+#: dialect/translators/__init__.py:42
+msgid "Chinese (Traditional)"
+msgstr "Geleneksel Çince"
+
+#: dialect/translators/__init__.py:43
+msgid "Corsican"
+msgstr "Korsikaca"
+
+#: dialect/translators/__init__.py:44
+msgid "Croatian"
+msgstr "Hırvatça"
+
+#: dialect/translators/__init__.py:45
+msgid "Czech"
+msgstr "Çekçe"
+
+#: dialect/translators/__init__.py:46
+msgid "Danish"
+msgstr "Danca"
+
+#: dialect/translators/__init__.py:47
+msgid "Dutch"
+msgstr "Felemenkçe"
+
+#: dialect/translators/__init__.py:48
+msgid "English"
+msgstr "İngilizce"
+
+#: dialect/translators/__init__.py:49
+msgid "Esperanto"
+msgstr "Esperanto"
+
+#: dialect/translators/__init__.py:50
+msgid "Estonian"
+msgstr "Estonca"
+
+#: dialect/translators/__init__.py:51
+msgid "Filipino"
+msgstr "Tagalogca"
+
+#: dialect/translators/__init__.py:52
+msgid "Finnish"
+msgstr "Fince"
+
+#: dialect/translators/__init__.py:53
+msgid "French"
+msgstr "Fransızca"
+
+#: dialect/translators/__init__.py:54
+msgid "Frisian"
+msgstr "Batı Frizcesi"
+
+#: dialect/translators/__init__.py:55
+msgid "Galician"
+msgstr "Galiçyaca"
+
+#: dialect/translators/__init__.py:56
+msgid "Georgian"
+msgstr "Gürcüce"
+
+#: dialect/translators/__init__.py:57
+msgid "German"
+msgstr "Almanca"
+
+#: dialect/translators/__init__.py:58
+msgid "Greek"
+msgstr "Yunanca"
+
+#: dialect/translators/__init__.py:59
+msgid "Gujarati"
+msgstr "Güceratça"
+
+#: dialect/translators/__init__.py:60
+msgid "Haitian Creole"
+msgstr "Haiti Kreyolu"
+
+#: dialect/translators/__init__.py:61
+msgid "Hausa"
+msgstr "Hausa dili"
+
+#: dialect/translators/__init__.py:62
+msgid "Hawaiian"
+msgstr "Hawaii dili"
+
+#: dialect/translators/__init__.py:63 dialect/translators/__init__.py:64
+msgid "Hebrew"
+msgstr "İbranice"
+
+#: dialect/translators/__init__.py:65
+msgid "Hindi"
+msgstr "Hintçe"
+
+#: dialect/translators/__init__.py:66
+msgid "Hmong"
+msgstr "Hmong"
+
+#: dialect/translators/__init__.py:67
+msgid "Hungarian"
+msgstr "Macarca"
+
+#: dialect/translators/__init__.py:68
+msgid "Icelandic"
+msgstr "İzlandaca"
+
+#: dialect/translators/__init__.py:69
+msgid "Igbo"
+msgstr "İbo dili"
+
+#: dialect/translators/__init__.py:70
+msgid "Indonesian"
+msgstr "Endonezce"
+
+#: dialect/translators/__init__.py:71
+msgid "Irish"
+msgstr "İrlandaca"
+
+#: dialect/translators/__init__.py:72
+msgid "Italian"
+msgstr "İtalyanca"
+
+#: dialect/translators/__init__.py:73
+msgid "Japanese"
+msgstr "Japonca"
+
+#: dialect/translators/__init__.py:74
+msgid "Javanese"
+msgstr "Cava Dili"
+
+#: dialect/translators/__init__.py:75
+msgid "Kannada"
+msgstr "Kannada dili"
+
+#: dialect/translators/__init__.py:76
+msgid "Kazakh"
+msgstr "Kazakça"
+
+#: dialect/translators/__init__.py:77
+msgid "Khmer"
+msgstr "Khmer dili"
+
+#: dialect/translators/__init__.py:78
+msgid "Kinyarwanda"
+msgstr "Kinyarwanda"
+
+#: dialect/translators/__init__.py:79
+msgid "Korean"
+msgstr "Korece"
+
+#: dialect/translators/__init__.py:80
+msgid "Kurdish (Kurmanji)"
+msgstr "Kürtçe"
+
+#: dialect/translators/__init__.py:81
+msgid "Kyrgyz"
+msgstr "Kırgızca"
+
+#: dialect/translators/__init__.py:82
+msgid "Lao"
+msgstr "Lao dili"
+
+#: dialect/translators/__init__.py:83
+msgid "Latin"
+msgstr "Latince"
+
+#: dialect/translators/__init__.py:84
+msgid "Latvian"
+msgstr "Letonca"
+
+#: dialect/translators/__init__.py:85
+msgid "Lithuanian"
+msgstr "Litvanca"
+
+#: dialect/translators/__init__.py:86
+msgid "Luxembourgish"
+msgstr "Lüksemburgca"
+
+#: dialect/translators/__init__.py:87
+msgid "Macedonian"
+msgstr "Makedonca"
+
+#: dialect/translators/__init__.py:88
+msgid "Malagasy"
+msgstr "Malgaşça"
+
+#: dialect/translators/__init__.py:89
+msgid "Malay"
+msgstr "Malayca"
+
+#: dialect/translators/__init__.py:90
+msgid "Malayalam"
+msgstr "Malayalam dili"
+
+#: dialect/translators/__init__.py:91
+msgid "Maltese"
+msgstr "Maltaca"
+
+#: dialect/translators/__init__.py:92
+msgid "Maori"
+msgstr "Maori dili"
+
+#: dialect/translators/__init__.py:93
+msgid "Marathi"
+msgstr "Marathi dili"
+
+#: dialect/translators/__init__.py:94
+msgid "Mongolian"
+msgstr "Moğolca"
+
+#: dialect/translators/__init__.py:95
+msgid "Myanmar (Burmese)"
+msgstr "Birman dili"
+
+#: dialect/translators/__init__.py:96
+msgid "Nepali"
+msgstr "Nepalce"
+
+#: dialect/translators/__init__.py:97
+msgid "Norwegian"
+msgstr "Norveççe"
+
+#: dialect/translators/__init__.py:98
+msgid "Odia (Oriya)"
+msgstr "Oriya dili"
+
+#: dialect/translators/__init__.py:99
+msgid "Pashto"
+msgstr "Peştuca"
+
+#: dialect/translators/__init__.py:100
+msgid "Persian"
+msgstr "Farsça"
+
+#: dialect/translators/__init__.py:101
+msgid "Polish"
+msgstr "Lehçe"
+
+#: dialect/translators/__init__.py:102
+msgid "Portuguese"
+msgstr "Portekizce"
+
+#: dialect/translators/__init__.py:103
+msgid "Punjabi"
+msgstr "Pencapça"
+
+#: dialect/translators/__init__.py:104
+msgid "Romanian"
+msgstr "Rumence"
+
+#: dialect/translators/__init__.py:105
+msgid "Russian"
+msgstr "Rusça"
+
+#: dialect/translators/__init__.py:106
+msgid "Samoan"
+msgstr "Samoa dili"
+
+#: dialect/translators/__init__.py:107
+msgid "Scots Gaelic"
+msgstr "İskoç Gaelcesi"
+
+#: dialect/translators/__init__.py:108
+msgid "Serbian"
+msgstr "Sırpça"
+
+#: dialect/translators/__init__.py:109
+msgid "Sesotho"
+msgstr "Güney Sotho dili"
+
+#: dialect/translators/__init__.py:110
+msgid "Shona"
+msgstr "Şona dili"
+
+#: dialect/translators/__init__.py:111
+msgid "Sindhi"
+msgstr "Sindhi dili"
+
+#: dialect/translators/__init__.py:112
+msgid "Sinhala"
+msgstr "Sinhali dili"
+
+#: dialect/translators/__init__.py:113
+msgid "Slovak"
+msgstr "Slovakça"
+
+#: dialect/translators/__init__.py:114
+msgid "Slovenian"
+msgstr "Slovence"
+
+#: dialect/translators/__init__.py:115
+msgid "Somali"
+msgstr "Somalice"
+
+#: dialect/translators/__init__.py:116
+msgid "Spanish"
+msgstr "İspanyolca"
+
+#: dialect/translators/__init__.py:117
+msgid "Sundanese"
+msgstr "Sunda dili"
+
+#: dialect/translators/__init__.py:118
+msgid "Swahili"
+msgstr "Svahili dili"
+
+#: dialect/translators/__init__.py:119
+msgid "Swedish"
+msgstr "İsveççe"
+
+#: dialect/translators/__init__.py:120
+msgid "Tajik"
+msgstr "Tacikçe"
+
+#: dialect/translators/__init__.py:121
+msgid "Tamil"
+msgstr "Tamilce"
+
+#: dialect/translators/__init__.py:122
+msgid "Tatar"
+msgstr "Tatarca"
+
+#: dialect/translators/__init__.py:123
+msgid "Telugu"
+msgstr "Telugu dili"
+
+#: dialect/translators/__init__.py:124
+msgid "Thai"
+msgstr "Tayca"
+
+#: dialect/translators/__init__.py:125
+msgid "Turkish"
+msgstr "Türkçe"
+
+#: dialect/translators/__init__.py:126
+msgid "Turkmen"
+msgstr "Türkmence"
+
+#: dialect/translators/__init__.py:127
+msgid "Ukrainian"
+msgstr "Ukraynaca"
+
+#: dialect/translators/__init__.py:128
+msgid "Urdu"
+msgstr "Urduca"
+
+#: dialect/translators/__init__.py:129
+msgid "Uyghur"
+msgstr "Uygurca"
+
+#: dialect/translators/__init__.py:130
+msgid "Uzbek"
+msgstr "Özbekçe"
+
+#: dialect/translators/__init__.py:131
+msgid "Vietnamese"
+msgstr "Vietnamca"
+
+#: dialect/translators/__init__.py:132
+msgid "Welsh"
+msgstr "Galce"
+
+#: dialect/translators/__init__.py:133
+msgid "Xhosa"
+msgstr "Zosa dili"
+
+#: dialect/translators/__init__.py:134
+msgid "Yiddish"
+msgstr "Yidiş"
+
+#: dialect/translators/__init__.py:135
+msgid "Yoruba"
+msgstr "Yorubaca"
+
+#: dialect/translators/__init__.py:136
+msgid "Zulu"
+msgstr "Zuluca"
+
+#~ msgid "Use Google for Text to Speech functionality."
+#~ msgstr "Metinden Sese işlevi için Google kullanın."
+
+#~ msgid ""
+#~ "Dialect has a GNOME Search Provider. Enabling or disabling Live "
+#~ "Translation here will also enable or disable the GNOME Search Provider. "
+#~ "This is to reduce the possibility of API abuse. Also make sure that the "
+#~ "feature is enabled in GNOME Settings."
+#~ msgstr ""
+#~ "Dialect'in bir GNOME Arama Sağlayıcısı vardır. Canlı Çeviri'yi burada "
+#~ "etkinleştirmek veya devre dışı bırakmak, GNOME Arama Sağlayıcısını da "
+#~ "etkinleştirir veya devre dışı bırakır. Bu, API kötüye kullanım "
+#~ "olasılığını azaltmak içindir. Ayrıca, özelliğin GNOME Ayarlarında "
+#~ "etkinleştirildiğinden emin olun."
+
+#~ msgid "Translation in progress..."
+#~ msgstr "Çeviri devam ediyor..."
+
+#~ msgid "Translation seems to have failed"
+#~ msgstr "Görünüşe göre çeviri başarısız oldu"
 
 #~ msgid "gi-lom"
 #~ msgstr "gi-lom"
 
-#~ msgid "A translation app for GNOME based on Google Translate."
-#~ msgstr "GNOME için Google Çeviri tabanlı çeviri uygulaması."
-
 #~ msgid "Text translation up to 5000 chars"
 #~ msgstr "5000 karaktere kadar metin çevirme"
-
-#~ msgid "Added a shortcuts window"
-#~ msgstr "Kısayollar penceresi eklendi"
-
-#~ msgid "Added Indonesian translation"
-#~ msgstr "Endonezce çeviri eklendi"
-
-#~ msgid "Added Portugese (BR) translation"
-#~ msgstr "Portekizce (BR) çeviri eklendi"
-
-#~ msgid "Fixed several bugs"
-#~ msgstr "Bazı hatalar düzeltildi"
-
-#~ msgid "Added a search provider for GNOME"
-#~ msgstr "GNOME için arama sağlayıcısı eklendi"
-
-#~ msgid "Added support for \"Did you mean\" suggestions"
-#~ msgstr "\"Şunu mu demek istediniz\" için öneri desteği eklendi"
-
-#~ msgid "Added a Ctrl+Q shortcut to quit"
-#~ msgstr "Çıkmak için Ctrl+Q kısayolu eklendi"
-
-#~ msgid "Added Hungarian translation"
-#~ msgstr "Macarca çeviri eklendi"
-
-#~ msgid "Added Italian translation"
-#~ msgstr "İtalyanca çeviri eklendi"
-
-#~ msgid "Added Persian translation"
-#~ msgstr "Farsça çeviri eklendi"
-
-#~ msgid "Added Russian translation"
-#~ msgstr "Rusça çeviri eklendi"
-
-#~ msgid "Added Turkish translation"
-#~ msgstr "Türkçe çeviri eklendi"
-
-#~ msgid "Fixed some issues with the icon"
-#~ msgstr "İkon ile ilgili sorunlar düzeltildi"
-
-#~ msgid "Made some minor UI improvements"
-#~ msgstr "Bazı arayüz iyileştirmeleri yapıldı"
-
-#~ msgid "Initial release."
-#~ msgstr "İlk sürüm."
 
 #~ msgid "History"
 #~ msgstr "Geçmiş"

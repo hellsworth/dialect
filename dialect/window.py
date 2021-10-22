@@ -12,7 +12,7 @@ from gi.repository import Gdk, GLib, GObject, Gst, Gtk, Handy
 from dialect.define import APP_ID, MAX_LENGTH, RES_PATH, TRANS_NUMBER
 from dialect.lang_selector import DialectLangSelector
 from dialect.settings import Settings
-from dialect.translators import TRANSLATORS
+from dialect.translators import TRANSLATORS, get_lang_name
 from dialect.tts import TTS
 
 
@@ -67,33 +67,30 @@ class DialectWindow(Handy.ApplicationWindow):
     notification_revealer = Gtk.Template.Child()
     notification_label = Gtk.Template.Child()
 
-    # Translator
-    translator = None
+    translator = None  # Translator object
+
     # Text to speech
     tts = None
     tts_langs = None
-    # Language values
+    voice_loading = False  # tts loading status
+
+    # Preset language values
     src_langs = []
     dest_langs = []
-    # Current input Text
-    current_input_text = ''
-    current_history = 0
-    no_retranslate = False
-    type_time = 0
-    trans_queue = []
-    active_thread = None
-    # These are for being able to go backspace
-    first_key = 0
-    second_key = 0
-    mobile_mode = False
-    # Connectivity issues monitoring
-    trans_failed = False
-    voice_loading = False
-    # Trans mistakes
-    trans_mistakes = None
+
+    current_history = 0  # for history management
+
+    # Translation-related variables
+    no_retranslate = False  # used to prevent unnecessary re-translations
+    trans_queue = []  # for pending translations
+    active_thread = None  # for ongoing translation
+    trans_failed = False  # for monitoring connectivity issues
+    trans_mistakes = None  # "mistakes" suggestions
     # Pronunciations
     trans_src_pron = None
     trans_dest_pron = None
+
+    mobile_mode = False  # UI mode
 
     # Propeties
     backend_loading = GObject.Property(type=bool, default=False)
@@ -160,15 +157,22 @@ class DialectWindow(Handy.ApplicationWindow):
                 self.src_pron_revealer.set_reveal_child(False)
                 self.dest_pron_revealer.set_reveal_child(False)
                 self.app.pronunciation_action.set_enabled(False)
+            else:
+                self.app.pronunciation_action.set_enabled(True)
 
             self.no_retranslate = True
             # Update langs list
             self.src_lang_selector.set_languages(self.translator.languages)
             self.dest_lang_selector.set_languages(self.translator.languages)
             # Update selected langs
-            src_lang_default = 'auto' if Settings.get().src_auto else self.src_langs[0]
-            self.src_lang_selector.set_property('selected', src_lang_default)
-            self.dest_lang_selector.set_property('selected', self.dest_langs[0])
+            self.src_lang_selector.set_property(
+                'selected',
+                'auto' if Settings.get().src_auto else self._fix_cases(self.src_langs[0])
+            )
+            self.dest_lang_selector.set_property(
+                'selected',
+                self._fix_cases(self.dest_langs[0])
+            )
 
             self.no_retranslate = False
 
@@ -214,9 +218,10 @@ class DialectWindow(Handy.ApplicationWindow):
             print('Error: ' + str(exc))
 
     def retry_load_translator(self, _button):
-        threading.Thread(target=self.load_translator,
-                         args=[Settings.get().backend],
-                         daemon=True
+        threading.Thread(
+            target=self.load_translator,
+            args=[Settings.get().backend],
+            daemon=True
         ).start()
 
     def on_listen_failed(self):
@@ -244,17 +249,17 @@ class DialectWindow(Handy.ApplicationWindow):
         )
 
         if self.tts_langs:
-            self.src_voice_btn.set_sensitive(
+            self.app.listen_src_action.set_enabled(
                 self.src_lang_selector.get_property('selected') in self.tts_langs
                 and src_text != ''
             )
-            self.dest_voice_btn.set_sensitive(
+            self.app.listen_dest_action.set_enabled(
                 self.dest_lang_selector.get_property('selected') in self.tts_langs
                 and dest_text != ''
             )
         else:
-            self.src_voice_btn.set_sensitive(src_text != '')
-            self.dest_voice_btn.set_sensitive(dest_text != '')
+            self.app.listen_src_action.set_enabled(src_text != '')
+            self.app.listen_dest_action.set_enabled(dest_text != '')
 
     def load_lang_speech(self, listen=False, text=None, language=None):
         """
@@ -279,10 +284,6 @@ class DialectWindow(Handy.ApplicationWindow):
                 self.voice_loading = False
 
     def setup_headerbar(self):
-        # Connect history buttons
-        self.return_btn.connect('clicked', self.ui_return)
-        self.forward_btn.connect('clicked', self.ui_forward)
-
         # Left lang selector
         self.src_lang_selector = DialectLangSelector()
         self.src_lang_selector.connect('notify::selected',
@@ -301,9 +302,6 @@ class DialectWindow(Handy.ApplicationWindow):
 
         self.langs_button_box.set_homogeneous(False)
 
-        # Switch button
-        self.switch_btn.connect('clicked', self.ui_switch)
-
         # Add menu to menu button
         builder = Gtk.Builder.new_from_resource(f'{RES_PATH}/menu.ui')
         menu = builder.get_object('app-menu')
@@ -315,9 +313,6 @@ class DialectWindow(Handy.ApplicationWindow):
         self.src_lang_btn2.set_popover(self.src_lang_selector)
         self.dest_lang_btn2.set_popover(self.dest_lang_selector)
 
-        # Switch button
-        self.switch_btn2.connect('clicked', self.ui_switch)
-
     def setup_translation(self):
         # Left buffer
         self.src_buffer = self.src_text.get_buffer()
@@ -325,10 +320,6 @@ class DialectWindow(Handy.ApplicationWindow):
         self.src_buffer.connect('changed', self.on_src_text_changed)
         self.src_buffer.connect('end-user-action', self.user_action_ended)
         self.connect('key-press-event', self.update_trans_button)
-        # Clear button
-        self.clear_btn.connect('clicked', self.ui_clear)
-        # Paste button
-        self.paste_btn.connect('clicked', self.ui_paste)
         # Translate button
         self.translate_btn.connect('clicked', self.translation)
         # "Did you mean" links
@@ -338,8 +329,6 @@ class DialectWindow(Handy.ApplicationWindow):
         self.dest_buffer = self.dest_text.get_buffer()
         self.dest_buffer.set_text('')
         self.dest_buffer.connect('changed', self.on_dest_text_changed)
-        # Clipboard button
-        self.copy_btn.connect('clicked', self.ui_copy)
         # Translation progress spinner
         self.trans_spinner.hide()
         self.trans_warning.hide()
@@ -350,14 +339,12 @@ class DialectWindow(Handy.ApplicationWindow):
         self.src_voice_image = Gtk.Image.new_from_icon_name(
             'audio-speakers-symbolic', Gtk.IconSize.BUTTON)
         self.src_voice_spinner = Gtk.Spinner()  # For use while audio is running or still loading.
-        self.src_voice_btn.connect('clicked', self.ui_src_voice)
 
         self.dest_voice_warning = Gtk.Image.new_from_icon_name(
             'dialog-warning-symbolic', Gtk.IconSize.BUTTON)
         self.dest_voice_image = Gtk.Image.new_from_icon_name(
             'audio-speakers-symbolic', Gtk.IconSize.BUTTON)
         self.dest_voice_spinner = Gtk.Spinner()
-        self.dest_voice_btn.connect('clicked', self.ui_dest_voice)
 
         self.toggle_voice_spinner(True)
 
@@ -443,11 +430,11 @@ class DialectWindow(Handy.ApplicationWindow):
 
     def toggle_voice_spinner(self, active=True):
         if active:
-            self.src_voice_btn.set_sensitive(False)
+            self.app.listen_src_action.set_enabled(False)
             self.src_voice_btn.set_image(self.src_voice_spinner)
             self.src_voice_spinner.start()
 
-            self.dest_voice_btn.set_sensitive(False)
+            self.app.listen_dest_action.set_enabled(False)
             self.dest_voice_btn.set_image(self.dest_voice_spinner)
             self.dest_voice_spinner.start()
         else:
@@ -456,7 +443,7 @@ class DialectWindow(Handy.ApplicationWindow):
                 self.src_buffer.get_end_iter(),
                 True
             )
-            self.src_voice_btn.set_sensitive(
+            self.app.listen_src_action.set_enabled(
                 self.src_lang_selector.get_property('selected') in self.tts_langs
                 and src_text != ''
             )
@@ -468,7 +455,7 @@ class DialectWindow(Handy.ApplicationWindow):
                 self.dest_buffer.get_end_iter(),
                 True
             )
-            self.dest_voice_btn.set_sensitive(
+            self.app.listen_dest_action.set_enabled(
                 self.dest_lang_selector.get_property('selected') in self.tts_langs
                 and dest_text != ''
             )
@@ -476,8 +463,8 @@ class DialectWindow(Handy.ApplicationWindow):
             self.dest_voice_spinner.stop()
 
     def on_src_lang_changed(self, _obj, _param):
-        code = self.src_lang_selector.get_property('selected')
-        dest_code = self.dest_lang_selector.get_property('selected')
+        code = self._fix_cases(self.src_lang_selector.get_property('selected'))
+        dest_code = self._fix_cases(self.dest_lang_selector.get_property('selected'))
         src_text = self.src_buffer.get_text(
             self.src_buffer.get_start_iter(),
             self.src_buffer.get_end_iter(),
@@ -485,24 +472,28 @@ class DialectWindow(Handy.ApplicationWindow):
         )
 
         if code == dest_code:
-            code = self.dest_langs[1] if code == self.src_langs[0] else dest_code
-            self.dest_lang_selector.set_property('selected', self.src_langs[0])
+            code = self._fix_cases(
+                self.dest_langs[1] if code == self.src_langs[0] else dest_code
+            )
+            self.dest_lang_selector.set_property('selected', self._fix_cases(self.src_langs[0]))
 
         # Disable or enable listen function.
         if self.tts_langs and Settings.get().tts != '':
-            self.src_voice_btn.set_sensitive(code in self.tts_langs
-                                         and src_text != '')
+            self.app.listen_src_action.set_enabled(code in self.tts_langs
+                                                   and src_text != '')
 
         if code in self.translator.languages:
-            self.src_lang_label.set_label(self.translator.languages[code].capitalize())
-            # Updated saved left langs list
+            self.src_lang_label.set_label(get_lang_name(code))
+            # Update saved src langs list
             if code in self.src_langs:
                 # Bring lang to the top
-                index = self.src_langs.index(code)
-                self.src_langs.insert(0, self.src_langs.pop(index))
-            else:
+                self.src_langs.remove(code)
+            elif code.lower() in self.src_langs:
+                # Bring lang to the top
+                self.src_langs.remove(code.lower())
+            elif len(self.src_langs) == 4:
                 self.src_langs.pop()
-                self.src_langs.insert(0, code)
+            self.src_langs.insert(0, code)
         else:
             self.src_lang_label.set_label(_('Auto'))
 
@@ -510,8 +501,8 @@ class DialectWindow(Handy.ApplicationWindow):
         self.src_lang_selector.clear_recent()
         self.src_lang_selector.insert_recent('auto', _('Auto'))
         for code in self.src_langs:
-            name = self.translator.languages[code].capitalize()
-            self.src_lang_selector.insert_recent(code, name)
+            code = self._fix_cases(code)
+            self.src_lang_selector.insert_recent(code, get_lang_name(code))
 
         # Refresh list
         self.src_lang_selector.refresh_selected()
@@ -521,8 +512,8 @@ class DialectWindow(Handy.ApplicationWindow):
             self.translation(None)
 
     def on_dest_lang_changed(self, _obj, _param):
-        code = self.dest_lang_selector.get_property('selected')
-        src_code = self.src_lang_selector.get_property('selected')
+        code = self._fix_cases(self.dest_lang_selector.get_property('selected'))
+        src_code = self._fix_cases(self.src_lang_selector.get_property('selected'))
         dest_text = self.dest_buffer.get_text(
             self.dest_buffer.get_start_iter(),
             self.dest_buffer.get_end_iter(),
@@ -530,30 +521,31 @@ class DialectWindow(Handy.ApplicationWindow):
         )
 
         if code == src_code:
-            code = src_code
-            self.src_lang_selector.set_property('selected', self.dest_langs[0])
+            code = self._fix_cases(src_code)
+            self.src_lang_selector.set_property('selected', self._fix_cases(self.dest_langs[0]))
 
         # Disable or enable listen function.
         if self.tts_langs and Settings.get().tts != '':
-            self.dest_voice_btn.set_sensitive(code in self.tts_langs
-                                         and dest_text != '')
+            self.app.listen_dest_action.set_enabled(code in self.tts_langs
+                                                    and dest_text != '')
 
-        name = self.translator.languages[code].capitalize()
-        self.dest_lang_label.set_label(name)
-        # Updated saved right langs list
+        self.dest_lang_label.set_label(get_lang_name(code))
+        # Update saved dest langs list
         if code in self.dest_langs:
             # Bring lang to the top
-            index = self.dest_langs.index(code)
-            self.dest_langs.insert(0, self.dest_langs.pop(index))
-        else:
+            self.dest_langs.remove(code)
+        elif code.lower() in self.dest_langs:
+            # Bring lang to the top
+            self.dest_langs.remove(code.lower())
+        elif len(self.src_langs) == 4:
             self.dest_langs.pop()
-            self.dest_langs.insert(0, code)
+        self.dest_langs.insert(0, code)
 
         # Rewrite recent langs
         self.dest_lang_selector.clear_recent()
         for code in self.dest_langs:
-            name = self.translator.languages[code].capitalize()
-            self.dest_lang_selector.insert_recent(code, name)
+            code = self._fix_cases(code)
+            self.dest_lang_selector.insert_recent(code, get_lang_name(code))
 
         # Refresh list
         self.dest_lang_selector.refresh_selected()
@@ -565,13 +557,13 @@ class DialectWindow(Handy.ApplicationWindow):
     """
     User interface functions
     """
-    def ui_return(self, _button):
+    def ui_return(self, _action, _param):
         """Go back one step in history."""
         if self.current_history != TRANS_NUMBER:
             self.current_history += 1
             self.history_update()
 
-    def ui_forward(self, _button):
+    def ui_forward(self, _action, _param):
         """Go forward one step in history."""
         if self.current_history != 0:
             self.current_history -= 1
@@ -586,8 +578,6 @@ class DialectWindow(Handy.ApplicationWindow):
         if self.current_history > 0:
             del self.translator.history[: self.current_history]
             self.current_history = 0
-        if len(self.translator.history) > 0:
-            self.return_btn.set_sensitive(True)
         if len(self.translator.history) == TRANS_NUMBER:
             self.translator.history.pop()
         self.translator.history.insert(0, new_history_trans)
@@ -612,7 +602,7 @@ class DialectWindow(Handy.ApplicationWindow):
         # Switch all
         GLib.idle_add(self.switch_all, src_language, dest_language, src_text, dest_text)
 
-    def ui_switch(self, _button):
+    def ui_switch(self, _action, _param):
         # Get variables
         self.langs_button_box.set_sensitive(False)
         self.translate_btn.set_sensitive(False)
@@ -642,11 +632,11 @@ class DialectWindow(Handy.ApplicationWindow):
         # Switch all
         self.switch_all(src_language, dest_language, src_text, dest_text)
 
-    def ui_clear(self, _button):
+    def ui_clear(self, _action, _param):
         self.src_buffer.set_text('')
         self.src_buffer.emit('end-user-action')
 
-    def ui_copy(self, _button):
+    def ui_copy(self, _action, _param):
         dest_text = self.dest_buffer.get_text(
             self.dest_buffer.get_start_iter(),
             self.dest_buffer.get_end_iter(),
@@ -655,13 +645,13 @@ class DialectWindow(Handy.ApplicationWindow):
         self.clipboard.set_text(dest_text, -1)
         self.clipboard.store()
 
-    def ui_paste(self, _button):
+    def ui_paste(self, _action, _param):
         text = self.clipboard.wait_for_text()
         if text is not None:
             end_iter = self.src_buffer.get_end_iter()
             self.src_buffer.insert(end_iter, text)
 
-    def ui_src_voice(self, _button):
+    def ui_src_voice(self, _action, _param):
         src_text = self.src_buffer.get_text(
             self.src_buffer.get_start_iter(),
             self.src_buffer.get_end_iter(),
@@ -670,7 +660,7 @@ class DialectWindow(Handy.ApplicationWindow):
         src_language = self.src_lang_selector.get_property('selected')
         self._voice(src_text, src_language)
 
-    def ui_dest_voice(self, _button):
+    def ui_dest_voice(self, _action, _param):
         dest_text = self.dest_buffer.get_text(
             self.dest_buffer.get_start_iter(),
             self.dest_buffer.get_end_iter(),
@@ -729,18 +719,19 @@ class DialectWindow(Handy.ApplicationWindow):
         control_mask = Gdk.ModifierType.CONTROL_MASK
         shift_mask = Gdk.ModifierType.SHIFT_MASK
         unicode_key_val = Gdk.keyval_to_unicode(keyboard.keyval)
+        enter_keys = (Gdk.KEY_Return, Gdk.KEY_KP_Enter)
         if (GLib.unichar_isgraph(chr(unicode_key_val)) and
                 modifiers in (shift_mask, 0) and not self.src_text.is_focus()):
             self.src_text.grab_focus()
 
         if not Settings.get().live_translation:
             if control_mask == modifiers:
-                if keyboard.keyval == Gdk.KEY_Return:
+                if keyboard.keyval in enter_keys:
                     if not Settings.get().translate_accel_value:
                         self.translation(button)
                         return Gdk.EVENT_STOP
                     return Gdk.EVENT_PROPAGATE
-            elif keyboard.keyval == Gdk.KEY_Return:
+            elif keyboard.keyval in enter_keys:
                 if Settings.get().translate_accel_value:
                     self.translation(button)
                     return Gdk.EVENT_STOP
@@ -757,25 +748,25 @@ class DialectWindow(Handy.ApplicationWindow):
     def on_src_text_changed(self, buffer):
         sensitive = buffer.get_char_count() != 0
         self.translate_btn.set_sensitive(sensitive)
-        self.clear_btn.set_sensitive(sensitive)
+        self.app.clear_action.set_enabled(sensitive)
         if not self.voice_loading and self.tts_langs:
-            self.src_voice_btn.set_sensitive(
+            self.app.listen_src_action.set_enabled(
                 self.src_lang_selector.get_property('selected') in self.tts_langs
                 and sensitive
             )
         elif not self.voice_loading and not self.tts_langs:
-            self.src_voice_btn.set_sensitive(sensitive)
+            self.app.listen_src_action.set_enabled(sensitive)
 
     def on_dest_text_changed(self, buffer):
         sensitive = buffer.get_char_count() != 0
-        self.copy_btn.set_sensitive(sensitive)
+        self.app.copy_action.set_enabled(sensitive)
         if not self.voice_loading and self.tts_langs:
-            self.dest_voice_btn.set_sensitive(
+            self.app.listen_dest_action.set_enabled(
                 self.dest_lang_selector.get_property('selected') in self.tts_langs
                 and sensitive
             )
         elif not self.voice_loading and not self.tts_langs:
-            self.dest_voice_btn.set_sensitive(sensitive)
+            self.app.listen_dest_action.set_enabled(sensitive)
 
     def user_action_ended(self, buffer):
         # If the text is over the highest number of characters allowed, it is truncated.
@@ -794,8 +785,8 @@ class DialectWindow(Handy.ApplicationWindow):
 
     # The history part
     def reset_return_forward_btns(self):
-        self.return_btn.set_sensitive(self.current_history < len(self.translator.history) - 1)
-        self.forward_btn.set_sensitive(self.current_history > 0)
+        self.app.back_action.set_enabled(self.current_history < len(self.translator.history) - 1)
+        self.app.forward_action.set_enabled(self.current_history > 0)
 
     # Retrieve translation history
     def history_update(self):
@@ -810,6 +801,9 @@ class DialectWindow(Handy.ApplicationWindow):
         self.src_buffer.set_text(lang_hist['Text'][0])
         self.dest_buffer.set_text(lang_hist['Text'][1])
 
+    def set_no_retranslate(self, state):
+        self.no_retranslate = state
+
     # THE TRANSLATION AND SAVING TO HISTORY PART
     def appeared_before(self):
         src_language = self.src_lang_selector.get_property('selected')
@@ -820,17 +814,23 @@ class DialectWindow(Handy.ApplicationWindow):
             True
         )
         if (
-            self.translator.history[self.current_history]['Languages'][0] == src_language
+            len(self.translator.history) >= self.current_history + 1
+            and (self.translator.history[self.current_history]['Languages'][0] == src_language or 'auto')
             and self.translator.history[self.current_history]['Languages'][1] == dest_language
             and self.translator.history[self.current_history]['Text'][0] == src_text
             and not self.trans_failed
+        ) or (
+            len(self.trans_queue) == 1
+            and (self.trans_queue[0].get('src_language') == src_language or 'auto')
+            and self.trans_queue[0].get('dest_language') == dest_language
+            and self.trans_queue[0].get('src_text') == src_text
         ):
             return True
         return False
 
     def translation(self, _button):
         # If it's like the last translation then it's useless to continue
-        if len(self.translator.history) == 0 or not self.appeared_before():
+        if not self.appeared_before():
             src_text = self.src_buffer.get_text(
                 self.src_buffer.get_start_iter(),
                 self.src_buffer.get_end_iter(),
@@ -865,18 +865,19 @@ class DialectWindow(Handy.ApplicationWindow):
         self.save_settings()
 
         # Load translator
-        threading.Thread(target=self.load_translator,
-                         args=[backend],
-                         daemon=True
+        threading.Thread(
+            target=self.load_translator,
+            args=[backend],
+            daemon=True
         ).start()
 
     def run_translation(self):
         def on_trans_failed():
             self.trans_warning.show()
             self.send_notification(_('Translation failed.\nPlease check for network issues.'))
-            self.copy_btn.set_sensitive(False)
-            self.src_voice_btn.set_sensitive(False)
-            self.dest_voice_btn.set_sensitive(False)
+            self.app.copy_action.set_enabled(False)
+            self.app.listen_src_action.set_enabled(False)
+            self.app.listen_dest_action.set_enabled(False)
 
         def on_trans_success():
             self.trans_warning.hide()
@@ -920,11 +921,11 @@ class DialectWindow(Handy.ApplicationWindow):
                     src_language = self.translator.detect(src_text).lang
                     if isinstance(src_language, list):
                         src_language = src_language[0]
-                    if src_language in self.translator.languages.keys():
-                        self.no_retranslate = True
+                    if src_language in self.translator.languages:
+                        GLib.idle_add(self.set_no_retranslate, True)
                         GLib.idle_add(self.src_lang_selector.set_property,
                                       'selected', src_language)
-                        self.no_retranslate = False
+                        GLib.idle_add(self.set_no_retranslate, False)
                         if src_language not in self.src_langs:
                             self.src_langs[0] = src_language
                     else:
@@ -975,3 +976,7 @@ class DialectWindow(Handy.ApplicationWindow):
             GLib.idle_add(on_trans_success)
         GLib.idle_add(on_trans_done)
         self.active_thread = None
+
+    @staticmethod
+    def _fix_cases(code):
+        return code.replace('cn', 'CN').replace('tw', 'TW')

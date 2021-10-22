@@ -6,24 +6,25 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: dialect\n"
-"Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2021-04-27 08:53-0500\n"
-"PO-Revision-Date: 2021-05-07 12:04+0200\n"
-"Last-Translator: Meskó Balázs <mesko.balazs@fsf.hu>\n"
-"Language-Team: \n"
+"Report-Msgid-Bugs-To: https://github.com/dialect-app/po/issues\n"
+"POT-Creation-Date: 2021-10-16 23:00+0530\n"
+"PO-Revision-Date: 2021-09-20 22:36+0000\n"
+"Last-Translator: ovari <ovari123@zoho.com>\n"
+"Language-Team: Hungarian <https://hosted.weblate.org/projects/dialect/"
+"dialect/hu/>\n"
 "Language: hu\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"X-Generator: Poedit 2.4.2\n"
-"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+"Plural-Forms: nplurals=2; plural=n != 1;\n"
+"X-Generator: Weblate 4.9-dev\n"
 
 #. Translators: Do not translate the app name!
 #: data/com.github.gi_lom.dialect.desktop.in:8
-#: data/com.github.gi_lom.dialect.metainfo.xml.in:6 data/resources/window.ui:66
-#: src/main.py:53 src/main.py:88
+#: data/com.github.gi_lom.dialect.metainfo.xml.in:6 data/resources/about.ui:10
+#: data/resources/window.ui:66 dialect/main.py:56 dialect/main.py:93
 msgid "Dialect"
-msgstr "Dialect"
+msgstr "Nyelvjárás"
 
 #: data/com.github.gi_lom.dialect.desktop.in:9
 #: data/com.github.gi_lom.dialect.metainfo.xml.in:7
@@ -71,17 +72,17 @@ msgstr "Automatikus nyelvfelismerés"
 msgid "Clipboard buttons"
 msgstr "Vágólap gombok"
 
-#: data/com.github.gi_lom.dialect.metainfo.xml.in:26
+#: data/com.github.gi_lom.dialect.metainfo.xml.in:27
 msgid "The Dialect Authors"
-msgstr "A Dialect szerzői"
+msgstr "A Nyelvjárás szerzői"
 
 #: data/resources/about.ui:11
-msgid "Copyright 2020-2021 The Dialect Authors"
-msgstr "Copyright 2020-2021 A Dialect szerzői"
+msgid "Copyright 2020–⁠2021 The Dialect Authors"
+msgstr "Szerzői jog © 2020–2021 A Nyelvjárás szerzői"
 
 #: data/resources/about.ui:14
-msgid "Github page"
-msgstr "Github oldal"
+msgid "GitHub page"
+msgstr "GitHub oldal"
 
 #. Replace me with your names.
 #: data/resources/about.ui:19
@@ -102,7 +103,7 @@ msgstr "Gyorsbillentyűk"
 
 #: data/resources/menu.ui:22
 msgid "About Dialect"
-msgstr "A Dialect névjegye"
+msgstr "A Nyelvjárás névjegye"
 
 #: data/resources/preferences.ui:15
 msgid "Appearance"
@@ -130,7 +131,7 @@ msgid "Translation Shortcut"
 msgstr "Fordítás gyorsbillentyűje"
 
 #: data/resources/preferences.ui:55
-msgid "Unselected choice will be used for line break."
+msgid "The unselected choice will be used for line break."
 msgstr "A nem kiválasztott lehetőség lesz az új sorhoz használva."
 
 #: data/resources/preferences.ui:61
@@ -138,10 +139,8 @@ msgid "Default to Auto"
 msgstr "Alapértelmezés szerint „Automatikus”"
 
 #: data/resources/preferences.ui:62
-msgid "Use \"Auto\" as the default language on every launch"
-msgstr ""
-"„Automatikus” lehetőség használata alapértelmezett nyelvként minden "
-"indításkor"
+msgid "Use \"Auto\" as the default language"
+msgstr "„Automatikus” lehetőség használata alapértelmezett nyelvként"
 
 #: data/resources/preferences.ui:76
 msgid "Translator"
@@ -156,8 +155,8 @@ msgid "Translator Instance"
 msgstr "Fordító példány"
 
 #: data/resources/preferences.ui:84
-msgid "Specify URL of translation service."
-msgstr "Adja meg a fordítási szolgálatás URL-jét."
+msgid "Enter a translation service URL."
+msgstr "Adja meg a fordítási szolgáltatás URL-jét."
 
 #: data/resources/preferences.ui:109
 msgid "Edit"
@@ -172,12 +171,12 @@ msgid "Save"
 msgstr "Mentés"
 
 #: data/resources/preferences.ui:175
-msgid "Text to Speech"
+msgid "Text-to-Speech"
 msgstr "Szöveg beszéddé alakítása"
 
 #: data/resources/preferences.ui:176
-msgid "Use Google for Text to Speech functionality."
-msgstr "Google használata a szöveg beszéddé alakítása funkcióhoz."
+msgid "Use Google for TTS."
+msgstr "Google használata a szöveg hanggá alakításához."
 
 #: data/resources/preferences.ui:192
 msgid "Search Provider"
@@ -185,43 +184,102 @@ msgstr "Keresésszolgáltató"
 
 #: data/resources/preferences.ui:193
 msgid ""
-"Dialect has a GNOME Search Provider. Enabling or disabling Live Translation "
-"here will also enable or disable the GNOME Search Provider. This is to "
-"reduce the possibility of API abuse. Also make sure that the feature is "
-"enabled in GNOME Settings."
+"To reduce API abuse, the GNOME search provider in Dialect is turned off when "
+"Live translation is. Ensure the search provider is also turned on in the "
+"GNOME Settings."
 msgstr ""
-"A Dialect egy GNOME-os keresésszolgáltatóval rendelkezik. Az Élő fordítások "
-"be- vagy kikapcsolása a GNOME-os keresésszolgáltatót is be- vagy "
-"kikapcsolja. Ez csökkenti az API-val való visszaélés lehetőségét. Győződjön "
-"meg arról, hogy a funkció engedélyezett a GNOME Beállításokban."
+"Az API-val történő visszaélés csökkentése miatt, a Nyelvjárásban lévő GNOME "
+"keresésszolgáltató kikapcsolása kerül, ha az élő fordítás be van kapcsolva. "
+"Győződjön meg róla, hogy a keresésszolgáltató a GNOME Beállításokban is be "
+"van kapcsolva."
 
 #: data/resources/shortcuts-window.ui:13
 msgctxt "shortcuts window"
-msgid "General"
-msgstr "Általános"
+msgid "Translator"
+msgstr "Fordító"
 
 #: data/resources/shortcuts-window.ui:17
-msgctxt "shortcuts window"
-msgid "Preferences"
-msgstr "Beállítások"
-
-#: data/resources/shortcuts-window.ui:24
 msgctxt "shortcuts window"
 msgid "Translate"
 msgstr "Fordítás"
 
+#: data/resources/shortcuts-window.ui:24
+msgctxt "shortcuts window"
+msgid "Switch Languages"
+msgstr "Nyelvek felcserélése"
+
 #: data/resources/shortcuts-window.ui:31
+msgctxt "shortcuts window"
+msgid "Clear source text"
+msgstr "Forrásszöveg törlése"
+
+#: data/resources/shortcuts-window.ui:38
+msgctxt "shortcuts window"
+msgid "Copy translation"
+msgstr "Fordítás másolása"
+
+#: data/resources/shortcuts-window.ui:45
+msgctxt "shortcuts window"
+msgid "Show Pronunciation"
+msgstr "Kiejtés megjelenítése"
+
+#: data/resources/shortcuts-window.ui:54
+msgctxt "shortcuts window"
+msgid "Text-to-Speech"
+msgstr "Szövegfelolvasás"
+
+#: data/resources/shortcuts-window.ui:58
+msgctxt "shortcuts window"
+msgid "Listen to source text"
+msgstr "Forrási szöveg hallgatása"
+
+#: data/resources/shortcuts-window.ui:65
+msgctxt "shortcuts window"
+msgid "Listen to translation"
+msgstr "Fordítási szöveg hallgatása"
+
+#: data/resources/shortcuts-window.ui:74
+msgctxt "shortcuts window"
+msgid "Navigation"
+msgstr "Navigáció"
+
+#: data/resources/shortcuts-window.ui:78
+msgctxt "shortcuts window"
+msgid "Go back in history"
+msgstr "Vissza előzményekben"
+
+#: data/resources/shortcuts-window.ui:85
+msgctxt "shortcuts window"
+msgid "Go forward in history"
+msgstr "Előre előzményekben"
+
+#: data/resources/shortcuts-window.ui:94
+msgctxt "shortcuts window"
+msgid "General"
+msgstr "Általános"
+
+#: data/resources/shortcuts-window.ui:98
+msgctxt "shortcuts window"
+msgid "Preferences"
+msgstr "Beállítások"
+
+#: data/resources/shortcuts-window.ui:105
+msgctxt "shortcut window"
+msgid "Shortcuts"
+msgstr "Billentyűparancsok"
+
+#: data/resources/shortcuts-window.ui:112
 msgctxt "shortcuts window"
 msgid "Quit"
 msgstr "Kilépés"
 
 #: data/resources/window.ui:42
-msgid "Loading..."
+msgid "Loading…"
 msgstr "Betöltés…"
 
 #: data/resources/window.ui:83
-msgid "Failed loading translator backend"
-msgstr "A fordítási háttérszolgáltatás betöltése sikertelen"
+msgid "Could not load the translator service"
+msgstr "A fordítási szolgáltatás nem tölthető be"
 
 #: data/resources/window.ui:108
 msgid "Retry"
@@ -231,60 +289,60 @@ msgstr "Újra"
 msgid "Open preferences"
 msgstr "Beállítások megnyitása"
 
-#: data/resources/window.ui:193 data/resources/window.ui:726
+#: data/resources/window.ui:194 data/resources/window.ui:728
 msgid "Switch languages"
 msgstr "Nyelvek felcserélése"
 
-#: data/resources/window.ui:273
+#: data/resources/window.ui:274
 msgid "Previous translation"
 msgstr "Előző fordítás"
 
-#: data/resources/window.ui:292
+#: data/resources/window.ui:293
 msgid "Next translation"
 msgstr "Következő fordítás"
 
-#: data/resources/window.ui:453
+#: data/resources/window.ui:454
 msgid "Clear"
 msgstr "Törlés"
 
-#: data/resources/window.ui:468
+#: data/resources/window.ui:470
 msgid "Paste"
 msgstr "Beillesztés"
 
-#: data/resources/window.ui:484 data/resources/window.ui:622
+#: data/resources/window.ui:486 data/resources/window.ui:624
 msgid "Listen"
 msgstr "Meghallgatás"
 
-#: data/resources/window.ui:492
+#: data/resources/window.ui:494
 msgid "Translate"
 msgstr "Fordítás"
 
-#: data/resources/window.ui:603
-msgid "Translation in progress..."
-msgstr "Fordítás folyamatban…"
+#: data/resources/window.ui:605
+msgid "Translating…"
+msgstr "Fordítás…"
 
-#: data/resources/window.ui:611
-msgid "Translation seems to have failed"
-msgstr "Úgy tűnik, hogy a fordítás sikertelen"
+#: data/resources/window.ui:613
+msgid "Could not translate the text"
+msgstr "A szöveg nem fordítható le"
 
-#: data/resources/window.ui:637
+#: data/resources/window.ui:639
 msgid "Copy"
 msgstr "Másolás"
 
-#: data/resources/window.ui:817
+#: data/resources/window.ui:820
 msgid "No network connection detected."
 msgstr "Nem észlelhető hálózati kapcsolat."
 
-#: src/preferences.py:250
+#: dialect/preferences.py:251
 #, python-brace-format
 msgid "Not a valid {backend} instance"
 msgstr "Nem érvényes {backend} példány"
 
-#: src/window.py:229
+#: dialect/window.py:234
 msgid "A network issue has occured. Retry?"
 msgstr "Hálózati probléma történt. Újrapróbálja?"
 
-#: src/window.py:233
+#: dialect/window.py:238
 msgid ""
 "A network issue has occured.\n"
 "Please try again."
@@ -292,15 +350,15 @@ msgstr ""
 "Hálózati probléma történt.\n"
 "Próbálja újra."
 
-#: src/window.py:507 src/window.py:511
+#: dialect/window.py:498 dialect/window.py:502
 msgid "Auto"
 msgstr "Automatikus"
 
-#: src/window.py:784
+#: dialect/window.py:775
 msgid "5000 characters limit reached!"
 msgstr "5000 karakteres korlát elérve!"
 
-#: src/window.py:876
+#: dialect/window.py:877
 msgid ""
 "Translation failed.\n"
 "Please check for network issues."
@@ -308,46 +366,475 @@ msgstr ""
 "Fordítás sikertelen.\n"
 "Ellenőrizze, hogy nincs-e hálózati probléma."
 
-#: src/window.py:892
+#: dialect/window.py:893
 msgid "Did you mean: "
 msgstr "Erre gondolhatott: "
+
+#: dialect/translators/__init__.py:26
+msgid "Afrikaans"
+msgstr "afrikaans"
+
+#: dialect/translators/__init__.py:27
+msgid "Albanian"
+msgstr "albán"
+
+#: dialect/translators/__init__.py:28
+msgid "Amharic"
+msgstr "amhara"
+
+#: dialect/translators/__init__.py:29
+msgid "Arabic"
+msgstr "arab"
+
+#: dialect/translators/__init__.py:30
+msgid "Armenian"
+msgstr "örmény"
+
+#: dialect/translators/__init__.py:31
+msgid "Azerbaijani"
+msgstr "azerbajdzsáni"
+
+#: dialect/translators/__init__.py:32
+msgid "Basque"
+msgstr "baszk"
+
+#: dialect/translators/__init__.py:33
+msgid "Belarusian"
+msgstr "belarusz"
+
+#: dialect/translators/__init__.py:34
+msgid "Bengali"
+msgstr "bangla"
+
+#: dialect/translators/__init__.py:35
+msgid "Bosnian"
+msgstr "bosnyák"
+
+#: dialect/translators/__init__.py:36
+msgid "Bulgarian"
+msgstr "bolgár"
+
+#: dialect/translators/__init__.py:37
+msgid "Catalan"
+msgstr "katalán"
+
+#: dialect/translators/__init__.py:38
+msgid "Cebuano"
+msgstr "szebuano"
+
+#: dialect/translators/__init__.py:39
+msgid "Chichewa"
+msgstr "nyandzsa"
+
+#: dialect/translators/__init__.py:40
+msgid "Chinese"
+msgstr "kínai"
+
+#: dialect/translators/__init__.py:41
+msgid "Chinese (Simplified)"
+msgstr "egyszerűsített kínai"
+
+#: dialect/translators/__init__.py:42
+msgid "Chinese (Traditional)"
+msgstr "hagyományos kínai"
+
+#: dialect/translators/__init__.py:43
+msgid "Corsican"
+msgstr "korzikai"
+
+#: dialect/translators/__init__.py:44
+msgid "Croatian"
+msgstr "horvát"
+
+#: dialect/translators/__init__.py:45
+msgid "Czech"
+msgstr "cseh"
+
+#: dialect/translators/__init__.py:46
+msgid "Danish"
+msgstr "dán"
+
+#: dialect/translators/__init__.py:47
+msgid "Dutch"
+msgstr "holland"
+
+#: dialect/translators/__init__.py:48
+msgid "English"
+msgstr "angol"
+
+#: dialect/translators/__init__.py:49
+msgid "Esperanto"
+msgstr "eszperantó"
+
+#: dialect/translators/__init__.py:50
+msgid "Estonian"
+msgstr "észt"
+
+#: dialect/translators/__init__.py:51
+msgid "Filipino"
+msgstr "tagalog"
+
+#: dialect/translators/__init__.py:52
+msgid "Finnish"
+msgstr "finn"
+
+#: dialect/translators/__init__.py:53
+msgid "French"
+msgstr "francia"
+
+#: dialect/translators/__init__.py:54
+msgid "Frisian"
+msgstr "nyugati fríz"
+
+#: dialect/translators/__init__.py:55
+msgid "Galician"
+msgstr "gallego"
+
+#: dialect/translators/__init__.py:56
+msgid "Georgian"
+msgstr "grúz"
+
+#: dialect/translators/__init__.py:57
+msgid "German"
+msgstr "német"
+
+#: dialect/translators/__init__.py:58
+msgid "Greek"
+msgstr "görög"
+
+#: dialect/translators/__init__.py:59
+msgid "Gujarati"
+msgstr "gudzsaráti"
+
+#: dialect/translators/__init__.py:60
+msgid "Haitian Creole"
+msgstr "haiti kreol"
+
+#: dialect/translators/__init__.py:61
+msgid "Hausa"
+msgstr "hausza"
+
+#: dialect/translators/__init__.py:62
+msgid "Hawaiian"
+msgstr "hawaii"
+
+#: dialect/translators/__init__.py:63 dialect/translators/__init__.py:64
+msgid "Hebrew"
+msgstr "héber"
+
+#: dialect/translators/__init__.py:65
+msgid "Hindi"
+msgstr "hindi"
+
+#: dialect/translators/__init__.py:66
+msgid "Hmong"
+msgstr "hmong"
+
+#: dialect/translators/__init__.py:67
+msgid "Hungarian"
+msgstr "magyar"
+
+#: dialect/translators/__init__.py:68
+msgid "Icelandic"
+msgstr "izlandi"
+
+#: dialect/translators/__init__.py:69
+msgid "Igbo"
+msgstr "igbó"
+
+#: dialect/translators/__init__.py:70
+msgid "Indonesian"
+msgstr "indonéz"
+
+#: dialect/translators/__init__.py:71
+msgid "Irish"
+msgstr "ír"
+
+#: dialect/translators/__init__.py:72
+msgid "Italian"
+msgstr "olasz"
+
+#: dialect/translators/__init__.py:73
+msgid "Japanese"
+msgstr "japán"
+
+#: dialect/translators/__init__.py:74
+msgid "Javanese"
+msgstr "jávai"
+
+#: dialect/translators/__init__.py:75
+msgid "Kannada"
+msgstr "kannada"
+
+#: dialect/translators/__init__.py:76
+msgid "Kazakh"
+msgstr "kazah"
+
+#: dialect/translators/__init__.py:77
+msgid "Khmer"
+msgstr "khmer"
+
+#: dialect/translators/__init__.py:78
+msgid "Kinyarwanda"
+msgstr "kinyarvanda"
+
+#: dialect/translators/__init__.py:79
+msgid "Korean"
+msgstr "koreai"
+
+#: dialect/translators/__init__.py:80
+msgid "Kurdish (Kurmanji)"
+msgstr "kurd"
+
+#: dialect/translators/__init__.py:81
+msgid "Kyrgyz"
+msgstr "kirgiz"
+
+#: dialect/translators/__init__.py:82
+msgid "Lao"
+msgstr "lao"
+
+#: dialect/translators/__init__.py:83
+msgid "Latin"
+msgstr "latin"
+
+#: dialect/translators/__init__.py:84
+msgid "Latvian"
+msgstr "lett"
+
+#: dialect/translators/__init__.py:85
+msgid "Lithuanian"
+msgstr "litván"
+
+#: dialect/translators/__init__.py:86
+msgid "Luxembourgish"
+msgstr "luxemburgi"
+
+#: dialect/translators/__init__.py:87
+msgid "Macedonian"
+msgstr "macedón"
+
+#: dialect/translators/__init__.py:88
+msgid "Malagasy"
+msgstr "malgas"
+
+#: dialect/translators/__init__.py:89
+msgid "Malay"
+msgstr "maláj"
+
+#: dialect/translators/__init__.py:90
+msgid "Malayalam"
+msgstr "malajálam"
+
+#: dialect/translators/__init__.py:91
+msgid "Maltese"
+msgstr "máltai"
+
+#: dialect/translators/__init__.py:92
+msgid "Maori"
+msgstr "maori"
+
+#: dialect/translators/__init__.py:93
+msgid "Marathi"
+msgstr "maráthi"
+
+#: dialect/translators/__init__.py:94
+msgid "Mongolian"
+msgstr "mongol"
+
+#: dialect/translators/__init__.py:95
+msgid "Myanmar (Burmese)"
+msgstr "burmai"
+
+#: dialect/translators/__init__.py:96
+msgid "Nepali"
+msgstr "nepáli"
+
+#: dialect/translators/__init__.py:97
+msgid "Norwegian"
+msgstr "norvég"
+
+#: dialect/translators/__init__.py:98
+msgid "Odia (Oriya)"
+msgstr "odia"
+
+#: dialect/translators/__init__.py:99
+msgid "Pashto"
+msgstr "pastu"
+
+#: dialect/translators/__init__.py:100
+msgid "Persian"
+msgstr "perzsa"
+
+#: dialect/translators/__init__.py:101
+msgid "Polish"
+msgstr "lengyel"
+
+#: dialect/translators/__init__.py:102
+msgid "Portuguese"
+msgstr "portugál"
+
+#: dialect/translators/__init__.py:103
+msgid "Punjabi"
+msgstr "pandzsábi"
+
+#: dialect/translators/__init__.py:104
+msgid "Romanian"
+msgstr "román"
+
+#: dialect/translators/__init__.py:105
+msgid "Russian"
+msgstr "orosz"
+
+#: dialect/translators/__init__.py:106
+msgid "Samoan"
+msgstr "szamoai"
+
+#: dialect/translators/__init__.py:107
+msgid "Scots Gaelic"
+msgstr "skóciai kelta"
+
+#: dialect/translators/__init__.py:108
+msgid "Serbian"
+msgstr "szerb"
+
+#: dialect/translators/__init__.py:109
+msgid "Sesotho"
+msgstr "déli szeszotó"
+
+#: dialect/translators/__init__.py:110
+msgid "Shona"
+msgstr "sona"
+
+#: dialect/translators/__init__.py:111
+msgid "Sindhi"
+msgstr "szindhi"
+
+#: dialect/translators/__init__.py:112
+msgid "Sinhala"
+msgstr "szingaléz"
+
+#: dialect/translators/__init__.py:113
+msgid "Slovak"
+msgstr "szlovák"
+
+#: dialect/translators/__init__.py:114
+msgid "Slovenian"
+msgstr "szlovén"
+
+#: dialect/translators/__init__.py:115
+msgid "Somali"
+msgstr "szomáli"
+
+#: dialect/translators/__init__.py:116
+msgid "Spanish"
+msgstr "spanyol"
+
+#: dialect/translators/__init__.py:117
+msgid "Sundanese"
+msgstr "szundanéz"
+
+#: dialect/translators/__init__.py:118
+msgid "Swahili"
+msgstr "szuahéli"
+
+#: dialect/translators/__init__.py:119
+msgid "Swedish"
+msgstr "svéd"
+
+#: dialect/translators/__init__.py:120
+msgid "Tajik"
+msgstr "tadzsik"
+
+#: dialect/translators/__init__.py:121
+msgid "Tamil"
+msgstr "tamil"
+
+#: dialect/translators/__init__.py:122
+msgid "Tatar"
+msgstr "tatár"
+
+#: dialect/translators/__init__.py:123
+msgid "Telugu"
+msgstr "telugu"
+
+#: dialect/translators/__init__.py:124
+msgid "Thai"
+msgstr "thai"
+
+#: dialect/translators/__init__.py:125
+msgid "Turkish"
+msgstr "török"
+
+#: dialect/translators/__init__.py:126
+msgid "Turkmen"
+msgstr "türkmén"
+
+#: dialect/translators/__init__.py:127
+msgid "Ukrainian"
+msgstr "ukrán"
+
+#: dialect/translators/__init__.py:128
+msgid "Urdu"
+msgstr "urdu"
+
+#: dialect/translators/__init__.py:129
+msgid "Uyghur"
+msgstr "ujgur"
+
+#: dialect/translators/__init__.py:130
+msgid "Uzbek"
+msgstr "üzbég"
+
+#: dialect/translators/__init__.py:131
+msgid "Vietnamese"
+msgstr "vietnámi"
+
+#: dialect/translators/__init__.py:132
+msgid "Welsh"
+msgstr "walesi"
+
+#: dialect/translators/__init__.py:133
+msgid "Xhosa"
+msgstr "xhosza"
+
+#: dialect/translators/__init__.py:134
+msgid "Yiddish"
+msgstr "jiddis"
+
+#: dialect/translators/__init__.py:135
+msgid "Yoruba"
+msgstr "joruba"
+
+#: dialect/translators/__init__.py:136
+msgid "Zulu"
+msgstr "zulu"
+
+#~ msgid "Use Google for Text to Speech functionality."
+#~ msgstr "Google használata a szöveg beszéddé alakítása funkcióhoz."
+
+#~ msgid ""
+#~ "Dialect has a GNOME Search Provider. Enabling or disabling Live "
+#~ "Translation here will also enable or disable the GNOME Search Provider. "
+#~ "This is to reduce the possibility of API abuse. Also make sure that the "
+#~ "feature is enabled in GNOME Settings."
+#~ msgstr ""
+#~ "A Dialect egy GNOME-os keresésszolgáltatóval rendelkezik. Az Élő "
+#~ "fordítások be- vagy kikapcsolása a GNOME-os keresésszolgáltatót is be- "
+#~ "vagy kikapcsolja. Ez csökkenti az API-val való visszaélés lehetőségét. "
+#~ "Győződjön meg arról, hogy a funkció engedélyezett a GNOME Beállításokban."
+
+#~ msgid "Translation in progress..."
+#~ msgstr "Fordítás folyamatban…"
+
+#~ msgid "Translation seems to have failed"
+#~ msgstr "Úgy tűnik, hogy a fordítás sikertelen"
 
 #~ msgid "gi-lom"
 #~ msgstr "gi-lom"
 
-#~ msgid "A translation app for GNOME based on Google Translate."
-#~ msgstr "Egy Google Fordítón alapuló fordítóalkalmazás a GNOME-hoz."
-
 #~ msgid "Text translation up to 5000 chars"
 #~ msgstr "Szövegfordítás legfeljebb 5000 karakterig"
-
-#, fuzzy
-#~ msgid "Added Indonesian translation"
-#~ msgstr "Előző fordítás"
-
-#, fuzzy
-#~ msgid "Added Portugese (BR) translation"
-#~ msgstr "Előző fordítás"
-
-#, fuzzy
-#~ msgid "Added Hungarian translation"
-#~ msgstr "Következő fordítás"
-
-#, fuzzy
-#~ msgid "Added Italian translation"
-#~ msgstr "Következő fordítás"
-
-#, fuzzy
-#~ msgid "Added Persian translation"
-#~ msgstr "Előző fordítás"
-
-#, fuzzy
-#~ msgid "Added Russian translation"
-#~ msgstr "Előző fordítás"
-
-#, fuzzy
-#~ msgid "Added Turkish translation"
-#~ msgstr "Előző fordítás"
 
 #~ msgid "History"
 #~ msgstr "Előzmények"

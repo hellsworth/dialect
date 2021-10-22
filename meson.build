@@ -1,5 +1,5 @@
 project('dialect',
-          version: '1.3.0',
+          version: '1.4.1',
     meson_version: '>= 0.50.0',
   default_options: [ 'warning_level=2',
                    ],
@@ -34,7 +34,7 @@ dependency('glib-2.0')
 dependency('pygobject-3.0', version: '>= 3.29.1')
 
 subdir('data')
-subdir('src')
+subdir('dialect')
 subdir('po')
 
 meson.add_install_script('build-aux/meson/postinstall.py')

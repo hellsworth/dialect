@@ -6,22 +6,23 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: dialect\n"
-"Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2021-04-27 08:53-0500\n"
-"PO-Revision-Date: 2021-04-28 11:54+0700\n"
-"Last-Translator: Kukuh Syafaat <kukuhsyafaat@gnome.org>\n"
-"Language-Team: \n"
+"Report-Msgid-Bugs-To: https://github.com/dialect-app/po/issues\n"
+"POT-Creation-Date: 2021-10-16 23:00+0530\n"
+"PO-Revision-Date: 2021-10-01 15:38+0000\n"
+"Last-Translator: Adzka Muhammad Mumtaz <4dzkamivi@gmail.com>\n"
+"Language-Team: Indonesian <https://hosted.weblate.org/projects/dialect/"
+"dialect/id/>\n"
 "Language: id\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"X-Generator: Poedit 2.4.3\n"
 "Plural-Forms: nplurals=1; plural=0;\n"
+"X-Generator: Weblate 4.9-dev\n"
 
 #. Translators: Do not translate the app name!
 #: data/com.github.gi_lom.dialect.desktop.in:8
-#: data/com.github.gi_lom.dialect.metainfo.xml.in:6 data/resources/window.ui:66
-#: src/main.py:53 src/main.py:88
+#: data/com.github.gi_lom.dialect.metainfo.xml.in:6 data/resources/about.ui:10
+#: data/resources/window.ui:66 dialect/main.py:56 dialect/main.py:93
 msgid "Dialect"
 msgstr "Dialect"
 
@@ -33,7 +34,7 @@ msgstr "Terjemahkan antar bahasa"
 #. Translators: These are search terms to find this application. Do NOT translate or localize the semicolons. The list MUST also end with a semicolon.
 #: data/com.github.gi_lom.dialect.desktop.in:13
 msgid "translate;translation;"
-msgstr "menerjemahkan;menerjemahkan;"
+msgstr "menerjemahkan;terjemahan;"
 
 #: data/com.github.gi_lom.dialect.metainfo.xml.in:9 data/resources/about.ui:12
 msgid "A translation app for GNOME."
@@ -71,17 +72,17 @@ msgstr "Deteksi bahasa otomatis"
 msgid "Clipboard buttons"
 msgstr "Tombol Papan Klip"
 
-#: data/com.github.gi_lom.dialect.metainfo.xml.in:26
+#: data/com.github.gi_lom.dialect.metainfo.xml.in:27
 msgid "The Dialect Authors"
 msgstr "Penulis Dialect"
 
 #: data/resources/about.ui:11
-msgid "Copyright 2020-2021 The Dialect Authors"
-msgstr "Hak Cipta 2020-2021 Penulis Dialect"
+msgid "Copyright 2020–⁠2021 The Dialect Authors"
+msgstr "Hak Cipta 2020–2021 Penulis Dialect"
 
 #: data/resources/about.ui:14
-msgid "Github page"
-msgstr "Halaman Github"
+msgid "GitHub page"
+msgstr "Halaman GitHub"
 
 #. Replace me with your names.
 #: data/resources/about.ui:19
@@ -90,7 +91,7 @@ msgstr "Kukuh Syafaat <kukuhsyafaat@gnome.org>, 2020-2021."
 
 #: data/resources/menu.ui:7
 msgid "Show Pronunciation"
-msgstr "Perlihatkan Pengucapan"
+msgstr "Tampilkan Pengucapan"
 
 #: data/resources/menu.ui:14
 msgid "Preferences"
@@ -98,7 +99,7 @@ msgstr "Preferensi"
 
 #: data/resources/menu.ui:18
 msgid "Keyboard Shortcuts"
-msgstr "Pintasan Papan Tik"
+msgstr "Pintasan Papan Ketik"
 
 #: data/resources/menu.ui:22
 msgid "About Dialect"
@@ -129,7 +130,7 @@ msgid "Translation Shortcut"
 msgstr "Pintasan Terjemahan"
 
 #: data/resources/preferences.ui:55
-msgid "Unselected choice will be used for line break."
+msgid "The unselected choice will be used for line break."
 msgstr "Pilihan yang tidak dipilih akan digunakan untuk hentian baris."
 
 #: data/resources/preferences.ui:61
@@ -137,8 +138,8 @@ msgid "Default to Auto"
 msgstr "Bawaan ke Otomatis"
 
 #: data/resources/preferences.ui:62
-msgid "Use \"Auto\" as the default language on every launch"
-msgstr "Gunakan \"Otomatis\" sebagai bahasa bawan pada setiap peluncuran"
+msgid "Use \"Auto\" as the default language"
+msgstr "Gunakan \"Otomatis\" sebagai bahasa bawaan"
 
 #: data/resources/preferences.ui:76
 msgid "Translator"
@@ -153,8 +154,8 @@ msgid "Translator Instance"
 msgstr "Instance Penerjemah"
 
 #: data/resources/preferences.ui:84
-msgid "Specify URL of translation service."
-msgstr "Tentukan URL layanan penerjemahan."
+msgid "Enter a translation service URL."
+msgstr "Masukkan sebuah alamat URL layanan penerjemahan."
 
 #: data/resources/preferences.ui:109
 msgid "Edit"
@@ -169,12 +170,12 @@ msgid "Save"
 msgstr "Simpan"
 
 #: data/resources/preferences.ui:175
-msgid "Text to Speech"
+msgid "Text-to-Speech"
 msgstr "Teks ke Ucapan"
 
 #: data/resources/preferences.ui:176
-msgid "Use Google for Text to Speech functionality."
-msgstr "Gunakan Google untuk fungsi Teks ke Ucapan."
+msgid "Use Google for TTS."
+msgstr "Gunakan Google untuk Teks Ke Ucapan."
 
 #: data/resources/preferences.ui:192
 msgid "Search Provider"
@@ -182,44 +183,101 @@ msgstr "Penyedia Pencarian"
 
 #: data/resources/preferences.ui:193
 msgid ""
-"Dialect has a GNOME Search Provider. Enabling or disabling Live Translation "
-"here will also enable or disable the GNOME Search Provider. This is to "
-"reduce the possibility of API abuse. Also make sure that the feature is "
-"enabled in GNOME Settings."
+"To reduce API abuse, the GNOME search provider in Dialect is turned off when "
+"Live translation is. Ensure the search provider is also turned on in the "
+"GNOME Settings."
 msgstr ""
-"Dialect memiliki Penyedia Pencarian GNOME. Mengaktifkan atau menonaktifkan "
-"Terjemahan Langsung di sini juga akan mengaktifkan atau menonaktifkan "
-"Penyedia Pencarian GNOME. Hal ini untuk mengurangi kemungkinan "
-"penyalahgunaan API. Pastikan juga bahwa fitur ini diaktifkan di Pengaturan "
-"GNOME."
+"Untuk mengurangi penyalahgunaan API, penyedia pencarian GNOME di Dialect "
+"dinonaktifkan jika Terjemahan Langsung juga nonaktif. Pastikan penyedia "
+"pencarian juga diaktifkan di Pengaturan GNOME."
 
 #: data/resources/shortcuts-window.ui:13
 msgctxt "shortcuts window"
-msgid "General"
-msgstr "Umum"
+msgid "Translator"
+msgstr "Penerjemah"
 
 #: data/resources/shortcuts-window.ui:17
-msgctxt "shortcuts window"
-msgid "Preferences"
-msgstr "Preferensi"
-
-#: data/resources/shortcuts-window.ui:24
 msgctxt "shortcuts window"
 msgid "Translate"
 msgstr "Terjemahkan"
 
+#: data/resources/shortcuts-window.ui:24
+msgctxt "shortcuts window"
+msgid "Switch Languages"
+msgstr "Beralih Bahasa"
+
 #: data/resources/shortcuts-window.ui:31
+msgctxt "shortcuts window"
+msgid "Clear source text"
+msgstr "Bersihkan teks sumber"
+
+#: data/resources/shortcuts-window.ui:38
+msgctxt "shortcuts window"
+msgid "Copy translation"
+msgstr "Salin terjemahan"
+
+#: data/resources/shortcuts-window.ui:45
+msgctxt "shortcuts window"
+msgid "Show Pronunciation"
+msgstr "Tampilkan Pengucapan"
+
+#: data/resources/shortcuts-window.ui:54
+msgctxt "shortcuts window"
+msgid "Text-to-Speech"
+msgstr "Teks ke Ucapan"
+
+#: data/resources/shortcuts-window.ui:58
+msgctxt "shortcuts window"
+msgid "Listen to source text"
+msgstr "Dengarkan teks sumber"
+
+#: data/resources/shortcuts-window.ui:65
+msgctxt "shortcuts window"
+msgid "Listen to translation"
+msgstr "Dengarkan terjemahan"
+
+#: data/resources/shortcuts-window.ui:74
+msgctxt "shortcuts window"
+msgid "Navigation"
+msgstr "Navigasi"
+
+#: data/resources/shortcuts-window.ui:78
+msgctxt "shortcuts window"
+msgid "Go back in history"
+msgstr "Kembali dalam riwayat"
+
+#: data/resources/shortcuts-window.ui:85
+msgctxt "shortcuts window"
+msgid "Go forward in history"
+msgstr "Maju dalam riwayat"
+
+#: data/resources/shortcuts-window.ui:94
+msgctxt "shortcuts window"
+msgid "General"
+msgstr "Umum"
+
+#: data/resources/shortcuts-window.ui:98
+msgctxt "shortcuts window"
+msgid "Preferences"
+msgstr "Preferensi"
+
+#: data/resources/shortcuts-window.ui:105
+msgctxt "shortcut window"
+msgid "Shortcuts"
+msgstr "Pintasan"
+
+#: data/resources/shortcuts-window.ui:112
 msgctxt "shortcuts window"
 msgid "Quit"
 msgstr "Keluar"
 
 #: data/resources/window.ui:42
-msgid "Loading..."
-msgstr "Memuat..."
+msgid "Loading…"
+msgstr "Memuat…"
 
 #: data/resources/window.ui:83
-msgid "Failed loading translator backend"
-msgstr "Gagal memuat backend penerjemah"
+msgid "Could not load the translator service"
+msgstr "Tidak dapat memuat layanan penerjemah"
 
 #: data/resources/window.ui:108
 msgid "Retry"
@@ -229,60 +287,60 @@ msgstr "Coba lagi"
 msgid "Open preferences"
 msgstr "Buka preferensi"
 
-#: data/resources/window.ui:193 data/resources/window.ui:726
+#: data/resources/window.ui:194 data/resources/window.ui:728
 msgid "Switch languages"
 msgstr "Beralih bahasa"
 
-#: data/resources/window.ui:273
+#: data/resources/window.ui:274
 msgid "Previous translation"
 msgstr "Terjemahan sebelumnya"
 
-#: data/resources/window.ui:292
+#: data/resources/window.ui:293
 msgid "Next translation"
 msgstr "Terjemahan berikutnya"
 
-#: data/resources/window.ui:453
+#: data/resources/window.ui:454
 msgid "Clear"
 msgstr "Bersihkan"
 
-#: data/resources/window.ui:468
+#: data/resources/window.ui:470
 msgid "Paste"
 msgstr "Tempel"
 
-#: data/resources/window.ui:484 data/resources/window.ui:622
+#: data/resources/window.ui:486 data/resources/window.ui:624
 msgid "Listen"
 msgstr "Dengarkan"
 
-#: data/resources/window.ui:492
+#: data/resources/window.ui:494
 msgid "Translate"
 msgstr "Terjemahkan"
 
-#: data/resources/window.ui:603
-msgid "Translation in progress..."
-msgstr "Terjemahan sedang berlangsung..."
+#: data/resources/window.ui:605
+msgid "Translating…"
+msgstr "Menerjemahkan…"
 
-#: data/resources/window.ui:611
-msgid "Translation seems to have failed"
-msgstr "Penerjemahan tampaknya telah gagal"
+#: data/resources/window.ui:613
+msgid "Could not translate the text"
+msgstr "Tidak dapat menerjemahkan teks"
 
-#: data/resources/window.ui:637
+#: data/resources/window.ui:639
 msgid "Copy"
 msgstr "Salin"
 
-#: data/resources/window.ui:817
+#: data/resources/window.ui:820
 msgid "No network connection detected."
 msgstr "Tidak tersedia sambungan jaringan."
 
-#: src/preferences.py:250
+#: dialect/preferences.py:251
 #, python-brace-format
 msgid "Not a valid {backend} instance"
 msgstr "Bukan instance {backend} yang valid"
 
-#: src/window.py:229
+#: dialect/window.py:234
 msgid "A network issue has occured. Retry?"
 msgstr "Terjadi masalah jaringan. Ulangi?"
 
-#: src/window.py:233
+#: dialect/window.py:238
 msgid ""
 "A network issue has occured.\n"
 "Please try again."
@@ -290,15 +348,15 @@ msgstr ""
 "Terjadi masalah jaringan.\n"
 "Silakan coba lagi."
 
-#: src/window.py:507 src/window.py:511
+#: dialect/window.py:498 dialect/window.py:502
 msgid "Auto"
 msgstr "Otomatis"
 
-#: src/window.py:784
+#: dialect/window.py:775
 msgid "5000 characters limit reached!"
 msgstr "Batas 5000 karakter tercapai!"
 
-#: src/window.py:876
+#: dialect/window.py:877
 msgid ""
 "Translation failed.\n"
 "Please check for network issues."
@@ -306,43 +364,473 @@ msgstr ""
 "Terjemahan gagal.\n"
 "Silakan periksa masalah jaringan."
 
-#: src/window.py:892
+#: dialect/window.py:893
 msgid "Did you mean: "
 msgstr "Apakah maksud Anda: "
+
+#: dialect/translators/__init__.py:26
+msgid "Afrikaans"
+msgstr "Afrikaans"
+
+#: dialect/translators/__init__.py:27
+msgid "Albanian"
+msgstr "Albania"
+
+#: dialect/translators/__init__.py:28
+msgid "Amharic"
+msgstr "Amharik"
+
+#: dialect/translators/__init__.py:29
+msgid "Arabic"
+msgstr "Arab"
+
+#: dialect/translators/__init__.py:30
+msgid "Armenian"
+msgstr "Armenia"
+
+#: dialect/translators/__init__.py:31
+msgid "Azerbaijani"
+msgstr "Azerbaijani"
+
+#: dialect/translators/__init__.py:32
+msgid "Basque"
+msgstr "Basque"
+
+#: dialect/translators/__init__.py:33
+msgid "Belarusian"
+msgstr "Belarusia"
+
+#: dialect/translators/__init__.py:34
+msgid "Bengali"
+msgstr "Bengali"
+
+#: dialect/translators/__init__.py:35
+msgid "Bosnian"
+msgstr "Bosnia"
+
+#: dialect/translators/__init__.py:36
+msgid "Bulgarian"
+msgstr "Bulgaria"
+
+#: dialect/translators/__init__.py:37
+msgid "Catalan"
+msgstr "Katalan"
+
+#: dialect/translators/__init__.py:38
+msgid "Cebuano"
+msgstr "Cebuano"
+
+#: dialect/translators/__init__.py:39
+msgid "Chichewa"
+msgstr "Nyanja"
+
+#: dialect/translators/__init__.py:40
+msgid "Chinese"
+msgstr "Tionghoa"
+
+#: dialect/translators/__init__.py:41
+msgid "Chinese (Simplified)"
+msgstr "Tionghoa (Sederhana)"
+
+#: dialect/translators/__init__.py:42
+msgid "Chinese (Traditional)"
+msgstr "Tionghoa (Tradisional)"
+
+#: dialect/translators/__init__.py:43
+msgid "Corsican"
+msgstr "Korsika"
+
+#: dialect/translators/__init__.py:44
+msgid "Croatian"
+msgstr "Kroasia"
+
+#: dialect/translators/__init__.py:45
+msgid "Czech"
+msgstr "Cheska"
+
+#: dialect/translators/__init__.py:46
+msgid "Danish"
+msgstr "Dansk"
+
+#: dialect/translators/__init__.py:47
+msgid "Dutch"
+msgstr "Belanda"
+
+#: dialect/translators/__init__.py:48
+msgid "English"
+msgstr "Inggris"
+
+#: dialect/translators/__init__.py:49
+msgid "Esperanto"
+msgstr "Esperanto"
+
+#: dialect/translators/__init__.py:50
+msgid "Estonian"
+msgstr "Esti"
+
+#: dialect/translators/__init__.py:51
+msgid "Filipino"
+msgstr "Tagalog"
+
+#: dialect/translators/__init__.py:52
+msgid "Finnish"
+msgstr "Suomi"
+
+#: dialect/translators/__init__.py:53
+msgid "French"
+msgstr "Prancis"
+
+#: dialect/translators/__init__.py:54
+msgid "Frisian"
+msgstr "Frisia Barat"
+
+#: dialect/translators/__init__.py:55
+msgid "Galician"
+msgstr "Galisia"
+
+#: dialect/translators/__init__.py:56
+msgid "Georgian"
+msgstr "Georgia"
+
+#: dialect/translators/__init__.py:57
+msgid "German"
+msgstr "Jerman"
+
+#: dialect/translators/__init__.py:58
+msgid "Greek"
+msgstr "Yunani"
+
+#: dialect/translators/__init__.py:59
+msgid "Gujarati"
+msgstr "Gujarat"
+
+#: dialect/translators/__init__.py:60
+msgid "Haitian Creole"
+msgstr "Kreol Haiti"
+
+#: dialect/translators/__init__.py:61
+msgid "Hausa"
+msgstr "Hausa"
+
+#: dialect/translators/__init__.py:62
+msgid "Hawaiian"
+msgstr "Hawaii"
+
+#: dialect/translators/__init__.py:63 dialect/translators/__init__.py:64
+msgid "Hebrew"
+msgstr "Ibrani"
+
+#: dialect/translators/__init__.py:65
+msgid "Hindi"
+msgstr "Hindi"
+
+#: dialect/translators/__init__.py:66
+msgid "Hmong"
+msgstr "Hmong"
+
+#: dialect/translators/__init__.py:67
+msgid "Hungarian"
+msgstr "Hungaria"
+
+#: dialect/translators/__init__.py:68
+msgid "Icelandic"
+msgstr "Islandia"
+
+#: dialect/translators/__init__.py:69
+msgid "Igbo"
+msgstr "Igbo"
+
+#: dialect/translators/__init__.py:70
+msgid "Indonesian"
+msgstr "Indonesia"
+
+#: dialect/translators/__init__.py:71
+msgid "Irish"
+msgstr "Irlandia"
+
+#: dialect/translators/__init__.py:72
+msgid "Italian"
+msgstr "Italia"
+
+#: dialect/translators/__init__.py:73
+msgid "Japanese"
+msgstr "Jepang"
+
+#: dialect/translators/__init__.py:74
+msgid "Javanese"
+msgstr "Jawa"
+
+#: dialect/translators/__init__.py:75
+msgid "Kannada"
+msgstr "Kannada"
+
+#: dialect/translators/__init__.py:76
+msgid "Kazakh"
+msgstr "Kazakh"
+
+#: dialect/translators/__init__.py:77
+msgid "Khmer"
+msgstr "Khmer"
+
+#: dialect/translators/__init__.py:78
+msgid "Kinyarwanda"
+msgstr "Kinyarwanda"
+
+#: dialect/translators/__init__.py:79
+msgid "Korean"
+msgstr "Korea"
+
+#: dialect/translators/__init__.py:80
+msgid "Kurdish (Kurmanji)"
+msgstr "Kurdi"
+
+#: dialect/translators/__init__.py:81
+msgid "Kyrgyz"
+msgstr "Kirgiz"
+
+#: dialect/translators/__init__.py:82
+msgid "Lao"
+msgstr "Lao"
+
+#: dialect/translators/__init__.py:83
+msgid "Latin"
+msgstr "Latin"
+
+#: dialect/translators/__init__.py:84
+msgid "Latvian"
+msgstr "Latvi"
+
+#: dialect/translators/__init__.py:85
+msgid "Lithuanian"
+msgstr "Lituavi"
+
+#: dialect/translators/__init__.py:86
+msgid "Luxembourgish"
+msgstr "Luksemburg"
+
+#: dialect/translators/__init__.py:87
+msgid "Macedonian"
+msgstr "Makedonia"
+
+#: dialect/translators/__init__.py:88
+msgid "Malagasy"
+msgstr "Malagasi"
+
+#: dialect/translators/__init__.py:89
+msgid "Malay"
+msgstr "Melayu"
+
+#: dialect/translators/__init__.py:90
+msgid "Malayalam"
+msgstr "Malayalam"
+
+#: dialect/translators/__init__.py:91
+msgid "Maltese"
+msgstr "Malta"
+
+#: dialect/translators/__init__.py:92
+msgid "Maori"
+msgstr "Maori"
+
+#: dialect/translators/__init__.py:93
+msgid "Marathi"
+msgstr "Marathi"
+
+#: dialect/translators/__init__.py:94
+msgid "Mongolian"
+msgstr "Mongolia"
+
+#: dialect/translators/__init__.py:95
+msgid "Myanmar (Burmese)"
+msgstr "Burma"
+
+#: dialect/translators/__init__.py:96
+msgid "Nepali"
+msgstr "Nepali"
+
+#: dialect/translators/__init__.py:97
+msgid "Norwegian"
+msgstr "Norwegia"
+
+#: dialect/translators/__init__.py:98
+msgid "Odia (Oriya)"
+msgstr "Oriya"
+
+#: dialect/translators/__init__.py:99
+msgid "Pashto"
+msgstr "Pashto"
+
+#: dialect/translators/__init__.py:100
+msgid "Persian"
+msgstr "Persia"
+
+#: dialect/translators/__init__.py:101
+msgid "Polish"
+msgstr "Polski"
+
+#: dialect/translators/__init__.py:102
+msgid "Portuguese"
+msgstr "Portugis"
+
+#: dialect/translators/__init__.py:103
+msgid "Punjabi"
+msgstr "Punjabi"
+
+#: dialect/translators/__init__.py:104
+msgid "Romanian"
+msgstr "Rumania"
+
+#: dialect/translators/__init__.py:105
+msgid "Russian"
+msgstr "Rusia"
+
+#: dialect/translators/__init__.py:106
+msgid "Samoan"
+msgstr "Samoa"
+
+#: dialect/translators/__init__.py:107
+msgid "Scots Gaelic"
+msgstr "Gaelik Skotlandia"
+
+#: dialect/translators/__init__.py:108
+msgid "Serbian"
+msgstr "Serbia"
+
+#: dialect/translators/__init__.py:109
+msgid "Sesotho"
+msgstr "Sotho Selatan"
+
+#: dialect/translators/__init__.py:110
+msgid "Shona"
+msgstr "Shona"
+
+#: dialect/translators/__init__.py:111
+msgid "Sindhi"
+msgstr "Sindhi"
+
+#: dialect/translators/__init__.py:112
+msgid "Sinhala"
+msgstr "Sinhala"
+
+#: dialect/translators/__init__.py:113
+msgid "Slovak"
+msgstr "Slovak"
+
+#: dialect/translators/__init__.py:114
+msgid "Slovenian"
+msgstr "Sloven"
+
+#: dialect/translators/__init__.py:115
+msgid "Somali"
+msgstr "Somalia"
+
+#: dialect/translators/__init__.py:116
+msgid "Spanish"
+msgstr "Spanyol"
+
+#: dialect/translators/__init__.py:117
+msgid "Sundanese"
+msgstr "Sunda"
+
+#: dialect/translators/__init__.py:118
+msgid "Swahili"
+msgstr "Swahili"
+
+#: dialect/translators/__init__.py:119
+msgid "Swedish"
+msgstr "Swedia"
+
+#: dialect/translators/__init__.py:120
+msgid "Tajik"
+msgstr "Tajik"
+
+#: dialect/translators/__init__.py:121
+msgid "Tamil"
+msgstr "Tamil"
+
+#: dialect/translators/__init__.py:122
+msgid "Tatar"
+msgstr "Tatar"
+
+#: dialect/translators/__init__.py:123
+msgid "Telugu"
+msgstr "Telugu"
+
+#: dialect/translators/__init__.py:124
+msgid "Thai"
+msgstr "Thai"
+
+#: dialect/translators/__init__.py:125
+msgid "Turkish"
+msgstr "Turki"
+
+#: dialect/translators/__init__.py:126
+msgid "Turkmen"
+msgstr "Turkmen"
+
+#: dialect/translators/__init__.py:127
+msgid "Ukrainian"
+msgstr "Ukraina"
+
+#: dialect/translators/__init__.py:128
+msgid "Urdu"
+msgstr "Urdu"
+
+#: dialect/translators/__init__.py:129
+msgid "Uyghur"
+msgstr "Uyghur"
+
+#: dialect/translators/__init__.py:130
+msgid "Uzbek"
+msgstr "Uzbek"
+
+#: dialect/translators/__init__.py:131
+msgid "Vietnamese"
+msgstr "Vietnam"
+
+#: dialect/translators/__init__.py:132
+msgid "Welsh"
+msgstr "Welsh"
+
+#: dialect/translators/__init__.py:133
+msgid "Xhosa"
+msgstr "Xhosa"
+
+#: dialect/translators/__init__.py:134
+msgid "Yiddish"
+msgstr "Yiddish"
+
+#: dialect/translators/__init__.py:135
+msgid "Yoruba"
+msgstr "Yoruba"
+
+#: dialect/translators/__init__.py:136
+msgid "Zulu"
+msgstr "Zulu"
+
+#~ msgid "Use Google for Text to Speech functionality."
+#~ msgstr "Gunakan Google untuk fungsi Teks ke Ucapan."
+
+#~ msgid ""
+#~ "Dialect has a GNOME Search Provider. Enabling or disabling Live "
+#~ "Translation here will also enable or disable the GNOME Search Provider. "
+#~ "This is to reduce the possibility of API abuse. Also make sure that the "
+#~ "feature is enabled in GNOME Settings."
+#~ msgstr ""
+#~ "Dialect memiliki Penyedia Pencarian GNOME. Mengaktifkan atau "
+#~ "menonaktifkan Terjemahan Langsung di sini juga akan mengaktifkan atau "
+#~ "menonaktifkan Penyedia Pencarian GNOME. Hal ini untuk mengurangi "
+#~ "kemungkinan penyalahgunaan API. Pastikan juga bahwa fitur ini diaktifkan "
+#~ "di Pengaturan GNOME."
+
+#~ msgid "Translation in progress..."
+#~ msgstr "Terjemahan sedang berlangsung..."
+
+#~ msgid "Translation seems to have failed"
+#~ msgstr "Penerjemahan tampaknya telah gagal"
 
 #~ msgid "gi-lom"
 #~ msgstr "gi-lom"
 
-#~ msgid "A translation app for GNOME based on Google Translate."
-#~ msgstr "Aplikasi terjemahan untuk GNOME berdasarkan Google Terjemahan."
-
 #~ msgid "Text translation up to 5000 chars"
 #~ msgstr "Terjemahan teks hingga 5000 karakter"
-
-#, fuzzy
-#~ msgid "Added Indonesian translation"
-#~ msgstr "Terjemahan sebelumnya"
-
-#, fuzzy
-#~ msgid "Added Portugese (BR) translation"
-#~ msgstr "Terjemahan sebelumnya"
-
-#, fuzzy
-#~ msgid "Added Hungarian translation"
-#~ msgstr "Terjemahan berikutnya"
-
-#, fuzzy
-#~ msgid "Added Italian translation"
-#~ msgstr "Terjemahan berikutnya"
-
-#, fuzzy
-#~ msgid "Added Persian translation"
-#~ msgstr "Terjemahan sebelumnya"
-
-#, fuzzy
-#~ msgid "Added Russian translation"
-#~ msgstr "Terjemahan sebelumnya"
-
-#, fuzzy
-#~ msgid "Added Turkish translation"
-#~ msgstr "Terjemahan sebelumnya"
