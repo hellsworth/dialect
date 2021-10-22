@@ -2,6 +2,7 @@ Format: https://www.debian.org/doc/packaging-manuals/copyright-format/1.0/
 Upstream-Name: Dialect
 Upstream-Contact: https://github.com/dialect-app/dialect/issues
 Source: https://github.com/dialect-app/dialect
+ https://github.com/dialect-app/po
 
 Files: *
 Copyright:
