@@ -58,7 +58,7 @@ pip install googletrans gtts
 ### Building from Git
 
 ```bash
-git clone https://github.com/dialect-app/dialect.git
+git clone --recurse-submodules https://github.com/dialect-app/dialect.git
 cd dialect
 meson builddir --prefix=/usr/local
 sudo ninja -C builddir install
@@ -67,10 +67,10 @@ sudo ninja -C builddir install
 For testing and development purposes, you may run a local build:
 
 ```bash
-git clone https://github.com/dialect-app/dialect.git
+git clone --recurse-submodules https://github.com/dialect-app/dialect.git
 cd dialect
 meson builddir
-meson configure _build -Dprefix=$(pwd)/builddir/testdir
+meson configure builddir -Dprefix=$(pwd)/builddir/testdir
 ninja -C builddir install
 ninja -C builddir run
 ```
@@ -81,7 +81,11 @@ Pull requests are welcome. For major changes, please open an issue first to disc
 
 ### Translations
 
-Dialect is translated into many languages already. Please help to [translate Dialect](https://github.com/dialect-app/dialect/tree/main/po/) into other languages.
+Dialect has already been translated into many languages (see the [translations repository](https://github.com/dialect-app/po/blob/main/README.md) file). Please help translate Dialect into more languages through [Weblate](https://hosted.weblate.org/engage/dialect/).
+
+<a href="https://hosted.weblate.org/engage/dialect/">
+<img src="https://hosted.weblate.org/widgets/dialect/-/dialect/multi-auto.svg" alt="Translation status" />
+</a>
 
 ## License
 

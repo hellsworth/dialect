@@ -1,22 +1,23 @@
 # SOME DESCRIPTIVE TITLE.
 # Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
 # This file is distributed under the same license as the dialect package.
-# ALBANO BATTISTELLA <albano_battistella@hotmail.com>, 2020,2021.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
 #
 msgid ""
 msgstr ""
 "Project-Id-Version: dialect\n"
 "Report-Msgid-Bugs-To: https://github.com/dialect-app/po/issues\n"
 "POT-Creation-Date: 2021-10-16 23:00+0530\n"
-"PO-Revision-Date: 2021-09-20 22:36+0000\n"
-"Last-Translator: J. Lavoie <j.lavoie@net-c.ca>\n"
-"Language-Team: Italian <https://hosted.weblate.org/projects/dialect/dialect/"
-"it/>\n"
-"Language: it\n"
+"PO-Revision-Date: 2021-09-29 13:37+0000\n"
+"Last-Translator: Богдан Матвіїв <bomtvv@gmail.com>\n"
+"Language-Team: Ukrainian <https://hosted.weblate.org/projects/dialect/"
+"dialect/uk/>\n"
+"Language: uk\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"Plural-Forms: nplurals=2; plural=n != 1;\n"
+"Plural-Forms: nplurals=3; plural=n%10==1 && n%100!=11 ? 0 : n%10>=2 && n"
+"%10<=4 && (n%100<10 || n%100>=20) ? 1 : 2;\n"
 "X-Generator: Weblate 4.9-dev\n"
 
 #. Translators: Do not translate the app name!
@@ -29,159 +30,158 @@ msgstr "Dialect"
 #: data/com.github.gi_lom.dialect.desktop.in:9
 #: data/com.github.gi_lom.dialect.metainfo.xml.in:7
 msgid "Translate between languages"
-msgstr "Traduci tra le lingue"
+msgstr "Переклад між мовами"
 
 #. Translators: These are search terms to find this application. Do NOT translate or localize the semicolons. The list MUST also end with a semicolon.
 #: data/com.github.gi_lom.dialect.desktop.in:13
 msgid "translate;translation;"
-msgstr "tradurre;traduzione;"
+msgstr "перекласти;переклад;translate;translation;"
 
 #: data/com.github.gi_lom.dialect.metainfo.xml.in:9 data/resources/about.ui:12
 msgid "A translation app for GNOME."
-msgstr "Un'app di traduzione per GNOME."
+msgstr "Перекладач для GNOME."
 
 #: data/com.github.gi_lom.dialect.metainfo.xml.in:12
 msgid "Features:"
-msgstr "Caratteristiche:"
+msgstr "Особливості:"
 
 #: data/com.github.gi_lom.dialect.metainfo.xml.in:16
 msgid "Translation based on an unofficial API for Google Translate"
-msgstr "Traduzione basata su un'API non ufficiale per Google Translate"
+msgstr "Переклад на основі неофіційного API від Google Translate"
 
 #: data/com.github.gi_lom.dialect.metainfo.xml.in:17
 msgid ""
 "Translation based on the LibreTranslate API, allowing you use any instance "
 "available online"
 msgstr ""
-"Traduzione basata sull'API LibreTranslate, che ti consente di utilizzare "
-"qualsiasi istanza disponibile online"
+"Переклад на основі API LibreTranslate, який дозволяє використовувати любий "
+"екземпляр, доступний онлайн"
 
 #: data/com.github.gi_lom.dialect.metainfo.xml.in:18
 msgid "Text to speech"
-msgstr "Sintesi vocale"
+msgstr "Прослуховування тексту"
 
 #: data/com.github.gi_lom.dialect.metainfo.xml.in:19
 msgid "Translation history"
-msgstr "Cronologia traduzione"
+msgstr "Історія перекладу"
 
 #: data/com.github.gi_lom.dialect.metainfo.xml.in:20
 msgid "Automatic language detection"
-msgstr "Rilevamento automatico della lingua"
+msgstr "Автоматичне визначення мови"
 
 #: data/com.github.gi_lom.dialect.metainfo.xml.in:21
 msgid "Clipboard buttons"
-msgstr "Pulsanti degli appunti"
+msgstr "Кнопки буфера обміну"
 
 #: data/com.github.gi_lom.dialect.metainfo.xml.in:27
 msgid "The Dialect Authors"
-msgstr "Gli autori di Dialect"
+msgstr "Автори Dialect"
 
 #: data/resources/about.ui:11
 msgid "Copyright 2020–⁠2021 The Dialect Authors"
-msgstr "Copyright 2020–⁠2021 Gli autori di Dialect"
+msgstr "Copyright 2020–⁠2021 Автори Dialect"
 
 #: data/resources/about.ui:14
 msgid "GitHub page"
-msgstr "Pagina GitHub"
+msgstr "Сторінка GitHub"
 
 #. Replace me with your names.
 #: data/resources/about.ui:19
 msgid "translator-credits"
-msgstr "Albano Battistella"
+msgstr "Богдан Матвіїв"
 
 #: data/resources/menu.ui:7
 msgid "Show Pronunciation"
-msgstr "Mostra pronuncia"
+msgstr "Показати вимову"
 
 #: data/resources/menu.ui:14
 msgid "Preferences"
-msgstr "Preferenze"
+msgstr "Налаштування"
 
 #: data/resources/menu.ui:18
 msgid "Keyboard Shortcuts"
-msgstr "Scorciatoie da Tastiera"
+msgstr "Комбінації клавіш"
 
 #: data/resources/menu.ui:22
 msgid "About Dialect"
-msgstr "Informazioni su Dialect"
+msgstr "Про Dialect"
 
 #: data/resources/preferences.ui:15
 msgid "Appearance"
-msgstr "Aspetto"
+msgstr "Зовнішній вигляд"
 
 #: data/resources/preferences.ui:19
 msgid "Dark Mode"
-msgstr "Modalità Scura"
+msgstr "Темний режим"
 
 #: data/resources/preferences.ui:35
 msgid "Behavior"
-msgstr "Comportamento"
+msgstr "Поведінка"
 
 #: data/resources/preferences.ui:39
 msgid "Live Translation"
-msgstr "Traduzione dal vivo"
+msgstr "Переклад в реальному часі"
 
 #: data/resources/preferences.ui:40
 msgid "Warning: Your IP address may get banned for API abuse."
 msgstr ""
-"Attenzione: il tuo indirizzo IP potrebbe essere bandito per abuso di API."
+"Попередження: ваша IP-адреса може бути заблокована через зловживання API."
 
 #: data/resources/preferences.ui:54
 msgid "Translation Shortcut"
-msgstr "Scorciatoia di Traduzione"
+msgstr "Комбінації клавіш для перекладу"
 
 #: data/resources/preferences.ui:55
 msgid "The unselected choice will be used for line break."
-msgstr ""
-"La scelta non selezionata verrà utilizzata per l'interruzione di linea."
+msgstr "Невиділений варіант буде використовуватися для розриву рядка."
 
 #: data/resources/preferences.ui:61
 msgid "Default to Auto"
-msgstr "Automatico Predefinito"
+msgstr "Автовизначення за замовчуванням"
 
 #: data/resources/preferences.ui:62
 msgid "Use \"Auto\" as the default language"
-msgstr "Usa \"Automatico\" come lingua predefinita"
+msgstr "Використовуйте \"Авто\" як мову за замовчуванням"
 
 #: data/resources/preferences.ui:76
 msgid "Translator"
-msgstr "Traduttore"
+msgstr "Перекладач"
 
 #: data/resources/preferences.ui:77
 msgid "Choose from the available translation services."
-msgstr "Scegli tra i servizi di traduzione disponibili."
+msgstr "Виберіть один з доступних послуг перекладу."
 
 #: data/resources/preferences.ui:83
 msgid "Translator Instance"
-msgstr "Istanza del traduttore"
+msgstr "Екземпляр перекладача"
 
 #: data/resources/preferences.ui:84
 msgid "Enter a translation service URL."
-msgstr "Inserisci l'URL del servizio di traduzione."
+msgstr "Введіть URL-адресу служби перекладу."
 
 #: data/resources/preferences.ui:109
 msgid "Edit"
-msgstr "Modifica"
+msgstr "Редагувати"
 
 #: data/resources/preferences.ui:143
 msgid "Reset to default"
-msgstr "Ripristina le impostazioni predefinite"
+msgstr "Скинути до початкового значення"
 
 #: data/resources/preferences.ui:158
 msgid "Save"
-msgstr "Salva"
+msgstr "Зберегти"
 
 #: data/resources/preferences.ui:175
 msgid "Text-to-Speech"
-msgstr "Sintesi Vocale"
+msgstr "Прослуховування тексту"
 
 #: data/resources/preferences.ui:176
 msgid "Use Google for TTS."
-msgstr "Usa Google per la Sintesi Vocale."
+msgstr "Використовуйте Google для TTS."
 
 #: data/resources/preferences.ui:192
 msgid "Search Provider"
-msgstr "Cerca Provider"
+msgstr "Пошуковий провайдер"
 
 #: data/resources/preferences.ui:193
 msgid ""
@@ -189,653 +189,623 @@ msgid ""
 "Live translation is. Ensure the search provider is also turned on in the "
 "GNOME Settings."
 msgstr ""
-"Per ridurre l'abuso dell'utilizzo dell'API, il motore di ricerca Gnome "
-"presente in Dialect è stato spento quando la traduzione simultanea è attiva. "
-"Assicurati che il motore di ricerca è attivo dalle impostazioni di Gnome."
+"Щоб зменшити зловживання API, провайдер пошуку GNOME в Dialect вимикається, "
+"якщо використовується переклад у реальному часі. Переконайтеся, що пошуковий "
+"провайдер також увімкнено в налаштуваннях GNOME."
 
 #: data/resources/shortcuts-window.ui:13
 msgctxt "shortcuts window"
 msgid "Translator"
-msgstr "Traduttore"
+msgstr "Перекладач"
 
 #: data/resources/shortcuts-window.ui:17
 msgctxt "shortcuts window"
 msgid "Translate"
-msgstr "Traduci"
+msgstr "Перекласти"
 
 #: data/resources/shortcuts-window.ui:24
 msgctxt "shortcuts window"
 msgid "Switch Languages"
-msgstr "Cambia lingua"
+msgstr "Переключення мов"
 
 #: data/resources/shortcuts-window.ui:31
 msgctxt "shortcuts window"
 msgid "Clear source text"
-msgstr "Pulisci testo sorgente"
+msgstr "Очистити вихідний текст"
 
 #: data/resources/shortcuts-window.ui:38
 msgctxt "shortcuts window"
 msgid "Copy translation"
-msgstr "Copia traduzione"
+msgstr "Копіювати переклад"
 
 #: data/resources/shortcuts-window.ui:45
 msgctxt "shortcuts window"
 msgid "Show Pronunciation"
-msgstr "Mostra pronuncia"
+msgstr "Показати вимову"
 
 #: data/resources/shortcuts-window.ui:54
 msgctxt "shortcuts window"
 msgid "Text-to-Speech"
-msgstr "Sintesi Vocale"
+msgstr "Прослуховування тексту"
 
 #: data/resources/shortcuts-window.ui:58
 msgctxt "shortcuts window"
 msgid "Listen to source text"
-msgstr "Ascolta il testo sorgente"
+msgstr "Прослуховування вихідного тексту"
 
 #: data/resources/shortcuts-window.ui:65
 msgctxt "shortcuts window"
 msgid "Listen to translation"
-msgstr "Ascolta la traduzione"
+msgstr "Слухати переклад"
 
 #: data/resources/shortcuts-window.ui:74
 msgctxt "shortcuts window"
 msgid "Navigation"
-msgstr "Navigazione"
+msgstr "Навігація"
 
 #: data/resources/shortcuts-window.ui:78
 msgctxt "shortcuts window"
 msgid "Go back in history"
-msgstr "Torna alla versione precedente"
+msgstr "Повернутися по історії"
 
 #: data/resources/shortcuts-window.ui:85
 msgctxt "shortcuts window"
 msgid "Go forward in history"
-msgstr "Vai alla versione successiva"
+msgstr "Вперед по історії"
 
 #: data/resources/shortcuts-window.ui:94
 msgctxt "shortcuts window"
 msgid "General"
-msgstr "Generale"
+msgstr "Загальне"
 
 #: data/resources/shortcuts-window.ui:98
 msgctxt "shortcuts window"
 msgid "Preferences"
-msgstr "Preferenze"
+msgstr "Налаштування"
 
 #: data/resources/shortcuts-window.ui:105
 msgctxt "shortcut window"
 msgid "Shortcuts"
-msgstr "Scorciatoie da Tastiera"
+msgstr "Комбінації клавіш"
 
 #: data/resources/shortcuts-window.ui:112
 msgctxt "shortcuts window"
 msgid "Quit"
-msgstr "Esci"
+msgstr "Вийти"
 
 #: data/resources/window.ui:42
 msgid "Loading…"
-msgstr "Caricamento in corso…"
+msgstr "Завантаження…"
 
 #: data/resources/window.ui:83
 msgid "Could not load the translator service"
-msgstr "Non è stato possibile caricare il servizio di traduzione"
+msgstr "Не вдалося завантажити службу перекладача"
 
 #: data/resources/window.ui:108
 msgid "Retry"
-msgstr "Riprova"
+msgstr "Повторити"
 
 #: data/resources/window.ui:115
 msgid "Open preferences"
-msgstr "Apri preferenze"
+msgstr "Відкрити налаштування"
 
 #: data/resources/window.ui:194 data/resources/window.ui:728
 msgid "Switch languages"
-msgstr "Cambia lingua"
+msgstr "Переключення мов"
 
 #: data/resources/window.ui:274
 msgid "Previous translation"
-msgstr "Traduzione precedente"
+msgstr "Попередній переклад"
 
 #: data/resources/window.ui:293
 msgid "Next translation"
-msgstr "Prossima traduzione"
+msgstr "Наступний переклад"
 
 #: data/resources/window.ui:454
 msgid "Clear"
-msgstr "Pulisci"
+msgstr "Очистити"
 
 #: data/resources/window.ui:470
 msgid "Paste"
-msgstr "Incolla"
+msgstr "Вставити"
 
 #: data/resources/window.ui:486 data/resources/window.ui:624
 msgid "Listen"
-msgstr "Ascolta"
+msgstr "Слухати"
 
 #: data/resources/window.ui:494
 msgid "Translate"
-msgstr "Traduci"
+msgstr "Перекласти"
 
 #: data/resources/window.ui:605
 msgid "Translating…"
-msgstr "Traducendo…"
+msgstr "Переклад…"
 
 #: data/resources/window.ui:613
 msgid "Could not translate the text"
-msgstr "Non è stato possibile tradurre il testo"
+msgstr "Не вдалося перекласти текст"
 
 #: data/resources/window.ui:639
 msgid "Copy"
-msgstr "Copia"
+msgstr "Копіювати"
 
 #: data/resources/window.ui:820
 msgid "No network connection detected."
-msgstr "Nessuna connessione di rete rilevata."
+msgstr "Не виявлено з’єднання з мережею."
 
 #: dialect/preferences.py:251
 #, python-brace-format
 msgid "Not a valid {backend} instance"
-msgstr "Non è un'istanza {backend} valida"
+msgstr "Недійсний екземпляр {backend}"
 
 #: dialect/window.py:234
 msgid "A network issue has occured. Retry?"
-msgstr "Si è verificato un problema di rete. Riprovare?"
+msgstr "Виникла проблема з мережею. Повторити?"
 
 #: dialect/window.py:238
 msgid ""
 "A network issue has occured.\n"
 "Please try again."
 msgstr ""
-"Si è verificato un problema di rete.\n"
-"Per favore riprova."
+"Виникла проблема з мережею.\n"
+"Будь ласка спробуйте ще раз."
 
 #: dialect/window.py:498 dialect/window.py:502
 msgid "Auto"
-msgstr "Automatico"
+msgstr "Визначити мову"
 
 #: dialect/window.py:775
 msgid "5000 characters limit reached!"
-msgstr "Limite di 5000 caratteri raggiunto!"
+msgstr "Досягнуто обмеження в 5000 символів!"
 
 #: dialect/window.py:877
 msgid ""
 "Translation failed.\n"
 "Please check for network issues."
 msgstr ""
-"Traduzione non riuscita.\n"
-"Verifica la presenza di problemi di rete."
+"Не вдалося виконати переклад.\n"
+"Будь ласка, перевірте з'єднання з мережею."
 
 #: dialect/window.py:893
 msgid "Did you mean: "
-msgstr "Forse cercavi: "
+msgstr "Ви мали на увазі: "
 
 #: dialect/translators/__init__.py:26
 msgid "Afrikaans"
-msgstr "Afrikaans"
+msgstr "африкаанс"
 
 #: dialect/translators/__init__.py:27
 msgid "Albanian"
-msgstr "Albanese"
+msgstr "албанська"
 
 #: dialect/translators/__init__.py:28
 msgid "Amharic"
-msgstr "Amarico"
+msgstr "амхарська"
 
 #: dialect/translators/__init__.py:29
 msgid "Arabic"
-msgstr "Arabo"
+msgstr "арабська"
 
 #: dialect/translators/__init__.py:30
 msgid "Armenian"
-msgstr "Armeno"
+msgstr "вірменська"
 
 #: dialect/translators/__init__.py:31
 msgid "Azerbaijani"
-msgstr "Azerbaigiano"
+msgstr "азербайджанська"
 
 #: dialect/translators/__init__.py:32
 msgid "Basque"
-msgstr "Basco"
+msgstr "баскська"
 
 #: dialect/translators/__init__.py:33
 msgid "Belarusian"
-msgstr "Bielorusso"
+msgstr "білоруська"
 
 #: dialect/translators/__init__.py:34
 msgid "Bengali"
-msgstr "Bengalese"
+msgstr "бенгальська"
 
 #: dialect/translators/__init__.py:35
 msgid "Bosnian"
-msgstr "Bosniaco"
+msgstr "боснійська"
 
 #: dialect/translators/__init__.py:36
 msgid "Bulgarian"
-msgstr "Bulgaro"
+msgstr "болгарська"
 
 #: dialect/translators/__init__.py:37
 msgid "Catalan"
-msgstr "Catalano"
+msgstr "каталонська"
 
 #: dialect/translators/__init__.py:38
 msgid "Cebuano"
-msgstr "Cebuano"
+msgstr "себуанська"
 
 #: dialect/translators/__init__.py:39
 msgid "Chichewa"
-msgstr "Nyanja"
+msgstr "ньянджа"
 
 #: dialect/translators/__init__.py:40
 msgid "Chinese"
-msgstr "Cinese"
+msgstr "китайська"
 
 #: dialect/translators/__init__.py:41
 msgid "Chinese (Simplified)"
-msgstr "Cinese semplificato"
+msgstr "китайська (спрощена)"
 
 #: dialect/translators/__init__.py:42
 msgid "Chinese (Traditional)"
-msgstr "Cinese tradizionale"
+msgstr "китайська (традиційна)"
 
 #: dialect/translators/__init__.py:43
 msgid "Corsican"
-msgstr "Corso"
+msgstr "корсиканська"
 
 #: dialect/translators/__init__.py:44
 msgid "Croatian"
-msgstr "Croato"
+msgstr "хорватська"
 
 #: dialect/translators/__init__.py:45
 msgid "Czech"
-msgstr "Ceco"
+msgstr "чеська"
 
 #: dialect/translators/__init__.py:46
 msgid "Danish"
-msgstr "Danese"
+msgstr "данська"
 
 #: dialect/translators/__init__.py:47
 msgid "Dutch"
-msgstr "Olandese"
+msgstr "нідерландська"
 
 #: dialect/translators/__init__.py:48
 msgid "English"
-msgstr "Inglese"
+msgstr "англійська"
 
 #: dialect/translators/__init__.py:49
 msgid "Esperanto"
-msgstr "Esperanto"
+msgstr "есперанто"
 
 #: dialect/translators/__init__.py:50
 msgid "Estonian"
-msgstr "Estone"
+msgstr "естонська"
 
 #: dialect/translators/__init__.py:51
 msgid "Filipino"
-msgstr "Tagalog"
+msgstr "тагальська"
 
 #: dialect/translators/__init__.py:52
 msgid "Finnish"
-msgstr "Finlandese"
+msgstr "фінська"
 
 #: dialect/translators/__init__.py:53
 msgid "French"
-msgstr "Francese"
+msgstr "французька"
 
 #: dialect/translators/__init__.py:54
 msgid "Frisian"
-msgstr "Frisone occidentale"
+msgstr "західнофризька"
 
 #: dialect/translators/__init__.py:55
 msgid "Galician"
-msgstr "Galiziano"
+msgstr "галісійська"
 
 #: dialect/translators/__init__.py:56
 msgid "Georgian"
-msgstr "Georgiano"
+msgstr "грузинська"
 
 #: dialect/translators/__init__.py:57
 msgid "German"
-msgstr "Tedesco"
+msgstr "німецька"
 
 #: dialect/translators/__init__.py:58
 msgid "Greek"
-msgstr "Greco"
+msgstr "грецька"
 
 #: dialect/translators/__init__.py:59
 msgid "Gujarati"
-msgstr "Gujarati"
+msgstr "гуджараті"
 
 #: dialect/translators/__init__.py:60
 msgid "Haitian Creole"
-msgstr "Creolo haitiano"
+msgstr "гаїтянська креольська"
 
 #: dialect/translators/__init__.py:61
 msgid "Hausa"
-msgstr "Hausa"
+msgstr "хауса"
 
 #: dialect/translators/__init__.py:62
 msgid "Hawaiian"
-msgstr "Hawaiano"
+msgstr "гавайська"
 
 #: dialect/translators/__init__.py:63 dialect/translators/__init__.py:64
 msgid "Hebrew"
-msgstr "Ebraico"
+msgstr "іврит"
 
 #: dialect/translators/__init__.py:65
 msgid "Hindi"
-msgstr "Hindi"
+msgstr "гінді"
 
 #: dialect/translators/__init__.py:66
 msgid "Hmong"
-msgstr "Hmong"
+msgstr "хмонг"
 
 #: dialect/translators/__init__.py:67
 msgid "Hungarian"
-msgstr "Ungherese"
+msgstr "угорська"
 
 #: dialect/translators/__init__.py:68
 msgid "Icelandic"
-msgstr "Islandese"
+msgstr "ісландська"
 
 #: dialect/translators/__init__.py:69
 msgid "Igbo"
-msgstr "Igbo"
+msgstr "ігбо"
 
 #: dialect/translators/__init__.py:70
 msgid "Indonesian"
-msgstr "Indonesiano"
+msgstr "індонезійська"
 
 #: dialect/translators/__init__.py:71
 msgid "Irish"
-msgstr "Irlandese"
+msgstr "ірландська"
 
 #: dialect/translators/__init__.py:72
 msgid "Italian"
-msgstr "Italiano"
+msgstr "італійська"
 
 #: dialect/translators/__init__.py:73
 msgid "Japanese"
-msgstr "Giapponese"
+msgstr "японська"
 
 #: dialect/translators/__init__.py:74
 msgid "Javanese"
-msgstr "Giavanese"
+msgstr "яванська"
 
 #: dialect/translators/__init__.py:75
 msgid "Kannada"
-msgstr "Kannada"
+msgstr "каннада"
 
 #: dialect/translators/__init__.py:76
 msgid "Kazakh"
-msgstr "Kazako"
+msgstr "казахська"
 
 #: dialect/translators/__init__.py:77
 msgid "Khmer"
-msgstr "Khmer"
+msgstr "кхмерська"
 
 #: dialect/translators/__init__.py:78
 msgid "Kinyarwanda"
-msgstr "Kinyarwanda"
+msgstr "кіньяруанда"
 
 #: dialect/translators/__init__.py:79
 msgid "Korean"
-msgstr "Coreano"
+msgstr "корейська"
 
 #: dialect/translators/__init__.py:80
 msgid "Kurdish (Kurmanji)"
-msgstr "Curdo"
+msgstr "курдська (Курманджі)"
 
 #: dialect/translators/__init__.py:81
 msgid "Kyrgyz"
-msgstr "Kirghiso"
+msgstr "киргизька"
 
 #: dialect/translators/__init__.py:82
 msgid "Lao"
-msgstr "Lao"
+msgstr "лаоська"
 
 #: dialect/translators/__init__.py:83
 msgid "Latin"
-msgstr "Latino"
+msgstr "латинська"
 
 #: dialect/translators/__init__.py:84
 msgid "Latvian"
-msgstr "Lettone"
+msgstr "латиська"
 
 #: dialect/translators/__init__.py:85
 msgid "Lithuanian"
-msgstr "Lituano"
+msgstr "литовська"
 
 #: dialect/translators/__init__.py:86
 msgid "Luxembourgish"
-msgstr "Lussemburghese"
+msgstr "люксембурзька"
 
 #: dialect/translators/__init__.py:87
 msgid "Macedonian"
-msgstr "Macedone"
+msgstr "македонська"
 
 #: dialect/translators/__init__.py:88
 msgid "Malagasy"
-msgstr "Malgascio"
+msgstr "малагасійська"
 
 #: dialect/translators/__init__.py:89
 msgid "Malay"
-msgstr "Malese"
+msgstr "малайська"
 
 #: dialect/translators/__init__.py:90
 msgid "Malayalam"
-msgstr "Malayalam"
+msgstr "малаялам"
 
 #: dialect/translators/__init__.py:91
 msgid "Maltese"
-msgstr "Maltese"
+msgstr "мальтійська"
 
 #: dialect/translators/__init__.py:92
 msgid "Maori"
-msgstr "Maori"
+msgstr "маорі"
 
 #: dialect/translators/__init__.py:93
 msgid "Marathi"
-msgstr "Marathi"
+msgstr "маратхі"
 
 #: dialect/translators/__init__.py:94
 msgid "Mongolian"
-msgstr "Mongolo"
+msgstr "монгольська"
 
 #: dialect/translators/__init__.py:95
 msgid "Myanmar (Burmese)"
-msgstr "Birmano"
+msgstr "м'янма (бірманська)"
 
 #: dialect/translators/__init__.py:96
 msgid "Nepali"
-msgstr "Nepalese"
+msgstr "непальська"
 
 #: dialect/translators/__init__.py:97
 msgid "Norwegian"
-msgstr "Norvegese"
+msgstr "норвезька"
 
 #: dialect/translators/__init__.py:98
 msgid "Odia (Oriya)"
-msgstr "Odia"
+msgstr "одія (Орія)"
 
 #: dialect/translators/__init__.py:99
 msgid "Pashto"
-msgstr "Pashto"
+msgstr "пушту"
 
 #: dialect/translators/__init__.py:100
 msgid "Persian"
-msgstr "Persiano"
+msgstr "перська"
 
 #: dialect/translators/__init__.py:101
 msgid "Polish"
-msgstr "Polacco"
+msgstr "польська"
 
 #: dialect/translators/__init__.py:102
 msgid "Portuguese"
-msgstr "Portoghese"
+msgstr "португальська"
 
 #: dialect/translators/__init__.py:103
 msgid "Punjabi"
-msgstr "Punjabi"
+msgstr "панджабі"
 
 #: dialect/translators/__init__.py:104
 msgid "Romanian"
-msgstr "Rumeno"
+msgstr "румунська"
 
 #: dialect/translators/__init__.py:105
 msgid "Russian"
-msgstr "Russo"
+msgstr "російська"
 
 #: dialect/translators/__init__.py:106
 msgid "Samoan"
-msgstr "Samoano"
+msgstr "самоанська"
 
 #: dialect/translators/__init__.py:107
 msgid "Scots Gaelic"
-msgstr "Gaelico scozzese"
+msgstr "шотландська гельська"
 
 #: dialect/translators/__init__.py:108
 msgid "Serbian"
-msgstr "Serbo"
+msgstr "сербська"
 
 #: dialect/translators/__init__.py:109
 msgid "Sesotho"
-msgstr "Sotho del sud"
+msgstr "південна сото"
 
 #: dialect/translators/__init__.py:110
 msgid "Shona"
-msgstr "Shona"
+msgstr "шона"
 
 #: dialect/translators/__init__.py:111
 msgid "Sindhi"
-msgstr "Sindhi"
+msgstr "синдхі"
 
 #: dialect/translators/__init__.py:112
 msgid "Sinhala"
-msgstr "Singalese"
+msgstr "сингальська"
 
 #: dialect/translators/__init__.py:113
 msgid "Slovak"
-msgstr "Slovacco"
+msgstr "словацька"
 
 #: dialect/translators/__init__.py:114
 msgid "Slovenian"
-msgstr "Sloveno"
+msgstr "словенська"
 
 #: dialect/translators/__init__.py:115
 msgid "Somali"
-msgstr "Somalo"
+msgstr "сомалі"
 
 #: dialect/translators/__init__.py:116
 msgid "Spanish"
-msgstr "Spagnolo"
+msgstr "іспанська"
 
 #: dialect/translators/__init__.py:117
 msgid "Sundanese"
-msgstr "Sundanese"
+msgstr "сунданська"
 
 #: dialect/translators/__init__.py:118
 msgid "Swahili"
-msgstr "Swahili"
+msgstr "суахілі"
 
 #: dialect/translators/__init__.py:119
 msgid "Swedish"
-msgstr "Svedese"
+msgstr "шведська"
 
 #: dialect/translators/__init__.py:120
 msgid "Tajik"
-msgstr "Tagico"
+msgstr "таджицька"
 
 #: dialect/translators/__init__.py:121
 msgid "Tamil"
-msgstr "Tamil"
+msgstr "тамільська"
 
 #: dialect/translators/__init__.py:122
 msgid "Tatar"
-msgstr "Tataro"
+msgstr "татарська"
 
 #: dialect/translators/__init__.py:123
 msgid "Telugu"
-msgstr "Telugu"
+msgstr "телугу"
 
 #: dialect/translators/__init__.py:124
 msgid "Thai"
-msgstr "Thai"
+msgstr "тайська"
 
 #: dialect/translators/__init__.py:125
 msgid "Turkish"
-msgstr "Turco"
+msgstr "турецька"
 
 #: dialect/translators/__init__.py:126
 msgid "Turkmen"
-msgstr "Turcomanno"
+msgstr "туркменська"
 
 #: dialect/translators/__init__.py:127
 msgid "Ukrainian"
-msgstr "Ucraino"
+msgstr "українська"
 
 #: dialect/translators/__init__.py:128
 msgid "Urdu"
-msgstr "Urdu"
+msgstr "урду"
 
 #: dialect/translators/__init__.py:129
 msgid "Uyghur"
-msgstr "Uiguro"
+msgstr "уйгурська"
 
 #: dialect/translators/__init__.py:130
 msgid "Uzbek"
-msgstr "Uzbeco"
+msgstr "узбецька"
 
 #: dialect/translators/__init__.py:131
 msgid "Vietnamese"
-msgstr "Vietnamita"
+msgstr "вʼєтнамська"
 
 #: dialect/translators/__init__.py:132
 msgid "Welsh"
-msgstr "Gallese"
+msgstr "валлійська"
 
 #: dialect/translators/__init__.py:133
 msgid "Xhosa"
-msgstr "Xhosa"
+msgstr "кхоса"
 
 #: dialect/translators/__init__.py:134
 msgid "Yiddish"
-msgstr "Yiddish"
+msgstr "їдиш"
 
 #: dialect/translators/__init__.py:135
 msgid "Yoruba"
-msgstr "Yoruba"
+msgstr "йоруба"
 
 #: dialect/translators/__init__.py:136
 msgid "Zulu"
-msgstr "Zulu"
-
-#~ msgid "Use Google for Text to Speech functionality."
-#~ msgstr "Utilizza la funzionalità di sintesi vocale di Google."
-
-#~ msgid ""
-#~ "Dialect has a GNOME Search Provider. Enabling or disabling Live "
-#~ "Translation here will also enable or disable the GNOME Search Provider. "
-#~ "This is to reduce the possibility of API abuse. Also make sure that the "
-#~ "feature is enabled in GNOME Settings."
-#~ msgstr ""
-#~ "Dialect ha un provider di ricerca GNOME. Abilitare o disabilitare la "
-#~ "traduzione dal vivo qui abiliterà o disabiliterà anche il provider di "
-#~ "ricerca GNOME. Questo è per ridurre la possibilità di abuso di API. "
-#~ "Assicurati inoltre che la funzione sia abilitato nelle impostazioni di "
-#~ "GNOME."
-
-#~ msgid "Translation in progress..."
-#~ msgstr "Traduzione in corso..."
-
-#~ msgid "Translation seems to have failed"
-#~ msgstr "La traduzione sembra essere fallita"
-
-#~ msgid "gi-lom"
-#~ msgstr "gi-lom"
-
-#~ msgid "Text translation up to 5000 chars"
-#~ msgstr "Traduzione del testo fino a 5000 caratteri"
-
-#~ msgid "History"
-#~ msgstr "Cronologia"
+msgstr "зулуська"

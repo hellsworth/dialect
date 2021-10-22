@@ -6,362 +6,836 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: dialect\n"
-"Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2021-04-27 08:53-0500\n"
-"PO-Revision-Date: 2021-05-03 23:50+0430\n"
-"Last-Translator: Soheil Khanalipur <soheil@disroot.org>\n"
-"Language-Team: Persian <soheil@disroot.org>\n"
+"Report-Msgid-Bugs-To: https://github.com/dialect-app/po/issues\n"
+"POT-Creation-Date: 2021-10-16 23:00+0530\n"
+"PO-Revision-Date: 2021-09-20 22:36+0000\n"
+"Last-Translator: Danial Behzadi <dani.behzi@ubuntu.com>\n"
+"Language-Team: Persian <https://hosted.weblate.org/projects/dialect/dialect/"
+"fa/>\n"
 "Language: fa\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"Plural-Forms: nplurals=1; plural=0\n"
-"X-Generator: Gtranslator 3.36.0\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
+"X-Generator: Weblate 4.9-dev\n"
 
 #. Translators: Do not translate the app name!
 #: data/com.github.gi_lom.dialect.desktop.in:8
-#: data/com.github.gi_lom.dialect.metainfo.xml.in:6 data/resources/window.ui:66
-#: src/main.py:53 src/main.py:88
+#: data/com.github.gi_lom.dialect.metainfo.xml.in:6 data/resources/about.ui:10
+#: data/resources/window.ui:66 dialect/main.py:56 dialect/main.py:93
 msgid "Dialect"
-msgstr "دایلِکت"
+msgstr "دایالکت"
 
 #: data/com.github.gi_lom.dialect.desktop.in:9
 #: data/com.github.gi_lom.dialect.metainfo.xml.in:7
 msgid "Translate between languages"
-msgstr "گَردانِش میان زَبان‌ها"
+msgstr "بازگردانی میان زبان‌ها"
 
 #. Translators: These are search terms to find this application. Do NOT translate or localize the semicolons. The list MUST also end with a semicolon.
 #: data/com.github.gi_lom.dialect.desktop.in:13
 msgid "translate;translation;"
-msgstr "گَردانش;گَرداندن;"
+msgstr "translate;translation;ترجمه;بازگردانی;"
 
 #: data/com.github.gi_lom.dialect.metainfo.xml.in:9 data/resources/about.ui:12
 msgid "A translation app for GNOME."
-msgstr "یِک بَرنامِه‌یِ گَردانِش بَرایِ گنوم."
+msgstr "یک کارهٔ ترجمه برای گنوم."
 
 #: data/com.github.gi_lom.dialect.metainfo.xml.in:12
 msgid "Features:"
-msgstr "ویژِگی‌ها:"
+msgstr "ویژگی‌ها:"
 
 #: data/com.github.gi_lom.dialect.metainfo.xml.in:16
 msgid "Translation based on an unofficial API for Google Translate"
-msgstr "گَردانِش بَر پایِه‌یِ یِک اِی‌پی‌آیِ نابُنیادین بَرایِ گَردانِشِ گوگِل اَست"
+msgstr "ترجمه برپایهٔ واسط برنامه‌نویسی غیررسمی‌ای برای ترجمهٔ گوگل"
 
 #: data/com.github.gi_lom.dialect.metainfo.xml.in:17
 msgid ""
 "Translation based on the LibreTranslate API, allowing you use any instance "
 "available online"
 msgstr ""
-"گَردانِش بَر پایِه‌یِ اِی‌پی‌آیِ لیبره‌ترانزلِیت اَست، تَواناییِ بِکارگیریِ هَر نِمونِه‌یِ بَرتارِ "
-"دَر دَسترِس را بِشُما می‌دَهَد"
+"ترجمه برپایهٔ واسط برنامه‌نویسی لیبره‌ترنسلیت. می‌گذارد از هر نمونهٔ برخط موجودی "
+"استفاده کنید"
 
 #: data/com.github.gi_lom.dialect.metainfo.xml.in:18
 msgid "Text to speech"
-msgstr "نِوِشتار بِه گُفتار"
+msgstr "متن به گفتار"
 
 #: data/com.github.gi_lom.dialect.metainfo.xml.in:19
 msgid "Translation history"
-msgstr "پیشینِه‌یِ گَردانِش"
+msgstr "پیشینهٔ ترجمه"
 
 #: data/com.github.gi_lom.dialect.metainfo.xml.in:20
 msgid "Automatic language detection"
-msgstr "شِناساییِ خودکارِ زَبان"
+msgstr "شناسایی خودکار زبان"
 
 #: data/com.github.gi_lom.dialect.metainfo.xml.in:21
 msgid "Clipboard buttons"
-msgstr "دُکمِه‌هایِ گِرِفتِه‌دان"
+msgstr "دکمه‌های تخته‌گیره"
 
-#: data/com.github.gi_lom.dialect.metainfo.xml.in:26
+#: data/com.github.gi_lom.dialect.metainfo.xml.in:27
 msgid "The Dialect Authors"
-msgstr "نِویسَندِگانِ دایلِکت"
+msgstr "نگارندگان دایالکت"
 
 #: data/resources/about.ui:11
-msgid "Copyright 2020-2021 The Dialect Authors"
-msgstr "کُپےرایت ۲۰۲۰-۲۰۲۱ نِویسَندِگانِ دایلِکت"
+msgid "Copyright 2020–⁠2021 The Dialect Authors"
+msgstr "حق رونوشت ۱۳۹۹-۱۴۰۰ نگارندگان دایالکت"
 
 #: data/resources/about.ui:14
-msgid "Github page"
-msgstr "تاربَرگِ گیت‌هاب"
+msgid "GitHub page"
+msgstr "صفحهٔ گیت‌هاب"
 
 #. Replace me with your names.
 #: data/resources/about.ui:19
 msgid "translator-credits"
-msgstr "سُهِیل خانعَلےپور"
+msgstr ""
+"دانیال بهزادی <dani.behzi@ubuntu.com>\n"
+"سهیل خانعلی‌پور"
 
 #: data/resources/menu.ui:7
 msgid "Show Pronunciation"
-msgstr "نَمایِشِ آوایِش"
+msgstr "نمایش بیان"
 
 #: data/resources/menu.ui:14
 msgid "Preferences"
-msgstr "ساماندَهی"
+msgstr "ترجیحات"
 
 #: data/resources/menu.ui:18
 msgid "Keyboard Shortcuts"
-msgstr "پایَندانِ تَختِه‌کِلید"
+msgstr "میان‌برهای صفحه‌کلید"
 
 #: data/resources/menu.ui:22
 msgid "About Dialect"
-msgstr "دَربارِه‌یِ دایلِکت"
+msgstr "دربارهٔ دایالکت"
 
 #: data/resources/preferences.ui:15
 msgid "Appearance"
-msgstr "چِهرِه"
+msgstr "ظاهر"
 
 #: data/resources/preferences.ui:19
 msgid "Dark Mode"
-msgstr "پوشِشِ تیرِه"
+msgstr "حالت تاریک"
 
 #: data/resources/preferences.ui:35
 msgid "Behavior"
-msgstr "رَفتار"
+msgstr "رفتار"
 
 #: data/resources/preferences.ui:39
 msgid "Live Translation"
-msgstr "گَردانِشِ زِندِه"
+msgstr "ترجمهٔ زنده"
 
 #: data/resources/preferences.ui:40
 msgid "Warning: Your IP address may get banned for API abuse."
-msgstr "هُشدار: شایَد نِشانیِ آی‌پیِ شُما بَرایِ کَژکارگیریِ اِی‌پی‌آی بَستِه شَوَد."
+msgstr ""
+"هشدار: ممکن است نشانی آی‌پیتان برای سواستفاده از رابط برنامه‌نویسی مسدود شود."
 
 #: data/resources/preferences.ui:54
 msgid "Translation Shortcut"
-msgstr "پایَندانِ گَردانِش"
+msgstr "میان‌برهای ترجمه"
 
 #: data/resources/preferences.ui:55
-msgid "Unselected choice will be used for line break."
-msgstr "گُزینِه‌یِ ناگُزیدِه بَرایِ جُداییِ خَت بِکار گِرِفتِه می‌شَوَد."
+msgid "The unselected choice will be used for line break."
+msgstr "گزینهٔ ناگزیده برای شکست خط استفاده خواهد شد."
 
 #: data/resources/preferences.ui:61
 msgid "Default to Auto"
-msgstr "پیشگُزیدِه بِه خودکار"
+msgstr "پیش‌گزیده به خودکار"
 
 #: data/resources/preferences.ui:62
-msgid "Use \"Auto\" as the default language on every launch"
-msgstr "بِکارگیریِ «خودکار» بَرایِ زَبانِ پیشـگُزیدِه دَر هَر رانِش"
+msgid "Use \"Auto\" as the default language"
+msgstr "استفاده از «خودکار» به عنوان زبان پیش‌گزیده"
 
 #: data/resources/preferences.ui:76
 msgid "Translator"
-msgstr "گَردانِشگَر"
+msgstr "بازگردان"
 
 #: data/resources/preferences.ui:77
 msgid "Choose from the available translation services."
-msgstr "اَز میانِ گَردانِشگَرهایِ دَر دَسترِس بِگُزینید."
+msgstr "گزینش از میان خدمات ترجمهٔ موجود."
 
 #: data/resources/preferences.ui:83
 msgid "Translator Instance"
-msgstr "نِمونِه‌یِ گَردانِشگَر"
+msgstr "نمونهٔ بازگردان"
 
 #: data/resources/preferences.ui:84
-msgid "Specify URL of translation service."
-msgstr "یوآراِلِ گَردانِشگَرِ ویژِه."
+msgid "Enter a translation service URL."
+msgstr "یک نشانی خدمت ترجمه وارد کنید."
 
 #: data/resources/preferences.ui:109
 msgid "Edit"
-msgstr "ویرایِش"
+msgstr "ویرایش"
 
 #: data/resources/preferences.ui:143
 msgid "Reset to default"
-msgstr "بازنِشانی بِه پیشگُزیدِه"
+msgstr "بازنشانی به پیش‌گزیده"
 
 #: data/resources/preferences.ui:158
 msgid "Save"
-msgstr "اَنباردَن"
+msgstr "ذخیره"
 
 #: data/resources/preferences.ui:175
-msgid "Text to Speech"
-msgstr "نِوِشتار بِه گُفتار"
+msgid "Text-to-Speech"
+msgstr "متن به گفتار"
 
 #: data/resources/preferences.ui:176
-msgid "Use Google for Text to Speech functionality."
-msgstr "بِکارگیریِ گوگِل بَرایِ کارکَردِ نِوِشتار بِه گُفتار."
+msgid "Use Google for TTS."
+msgstr "استفاده از گوگل برای متن به گفتار."
 
 #: data/resources/preferences.ui:192
 msgid "Search Provider"
-msgstr "فَراهَم‌آوَرِ جُستجو"
+msgstr "فراهم‌کنندهٔ جست‌وجو"
 
 #: data/resources/preferences.ui:193
 msgid ""
-"Dialect has a GNOME Search Provider. Enabling or disabling Live Translation "
-"here will also enable or disable the GNOME Search Provider. This is to "
-"reduce the possibility of API abuse. Also make sure that the feature is "
-"enabled in GNOME Settings."
+"To reduce API abuse, the GNOME search provider in Dialect is turned off when "
+"Live translation is. Ensure the search provider is also turned on in the "
+"GNOME Settings."
 msgstr ""
-"دایلِکت یِک فَراهَم‌آوَرِ جُستجویِ گنوم دارَد. کارا یا ناکارا کَردَنِ گَردانِشِ زِندِه‌یِ اینجا، "
-"فَراهَم‌آوَرِ جُستجوی گنوم را هَم کارا یا ناکارا می‌کُنَد. این بَرایِ کاهِشِ شایِشِ "
-"کَژکارگیریِ اِی‌پی‌آی بِکار گِرِفتِه می‌شَوَد. هَمچِنین بِنگَرید کِه این ویژِگی دِر ساماندَهیِ "
-"گنوم کارا باشَد."
+"برای کاهش سواستفاده از رابط برنامه‌نویسی، فراهم‌کنندهٔ جست‌وجوی گنوم در دایالکت "
+"هنگام روشن بودن ترجمهٔ زنده، خاموش شده است. مطمئن شوید فراهم‌کنندهٔ جست‌وجو هم "
+"در تنظیمات گنوم روشن شده باشد."
 
 #: data/resources/shortcuts-window.ui:13
 msgctxt "shortcuts window"
-msgid "General"
-msgstr "فَراگیر"
+msgid "Translator"
+msgstr "مترجم"
 
 #: data/resources/shortcuts-window.ui:17
 msgctxt "shortcuts window"
-msgid "Preferences"
-msgstr "ساماندَهی"
+msgid "Translate"
+msgstr "ترجمه"
 
 #: data/resources/shortcuts-window.ui:24
 msgctxt "shortcuts window"
-msgid "Translate"
-msgstr "گَرداندَن"
+msgid "Switch Languages"
+msgstr "جابه‌جایی زبان‌ها"
 
 #: data/resources/shortcuts-window.ui:31
 msgctxt "shortcuts window"
+msgid "Clear source text"
+msgstr "متن منبع تمیز"
+
+#: data/resources/shortcuts-window.ui:38
+msgctxt "shortcuts window"
+msgid "Copy translation"
+msgstr "رونوشت از ترجمه"
+
+#: data/resources/shortcuts-window.ui:45
+msgctxt "shortcuts window"
+msgid "Show Pronunciation"
+msgstr "نمایش بیان"
+
+#: data/resources/shortcuts-window.ui:54
+msgctxt "shortcuts window"
+msgid "Text-to-Speech"
+msgstr "متن به گفتار"
+
+#: data/resources/shortcuts-window.ui:58
+msgctxt "shortcuts window"
+msgid "Listen to source text"
+msgstr "شنیدن متن منبع"
+
+#: data/resources/shortcuts-window.ui:65
+msgctxt "shortcuts window"
+msgid "Listen to translation"
+msgstr "شنیدن ترجمه"
+
+#: data/resources/shortcuts-window.ui:74
+msgctxt "shortcuts window"
+msgid "Navigation"
+msgstr "ناوبری"
+
+#: data/resources/shortcuts-window.ui:78
+msgctxt "shortcuts window"
+msgid "Go back in history"
+msgstr "به عقب رفتن در تاریخچه"
+
+#: data/resources/shortcuts-window.ui:85
+msgctxt "shortcuts window"
+msgid "Go forward in history"
+msgstr "به پیش رفتن در تاریخچه"
+
+#: data/resources/shortcuts-window.ui:94
+msgctxt "shortcuts window"
+msgid "General"
+msgstr "عمومی"
+
+#: data/resources/shortcuts-window.ui:98
+msgctxt "shortcuts window"
+msgid "Preferences"
+msgstr "ترجیحات"
+
+#: data/resources/shortcuts-window.ui:105
+msgctxt "shortcut window"
+msgid "Shortcuts"
+msgstr "میان‌برها"
+
+#: data/resources/shortcuts-window.ui:112
+msgctxt "shortcuts window"
 msgid "Quit"
-msgstr "بُرونرَفت"
+msgstr "خروج"
 
 #: data/resources/window.ui:42
-msgid "Loading..."
-msgstr ""
+msgid "Loading…"
+msgstr "بار کردن…"
 
 #: data/resources/window.ui:83
-msgid "Failed loading translator backend"
-msgstr ""
+msgid "Could not load the translator service"
+msgstr "نتوانست خدمت ترجمه را بار کند"
 
 #: data/resources/window.ui:108
 msgid "Retry"
-msgstr "بازکوشِش"
+msgstr "تلاش دوباره"
 
 #: data/resources/window.ui:115
 msgid "Open preferences"
-msgstr "گُشودَنِ ساماندَهی"
+msgstr "گشودن ترجیحات"
 
-#: data/resources/window.ui:193 data/resources/window.ui:726
+#: data/resources/window.ui:194 data/resources/window.ui:728
 msgid "Switch languages"
-msgstr "جابِجاییِ زَبان‌ها"
+msgstr "جابه‌جایی زبان‌ها"
 
-#: data/resources/window.ui:273
+#: data/resources/window.ui:274
 msgid "Previous translation"
-msgstr "گَردانِشِ پیشین"
+msgstr "ترجمهٔ پیشین"
 
-#: data/resources/window.ui:292
+#: data/resources/window.ui:293
 msgid "Next translation"
-msgstr "گَردانِشِ پَسین"
+msgstr "ترجمهٔ بعدی"
 
-#: data/resources/window.ui:453
+#: data/resources/window.ui:454
 msgid "Clear"
-msgstr "پاکیدَن"
+msgstr "پاک‌سازی"
 
-#: data/resources/window.ui:468
+#: data/resources/window.ui:470
 msgid "Paste"
-msgstr "چَسباندَن"
+msgstr "جای‌گذاری"
 
-#: data/resources/window.ui:484 data/resources/window.ui:622
+#: data/resources/window.ui:486 data/resources/window.ui:624
 msgid "Listen"
-msgstr "شِنیدَن"
+msgstr "شنیدن"
 
-#: data/resources/window.ui:492
+#: data/resources/window.ui:494
 msgid "Translate"
-msgstr "گَرداندَن"
+msgstr "ترجمه"
 
-#: data/resources/window.ui:603
-msgid "Translation in progress..."
-msgstr "گَردانِش رَوان اَست..."
+#: data/resources/window.ui:605
+msgid "Translating…"
+msgstr "ترجمه کردن…"
 
-#: data/resources/window.ui:611
-msgid "Translation seems to have failed"
-msgstr "گویا گَردانِش شِکَست خوردِه اَست"
+#: data/resources/window.ui:613
+msgid "Could not translate the text"
+msgstr "نتوانست متن را ترجمه کند"
 
-#: data/resources/window.ui:637
+#: data/resources/window.ui:639
 msgid "Copy"
-msgstr "روگِرِفت"
+msgstr "رونوشت"
 
-#: data/resources/window.ui:817
+#: data/resources/window.ui:820
 msgid "No network connection detected."
-msgstr "پِیوَستِ تارگان یافت نَشُد."
+msgstr "هیچ اتّصال شبکه‌ای پیدا نشد."
 
-#: src/preferences.py:250
+#: dialect/preferences.py:251
 #, python-brace-format
 msgid "Not a valid {backend} instance"
-msgstr ""
+msgstr "نمونهٔ معتبر {backend} نیست"
 
-#: src/window.py:229
+#: dialect/window.py:234
 msgid "A network issue has occured. Retry?"
-msgstr "پَریشانیِ تارگان رُخ داد. بازکوشِش شَوَد؟"
+msgstr "مشکلی در شبکه رخ داد. تلاش دوباره؟"
 
-#: src/window.py:233
+#: dialect/window.py:238
 msgid ""
 "A network issue has occured.\n"
 "Please try again."
 msgstr ""
-"پَریشانیِ تارگان رُخ داد.\n"
-"خواهِشمَند اَست دوبارِه بِکوشید."
+"مشکلی در شبکه رخ داد.\n"
+"لطفاً دوباره تلاش کنید."
 
-#: src/window.py:507 src/window.py:511
+#: dialect/window.py:498 dialect/window.py:502
 msgid "Auto"
 msgstr "خودکار"
 
-#: src/window.py:784
+#: dialect/window.py:775
 msgid "5000 characters limit reached!"
-msgstr "بِه پایانِ ۵۰۰۰ وات رِسید!"
+msgstr "به کران ۵٫۰۰۰ نویسه رسید!"
 
-#: src/window.py:876
+#: dialect/window.py:877
 msgid ""
 "Translation failed.\n"
 "Please check for network issues."
 msgstr ""
-"گَردانِش شِکَست خورد.\n"
-"خواهِشمَند اَست پَریشانیِ تارگان را بَررِسی کُنید."
+"ترجمه شکست خورد.\n"
+"لطفاً برای مشکلات شبکه بررسی کنید."
 
-#: src/window.py:892
+#: dialect/window.py:893
 msgid "Did you mean: "
-msgstr "شایَد این را می‌خواستید: "
+msgstr "شاید منظورتان این بود: "
+
+#: dialect/translators/__init__.py:26
+msgid "Afrikaans"
+msgstr "آفریکانس"
+
+#: dialect/translators/__init__.py:27
+msgid "Albanian"
+msgstr "آلبانیایی"
+
+#: dialect/translators/__init__.py:28
+msgid "Amharic"
+msgstr "امهری"
+
+#: dialect/translators/__init__.py:29
+msgid "Arabic"
+msgstr "عربی"
+
+#: dialect/translators/__init__.py:30
+msgid "Armenian"
+msgstr "ارمنی"
+
+#: dialect/translators/__init__.py:31
+msgid "Azerbaijani"
+msgstr "ترکی آذربایجانی"
+
+#: dialect/translators/__init__.py:32
+msgid "Basque"
+msgstr "باسکی"
+
+#: dialect/translators/__init__.py:33
+msgid "Belarusian"
+msgstr "بلاروسی"
+
+#: dialect/translators/__init__.py:34
+msgid "Bengali"
+msgstr "بنگالی"
+
+#: dialect/translators/__init__.py:35
+msgid "Bosnian"
+msgstr "بوسنیایی"
+
+#: dialect/translators/__init__.py:36
+msgid "Bulgarian"
+msgstr "بلغاری"
+
+#: dialect/translators/__init__.py:37
+msgid "Catalan"
+msgstr "کاتالان"
+
+#: dialect/translators/__init__.py:38
+msgid "Cebuano"
+msgstr "سبویی"
+
+#: dialect/translators/__init__.py:39
+msgid "Chichewa"
+msgstr "نیانجایی"
+
+#: dialect/translators/__init__.py:40
+msgid "Chinese"
+msgstr "چینی"
+
+#: dialect/translators/__init__.py:41
+msgid "Chinese (Simplified)"
+msgstr "چینی ساده‌شده"
+
+#: dialect/translators/__init__.py:42
+msgid "Chinese (Traditional)"
+msgstr "چینی سنتی"
+
+#: dialect/translators/__init__.py:43
+msgid "Corsican"
+msgstr "کورسی"
+
+#: dialect/translators/__init__.py:44
+msgid "Croatian"
+msgstr "کروات"
+
+#: dialect/translators/__init__.py:45
+msgid "Czech"
+msgstr "چکی"
+
+#: dialect/translators/__init__.py:46
+msgid "Danish"
+msgstr "دانمارکی"
+
+#: dialect/translators/__init__.py:47
+msgid "Dutch"
+msgstr "هلندی"
+
+#: dialect/translators/__init__.py:48
+msgid "English"
+msgstr "انگلیسی"
+
+#: dialect/translators/__init__.py:49
+msgid "Esperanto"
+msgstr "اسپرانتو"
+
+#: dialect/translators/__init__.py:50
+msgid "Estonian"
+msgstr "استونیایی"
+
+#: dialect/translators/__init__.py:51
+msgid "Filipino"
+msgstr "تاگالوگی"
+
+#: dialect/translators/__init__.py:52
+msgid "Finnish"
+msgstr "فنلاندی"
+
+#: dialect/translators/__init__.py:53
+msgid "French"
+msgstr "فرانسوی"
+
+#: dialect/translators/__init__.py:54
+msgid "Frisian"
+msgstr "فریسی غربی"
+
+#: dialect/translators/__init__.py:55
+msgid "Galician"
+msgstr "گالیسیایی"
+
+#: dialect/translators/__init__.py:56
+msgid "Georgian"
+msgstr "گرجی"
+
+#: dialect/translators/__init__.py:57
+msgid "German"
+msgstr "آلمانی"
+
+#: dialect/translators/__init__.py:58
+msgid "Greek"
+msgstr "یونانی"
+
+#: dialect/translators/__init__.py:59
+msgid "Gujarati"
+msgstr "گجراتی"
+
+#: dialect/translators/__init__.py:60
+msgid "Haitian Creole"
+msgstr "هائیتیایی"
+
+#: dialect/translators/__init__.py:61
+msgid "Hausa"
+msgstr "هوسایی"
+
+#: dialect/translators/__init__.py:62
+msgid "Hawaiian"
+msgstr "هاوایی"
+
+#: dialect/translators/__init__.py:63 dialect/translators/__init__.py:64
+msgid "Hebrew"
+msgstr "عبری"
+
+#: dialect/translators/__init__.py:65
+msgid "Hindi"
+msgstr "هندی"
+
+#: dialect/translators/__init__.py:66
+msgid "Hmong"
+msgstr "همونگ"
+
+#: dialect/translators/__init__.py:67
+msgid "Hungarian"
+msgstr "مجاری"
+
+#: dialect/translators/__init__.py:68
+msgid "Icelandic"
+msgstr "ایسلندی"
+
+#: dialect/translators/__init__.py:69
+msgid "Igbo"
+msgstr "ایگبویی"
+
+#: dialect/translators/__init__.py:70
+msgid "Indonesian"
+msgstr "اندونزیایی"
+
+#: dialect/translators/__init__.py:71
+msgid "Irish"
+msgstr "ایرلندی"
+
+#: dialect/translators/__init__.py:72
+msgid "Italian"
+msgstr "ایتالیایی"
+
+#: dialect/translators/__init__.py:73
+msgid "Japanese"
+msgstr "ژاپنی"
+
+#: dialect/translators/__init__.py:74
+msgid "Javanese"
+msgstr "جاوه‌ای"
+
+#: dialect/translators/__init__.py:75
+msgid "Kannada"
+msgstr "کانارا"
+
+#: dialect/translators/__init__.py:76
+msgid "Kazakh"
+msgstr "قزاقی"
+
+#: dialect/translators/__init__.py:77
+msgid "Khmer"
+msgstr "خمری"
+
+#: dialect/translators/__init__.py:78
+msgid "Kinyarwanda"
+msgstr "کینیارواندایی"
+
+#: dialect/translators/__init__.py:79
+msgid "Korean"
+msgstr "کره‌ای"
+
+#: dialect/translators/__init__.py:80
+msgid "Kurdish (Kurmanji)"
+msgstr "کردی"
+
+#: dialect/translators/__init__.py:81
+msgid "Kyrgyz"
+msgstr "قرقیزی"
+
+#: dialect/translators/__init__.py:82
+msgid "Lao"
+msgstr "لائوسی"
+
+#: dialect/translators/__init__.py:83
+msgid "Latin"
+msgstr "لاتین"
+
+#: dialect/translators/__init__.py:84
+msgid "Latvian"
+msgstr "لتونیایی"
+
+#: dialect/translators/__init__.py:85
+msgid "Lithuanian"
+msgstr "لیتوانیایی"
+
+#: dialect/translators/__init__.py:86
+msgid "Luxembourgish"
+msgstr "لوگزامبورگی"
+
+#: dialect/translators/__init__.py:87
+msgid "Macedonian"
+msgstr "مقدونی"
+
+#: dialect/translators/__init__.py:88
+msgid "Malagasy"
+msgstr "مالاگاسی"
+
+#: dialect/translators/__init__.py:89
+msgid "Malay"
+msgstr "مالایی"
+
+#: dialect/translators/__init__.py:90
+msgid "Malayalam"
+msgstr "مالایالامی"
+
+#: dialect/translators/__init__.py:91
+msgid "Maltese"
+msgstr "مالتی"
+
+#: dialect/translators/__init__.py:92
+msgid "Maori"
+msgstr "مائوری"
+
+#: dialect/translators/__init__.py:93
+msgid "Marathi"
+msgstr "مراتی"
+
+#: dialect/translators/__init__.py:94
+msgid "Mongolian"
+msgstr "مغولی"
+
+#: dialect/translators/__init__.py:95
+msgid "Myanmar (Burmese)"
+msgstr "برمه‌ای"
+
+#: dialect/translators/__init__.py:96
+msgid "Nepali"
+msgstr "نپالی"
+
+#: dialect/translators/__init__.py:97
+msgid "Norwegian"
+msgstr "نروژی"
+
+#: dialect/translators/__init__.py:98
+msgid "Odia (Oriya)"
+msgstr "اوریه‌ای"
+
+#: dialect/translators/__init__.py:99
+msgid "Pashto"
+msgstr "پشتو"
+
+#: dialect/translators/__init__.py:100
+msgid "Persian"
+msgstr "فارسی"
+
+#: dialect/translators/__init__.py:101
+msgid "Polish"
+msgstr "لهستانی"
+
+#: dialect/translators/__init__.py:102
+msgid "Portuguese"
+msgstr "پرتغالی"
+
+#: dialect/translators/__init__.py:103
+msgid "Punjabi"
+msgstr "پنجابی"
+
+#: dialect/translators/__init__.py:104
+msgid "Romanian"
+msgstr "رومانیایی"
+
+#: dialect/translators/__init__.py:105
+msgid "Russian"
+msgstr "روسی"
+
+#: dialect/translators/__init__.py:106
+msgid "Samoan"
+msgstr "ساموآیی"
+
+#: dialect/translators/__init__.py:107
+msgid "Scots Gaelic"
+msgstr "گیلی اسکاتلندی"
+
+#: dialect/translators/__init__.py:108
+msgid "Serbian"
+msgstr "صربی"
+
+#: dialect/translators/__init__.py:109
+msgid "Sesotho"
+msgstr "سوتوی جنوبی"
+
+#: dialect/translators/__init__.py:110
+msgid "Shona"
+msgstr "شونایی"
+
+#: dialect/translators/__init__.py:111
+msgid "Sindhi"
+msgstr "سندی"
+
+#: dialect/translators/__init__.py:112
+msgid "Sinhala"
+msgstr "سینهالی"
+
+#: dialect/translators/__init__.py:113
+msgid "Slovak"
+msgstr "اسلواکی"
+
+#: dialect/translators/__init__.py:114
+msgid "Slovenian"
+msgstr "اسلوونیایی"
+
+#: dialect/translators/__init__.py:115
+msgid "Somali"
+msgstr "سومالیایی"
+
+#: dialect/translators/__init__.py:116
+msgid "Spanish"
+msgstr "اسپانیایی"
+
+#: dialect/translators/__init__.py:117
+msgid "Sundanese"
+msgstr "سوندایی"
+
+#: dialect/translators/__init__.py:118
+msgid "Swahili"
+msgstr "سواحیلی"
+
+#: dialect/translators/__init__.py:119
+msgid "Swedish"
+msgstr "سوئدی"
+
+#: dialect/translators/__init__.py:120
+msgid "Tajik"
+msgstr "تاجیکی"
+
+#: dialect/translators/__init__.py:121
+msgid "Tamil"
+msgstr "تامیلی"
+
+#: dialect/translators/__init__.py:122
+msgid "Tatar"
+msgstr "تاتاری"
+
+#: dialect/translators/__init__.py:123
+msgid "Telugu"
+msgstr "تلوگویی"
+
+#: dialect/translators/__init__.py:124
+msgid "Thai"
+msgstr "تایلندی"
+
+#: dialect/translators/__init__.py:125
+msgid "Turkish"
+msgstr "ترکی استانبولی"
+
+#: dialect/translators/__init__.py:126
+msgid "Turkmen"
+msgstr "ترکمنی"
+
+#: dialect/translators/__init__.py:127
+msgid "Ukrainian"
+msgstr "اوکراینی"
+
+#: dialect/translators/__init__.py:128
+msgid "Urdu"
+msgstr "اردو"
+
+#: dialect/translators/__init__.py:129
+msgid "Uyghur"
+msgstr "اویغوری"
+
+#: dialect/translators/__init__.py:130
+msgid "Uzbek"
+msgstr "ازبکی"
+
+#: dialect/translators/__init__.py:131
+msgid "Vietnamese"
+msgstr "ویتنامی"
+
+#: dialect/translators/__init__.py:132
+msgid "Welsh"
+msgstr "ولزی"
+
+#: dialect/translators/__init__.py:133
+msgid "Xhosa"
+msgstr "خوسایی"
+
+#: dialect/translators/__init__.py:134
+msgid "Yiddish"
+msgstr "یدی"
+
+#: dialect/translators/__init__.py:135
+msgid "Yoruba"
+msgstr "یوروبایی"
+
+#: dialect/translators/__init__.py:136
+msgid "Zulu"
+msgstr "زولویی"
+
+#~ msgid "Use Google for Text to Speech functionality."
+#~ msgstr "بِکارگیریِ گوگِل بَرایِ کارکَردِ نِوِشتار بِه گُفتار."
+
+#~ msgid ""
+#~ "Dialect has a GNOME Search Provider. Enabling or disabling Live "
+#~ "Translation here will also enable or disable the GNOME Search Provider. "
+#~ "This is to reduce the possibility of API abuse. Also make sure that the "
+#~ "feature is enabled in GNOME Settings."
+#~ msgstr ""
+#~ "دایلِکت یِک فَراهَم‌آوَرِ جُستجویِ گنوم دارَد. کارا یا ناکارا کَردَنِ گَردانِشِ زِندِه‌یِ "
+#~ "اینجا، فَراهَم‌آوَرِ جُستجوی گنوم را هَم کارا یا ناکارا می‌کُنَد. این بَرایِ کاهِشِ "
+#~ "شایِشِ کَژکارگیریِ اِی‌پی‌آی بِکار گِرِفتِه می‌شَوَد. هَمچِنین بِنگَرید کِه این ویژِگی دِر "
+#~ "ساماندَهیِ گنوم کارا باشَد."
+
+#~ msgid "Translation in progress..."
+#~ msgstr "گَردانِش رَوان اَست..."
+
+#~ msgid "Translation seems to have failed"
+#~ msgstr "گویا گَردانِش شِکَست خوردِه اَست"
 
 #~ msgid "gi-lom"
 #~ msgstr "gi-lom"
 
-#~ msgid "A translation app for GNOME based on Google Translate."
-#~ msgstr "یک برنامه گردانش برای گنوم بر پایه گردانش گوگل."
-
 #~ msgid "Text translation up to 5000 chars"
 #~ msgstr "ترگومه نوشتار تا ۵۰۰۰ واج"
-
-#~ msgid "Added a shortcuts window"
-#~ msgstr "یک پنجره پایندان افزوده شد"
-
-#~ msgid "Added Indonesian translation"
-#~ msgstr "برگردان اندونزیایی افزوده شد"
-
-#~ msgid "Added Portugese (BR) translation"
-#~ msgstr "برگردان پرتغالی افزوده شد"
-
-#~ msgid "Fixed several bugs"
-#~ msgstr "چند ایراد درست شد"
-
-#~ msgid "Added a search provider for GNOME"
-#~ msgstr "یک فراهم‌آور جستجوی گنوم افزوده شد"
-
-#~ msgid "Added support for \"Did you mean\" suggestions"
-#~ msgstr "پشتیبانی از پیشنهاد «شاید این را می‌خواستید» افزوده شد"
-
-#~ msgid "Added a Ctrl+Q shortcut to quit"
-#~ msgstr "یک پایندان پایش+ض برای برونرفت افزوده شد"
-
-#~ msgid "Added Hungarian translation"
-#~ msgstr "برگردان مجارستانی افزوده شد"
-
-#~ msgid "Added Italian translation"
-#~ msgstr "برگردان ایتالیایی افزوده شد"
-
-#~ msgid "Added Persian translation"
-#~ msgstr "برگردان پارسی افزوده شد"
-
-#~ msgid "Added Russian translation"
-#~ msgstr "برگردان روسی افزوده شد"
-
-#~ msgid "Added Turkish translation"
-#~ msgstr "برگردان ترکی افزوده شد"
-
-#~ msgid "Fixed some issues with the icon"
-#~ msgstr "برخی از ایرادهای نماد درست شد"
-
-#~ msgid "Made some minor UI improvements"
-#~ msgstr "گشایش برخی از اندک پیشرفت‌های یوآی"
-
-#~ msgid "Initial release."
-#~ msgstr "پخش یکم."
 
 #~ msgid "History"
 #~ msgstr "پیشینه"
