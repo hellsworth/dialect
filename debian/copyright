@@ -26,6 +26,7 @@ License-Grant:
  either version 3,
  or (at your option) any later version.
 License: GPL-3+
+Reference: debian/copyright
 
 License: GPL-3+
-License-Reference: /usr/share/common-licenses/GPL-3
+Reference: /usr/share/common-licenses/GPL-3
