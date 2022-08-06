@@ -1,14 +1,14 @@
 # Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
 # This file is distributed under the same license as the dialect package.
-# Bedirhan Tuhana GAYRETLİ <noteqnil@gmail.com>, 2021
+# Tuhana GAYRETLİ <tuhana@tuta.io>, 2021
 #
 msgid ""
 msgstr ""
 "Project-Id-Version: dialect\n"
-"Report-Msgid-Bugs-To: https://github.com/dialect-app/po/issues\n"
-"POT-Creation-Date: 2021-10-16 23:00+0530\n"
-"PO-Revision-Date: 2021-09-20 22:36+0000\n"
-"Last-Translator: Oğuz Ersen <oguzersen@protonmail.com>\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2022-06-27 16:36-0500\n"
+"PO-Revision-Date: 2022-06-30 01:14+0000\n"
+"Last-Translator: Sabri Ünal <libreajans@gmail.com>\n"
 "Language-Team: Turkish <https://hosted.weblate.org/projects/dialect/dialect/"
 "tr/>\n"
 "Language: tr\n"
@@ -16,358 +16,444 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=n != 1;\n"
-"X-Generator: Weblate 4.9-dev\n"
+"X-Generator: Weblate 4.13.1-dev\n"
 
 #. Translators: Do not translate the app name!
-#: data/com.github.gi_lom.dialect.desktop.in:8
-#: data/com.github.gi_lom.dialect.metainfo.xml.in:6 data/resources/about.ui:10
-#: data/resources/window.ui:66 dialect/main.py:56 dialect/main.py:93
+#: data/app.drey.Dialect.desktop.in.in:8
+#: data/app.drey.Dialect.metainfo.xml.in.in:6 data/resources/about.blp:6
+#: data/resources/window.blp:240 dialect/main.py:57
 msgid "Dialect"
 msgstr "Dialect"
 
-#: data/com.github.gi_lom.dialect.desktop.in:9
-#: data/com.github.gi_lom.dialect.metainfo.xml.in:7
+#: data/app.drey.Dialect.desktop.in.in:9
+#: data/app.drey.Dialect.metainfo.xml.in.in:7
 msgid "Translate between languages"
 msgstr "Diller arasında çevir"
 
 #. Translators: These are search terms to find this application. Do NOT translate or localize the semicolons. The list MUST also end with a semicolon.
-#: data/com.github.gi_lom.dialect.desktop.in:13
+#: data/app.drey.Dialect.desktop.in.in:13
 msgid "translate;translation;"
 msgstr "translate;translation;çevir;çeviri;"
 
-#: data/com.github.gi_lom.dialect.metainfo.xml.in:9 data/resources/about.ui:12
+#: data/app.drey.Dialect.metainfo.xml.in.in:9 data/resources/about.blp:8
 msgid "A translation app for GNOME."
 msgstr "GNOME için çeviri uygulaması."
 
-#: data/com.github.gi_lom.dialect.metainfo.xml.in:12
+#: data/app.drey.Dialect.metainfo.xml.in.in:12
 msgid "Features:"
 msgstr "Özellikler:"
 
-#: data/com.github.gi_lom.dialect.metainfo.xml.in:16
-msgid "Translation based on an unofficial API for Google Translate"
-msgstr "Resmi olmayan bir Google Translate API'si tabanlı çeviri"
+#: data/app.drey.Dialect.metainfo.xml.in.in:16
+msgid "Translation based on Google Translate"
+msgstr "Google Translate tabanlı çeviri"
 
-#: data/com.github.gi_lom.dialect.metainfo.xml.in:17
+#: data/app.drey.Dialect.metainfo.xml.in.in:17
 msgid ""
-"Translation based on the LibreTranslate API, allowing you use any instance "
-"available online"
+"Translation based on the LibreTranslate API, allowing you to use any public "
+"instance"
 msgstr ""
 "LibreTranslate API tabanlı çeviri, herhangi bir çevrim içi örneği "
 "kullanmanıza izin verir"
 
-#: data/com.github.gi_lom.dialect.metainfo.xml.in:18
+#: data/app.drey.Dialect.metainfo.xml.in.in:18
+msgid "Translation based on Lingva Translate API"
+msgstr "Lingva Translate API tabanlı çeviri"
+
+#: data/app.drey.Dialect.metainfo.xml.in.in:19
 msgid "Text to speech"
 msgstr "Metinden sese"
 
-#: data/com.github.gi_lom.dialect.metainfo.xml.in:19
+#: data/app.drey.Dialect.metainfo.xml.in.in:20
 msgid "Translation history"
 msgstr "Çeviri geçmişi"
 
-#: data/com.github.gi_lom.dialect.metainfo.xml.in:20
+#: data/app.drey.Dialect.metainfo.xml.in.in:21
 msgid "Automatic language detection"
 msgstr "Otomatik dil algılama"
 
-#: data/com.github.gi_lom.dialect.metainfo.xml.in:21
+#: data/app.drey.Dialect.metainfo.xml.in.in:22
 msgid "Clipboard buttons"
 msgstr "Pano düğmeleri"
 
-#: data/com.github.gi_lom.dialect.metainfo.xml.in:27
+#: data/app.drey.Dialect.metainfo.xml.in.in:28
 msgid "The Dialect Authors"
 msgstr "Dialect Yaratıcıları"
 
-#: data/resources/about.ui:11
-msgid "Copyright 2020–⁠2021 The Dialect Authors"
-msgstr "Telif Hakkı 2020–⁠2021 Dialect Yaratıcıları"
+#: data/resources/about.blp:7
+msgid "Copyright 2020–⁠2022 The Dialect Authors"
+msgstr "Telif Hakkı 2020–⁠2022 Dialect Yazarları"
 
-#: data/resources/about.ui:14
+#: data/resources/about.blp:10
 msgid "GitHub page"
 msgstr "GitHub sayfası"
 
-#. Replace me with your names.
-#: data/resources/about.ui:19
+#. Translators: Replace me with your names.
+#: data/resources/about.blp:14
 msgid "translator-credits"
 msgstr ""
-"Bedirhan Tuhana GAYRETLİ <noteqnil@gmail.com>\n"
-"Oğuz Ersen"
+"Tuhana GAYRETLİ <tuhana@tuta.io>\n"
+"Oğuz Ersen\n"
+"Sabri Ünal <libreajans@gmail.com>"
 
-#: data/resources/menu.ui:7
-msgid "Show Pronunciation"
-msgstr "Telaffuzunu Göster"
-
-#: data/resources/menu.ui:14
-msgid "Preferences"
-msgstr "Tercihler"
-
-#: data/resources/menu.ui:18
-msgid "Keyboard Shortcuts"
-msgstr "Klavye Kısayolları"
-
-#: data/resources/menu.ui:22
-msgid "About Dialect"
-msgstr "Dialect Hakkında"
-
-#: data/resources/preferences.ui:15
-msgid "Appearance"
-msgstr "Görünüm"
-
-#: data/resources/preferences.ui:19
-msgid "Dark Mode"
-msgstr "Koyu Mod"
-
-#: data/resources/preferences.ui:35
+#: data/resources/preferences.ui:11
 msgid "Behavior"
 msgstr "Davranış"
 
-#: data/resources/preferences.ui:39
+#: data/resources/preferences.ui:14
 msgid "Live Translation"
 msgstr "Canlı Çeviri"
 
-#: data/resources/preferences.ui:40
+#: data/resources/preferences.ui:15
 msgid "Warning: Your IP address may get banned for API abuse."
 msgstr "Uyarı: IP adresiniz kötüye kullanım sebebiyle yasaklanabilir."
 
-#: data/resources/preferences.ui:54
+#: data/resources/preferences.ui:21
+msgid "Show Translations in Desktop Search"
+msgstr "Masaüstü Aramasında Çevirileri Göster"
+
+#: data/resources/preferences.ui:22
+msgid "Warning: All desktop searches will be sent to the translation service"
+msgstr "Uyarı: Tüm masaüstü aramaları çeviri servisine gönderililir"
+
+#: data/resources/preferences.ui:35
 msgid "Translation Shortcut"
 msgstr "Çeviri Kısayolu"
 
-#: data/resources/preferences.ui:55
+#: data/resources/preferences.ui:36
 msgid "The unselected choice will be used for line break."
 msgstr "Seçili olmayan seçim satır sonu için kullanılacaktır."
 
-#: data/resources/preferences.ui:61
+#: data/resources/preferences.ui:49
 msgid "Default to Auto"
 msgstr "Varsayılan Olarak Otomatik"
 
-#: data/resources/preferences.ui:62
+#: data/resources/preferences.ui:50
 msgid "Use \"Auto\" as the default language"
 msgstr "Varsayılan dil olarak \"Otomatik\" kullan"
 
-#: data/resources/preferences.ui:76
+#: data/resources/preferences.ui:61
 msgid "Translator"
 msgstr "Çevirmen"
 
-#: data/resources/preferences.ui:77
+#: data/resources/preferences.ui:62
 msgid "Choose from the available translation services."
 msgstr "Kullanılabilir çeviri hizmetleri arasından seçim yapın."
 
-#: data/resources/preferences.ui:83
+#: data/resources/preferences.ui:70
 msgid "Translator Instance"
 msgstr "Çevirmen Örneği"
 
-#: data/resources/preferences.ui:84
+#: data/resources/preferences.ui:71
 msgid "Enter a translation service URL."
 msgstr "Bir çeviri hizmeti URL'si girin."
 
-#: data/resources/preferences.ui:109
+#: data/resources/preferences.ui:89 data/resources/preferences.ui:161
 msgid "Edit"
 msgstr "Düzenle"
 
-#: data/resources/preferences.ui:143
+#: data/resources/preferences.ui:116 data/resources/preferences.ui:188
 msgid "Reset to default"
 msgstr "Varsayılana sıfırla"
 
-#: data/resources/preferences.ui:158
+#: data/resources/preferences.ui:126 data/resources/preferences.ui:198
+#: data/resources/window.blp:524
 msgid "Save"
 msgstr "Kaydet"
 
-#: data/resources/preferences.ui:175
+#: data/resources/preferences.ui:142
+msgid "API Key"
+msgstr "API Anahtarı"
+
+#: data/resources/preferences.ui:143
+msgid "Enter an API key for the translation service."
+msgstr "Çeviri hizmeti için API anahtarı girin."
+
+#: data/resources/preferences.ui:214
 msgid "Text-to-Speech"
 msgstr "Metinden Sese"
 
-#: data/resources/preferences.ui:176
+#: data/resources/preferences.ui:215
 msgid "Use Google for TTS."
 msgstr "Metinden Sese için Google kullan."
 
-#: data/resources/preferences.ui:192
-msgid "Search Provider"
-msgstr "Arama Sağlayıcısı"
-
-#: data/resources/preferences.ui:193
-msgid ""
-"To reduce API abuse, the GNOME search provider in Dialect is turned off when "
-"Live translation is. Ensure the search provider is also turned on in the "
-"GNOME Settings."
-msgstr ""
-"API kötüye kullanımını azaltmak için, Canlı çeviri açıkken Dialect'teki "
-"GNOME arama sağlayıcısı kapatılır. Arama sağlayıcısının GNOME ayarlarında da "
-"açık olduğundan emin olun."
-
-#: data/resources/shortcuts-window.ui:13
+#: data/resources/shortcuts.blp:13
 msgctxt "shortcuts window"
 msgid "Translator"
 msgstr "Çevirmen"
 
-#: data/resources/shortcuts-window.ui:17
+#: data/resources/shortcuts.blp:17
 msgctxt "shortcuts window"
 msgid "Translate"
 msgstr "Çevir"
 
-#: data/resources/shortcuts-window.ui:24
+#: data/resources/shortcuts.blp:23
 msgctxt "shortcuts window"
 msgid "Switch Languages"
 msgstr "Dili Değiştir"
 
-#: data/resources/shortcuts-window.ui:31
+#: data/resources/shortcuts.blp:29
 msgctxt "shortcuts window"
 msgid "Clear source text"
 msgstr "Kaynak metni temizle"
 
-#: data/resources/shortcuts-window.ui:38
+#: data/resources/shortcuts.blp:35
 msgctxt "shortcuts window"
 msgid "Copy translation"
 msgstr "Çeviriyi kopyala"
 
-#: data/resources/shortcuts-window.ui:45
+#: data/resources/shortcuts.blp:41
 msgctxt "shortcuts window"
 msgid "Show Pronunciation"
 msgstr "Telaffuzunu Göster"
 
-#: data/resources/shortcuts-window.ui:54
+#: data/resources/shortcuts.blp:48
 msgctxt "shortcuts window"
 msgid "Text-to-Speech"
 msgstr "Metinden Sese"
 
-#: data/resources/shortcuts-window.ui:58
+#: data/resources/shortcuts.blp:52
 msgctxt "shortcuts window"
 msgid "Listen to source text"
 msgstr "Kaynak metni dinle"
 
-#: data/resources/shortcuts-window.ui:65
+#: data/resources/shortcuts.blp:58
 msgctxt "shortcuts window"
 msgid "Listen to translation"
 msgstr "Çeviriyi dinle"
 
-#: data/resources/shortcuts-window.ui:74
+#: data/resources/shortcuts.blp:65
 msgctxt "shortcuts window"
 msgid "Navigation"
 msgstr "Gezinme"
 
-#: data/resources/shortcuts-window.ui:78
+#: data/resources/shortcuts.blp:69
 msgctxt "shortcuts window"
 msgid "Go back in history"
 msgstr "Geçmişte geri git"
 
-#: data/resources/shortcuts-window.ui:85
+#: data/resources/shortcuts.blp:75
 msgctxt "shortcuts window"
 msgid "Go forward in history"
 msgstr "Geçmişte ileri git"
 
-#: data/resources/shortcuts-window.ui:94
+#: data/resources/shortcuts.blp:82
 msgctxt "shortcuts window"
 msgid "General"
 msgstr "Genel"
 
-#: data/resources/shortcuts-window.ui:98
+#: data/resources/shortcuts.blp:86
 msgctxt "shortcuts window"
 msgid "Preferences"
 msgstr "Tercihler"
 
-#: data/resources/shortcuts-window.ui:105
+#: data/resources/shortcuts.blp:92
 msgctxt "shortcut window"
 msgid "Shortcuts"
 msgstr "Kısayollar"
 
-#: data/resources/shortcuts-window.ui:112
+#: data/resources/shortcuts.blp:98
 msgctxt "shortcuts window"
 msgid "Quit"
 msgstr "Çıkış"
 
-#: data/resources/window.ui:42
+#: data/resources/window.blp:15
+msgid "Show Pronunciation"
+msgstr "Telaffuzunu Göster"
+
+#: data/resources/window.blp:24 dialect/window.py:1224 dialect/window.py:1232
+msgid "Preferences"
+msgstr "Tercihler"
+
+#: data/resources/window.blp:29
+msgid "Keyboard Shortcuts"
+msgstr "Klavye Kısayolları"
+
+#: data/resources/window.blp:34
+msgid "About Dialect"
+msgstr "Dialect Hakkında"
+
+#: data/resources/window.blp:70
 msgid "Loading…"
 msgstr "Yükleniyor…"
 
-#: data/resources/window.ui:83
-msgid "Could not load the translator service"
-msgstr "Çeviri hizmeti yüklenemedi"
-
-#: data/resources/window.ui:108
+#: data/resources/window.blp:103 dialect/window.py:375 dialect/window.py:1216
+#: dialect/window.py:1240
 msgid "Retry"
 msgstr "Yeniden dene"
 
-#: data/resources/window.ui:115
-msgid "Open preferences"
-msgstr "Tercihleri aç"
+#: data/resources/window.blp:112 data/resources/window.blp:163
+msgid "Open Preferences"
+msgstr "Tercihleri Aç"
 
-#: data/resources/window.ui:194 data/resources/window.ui:728
+#: data/resources/window.blp:154
+msgid "Remove Key and Retry"
+msgstr "Anahtarı Kaldır ve Yeniden Dene"
+
+#: data/resources/window.blp:215 data/resources/window.blp:572
 msgid "Switch languages"
 msgstr "Dili değiştir"
 
-#: data/resources/window.ui:274
+#: data/resources/window.blp:251
 msgid "Previous translation"
 msgstr "Önceki çeviri"
 
-#: data/resources/window.ui:293
+#: data/resources/window.blp:257
 msgid "Next translation"
 msgstr "Sonraki çeviri"
 
-#: data/resources/window.ui:454
+#: data/resources/window.blp:366
 msgid "Clear"
 msgstr "Temizle"
 
-#: data/resources/window.ui:470
+#: data/resources/window.blp:372
 msgid "Paste"
 msgstr "Yapıştır"
 
-#: data/resources/window.ui:486 data/resources/window.ui:624
+#: data/resources/window.blp:378 data/resources/window.blp:496
 msgid "Listen"
 msgstr "Dinle"
 
-#: data/resources/window.ui:494
+#: data/resources/window.blp:398
 msgid "Translate"
 msgstr "Çevir"
 
-#: data/resources/window.ui:605
+#: data/resources/window.blp:470
 msgid "Translating…"
 msgstr "Çevriliyor…"
 
-#: data/resources/window.ui:613
+#: data/resources/window.blp:475
 msgid "Could not translate the text"
 msgstr "Metin çevrilemedi"
 
-#: data/resources/window.ui:639
+#: data/resources/window.blp:482
 msgid "Copy"
 msgstr "Kopyala"
 
-#: data/resources/window.ui:820
-msgid "No network connection detected."
-msgstr "Ağ bağlantısı algılanmadı."
+#: data/resources/window.blp:490
+msgid "Suggest Translation"
+msgstr "Çeviri Öner"
 
-#: dialect/preferences.py:251
+#: data/resources/window.blp:517
+msgid "Cancel"
+msgstr "İptal Et"
+
+#: data/resources/lang-selector.blp:18
+msgid "Search Languages…"
+msgstr "Dilleri Ara…"
+
+#: data/resources/theme-switcher.blp:25
+msgid "Follow system style"
+msgstr "Sistem biçimini takip et"
+
+#: data/resources/theme-switcher.blp:39
+msgid "Light style"
+msgstr "Açık biçim"
+
+#: data/resources/theme-switcher.blp:53
+msgid "Dark style"
+msgstr "Koyu biçim"
+
+#: dialect/preferences.py:220
 #, python-brace-format
 msgid "Not a valid {backend} instance"
 msgstr "Geçerli bir {backend} örneği değil"
 
-#: dialect/window.py:234
+#: dialect/preferences.py:288
+#, python-brace-format
+msgid "Not a valid {backend} API key"
+msgstr "Geçerli bir {backend} API anahtarı değil"
+
+#: dialect/window.py:296 dialect/window.py:1222
+msgid "The provided API key is invalid"
+msgstr "Sağlanan API anahtarı geçersiz"
+
+#: dialect/window.py:298
+msgid "Please set a valid API key in the preferences."
+msgstr "Lütfen tercihlerden geçerli bir API anahtarı ayarlayın."
+
+#: dialect/window.py:301
+msgid "Please set a valid API key or unset the API key in the preferences."
+msgstr ""
+"Lütfen geçerli bir API anahtarı ayarlayın veya tercihlerde API anahtarını "
+"kaldırın."
+
+#: dialect/window.py:322 dialect/window.py:1230
+msgid "API key is required to use the service"
+msgstr "Hizmeti kullanmak için API anahtarı gerekli"
+
+#: dialect/window.py:323
+msgid "Please set an API key in the preferences."
+msgstr "Lütfen tercihlerde API anahtarı ayarlayın."
+
+#: dialect/window.py:336
+msgid "Failed loading the translation service"
+msgstr "Çeviri hizmeti yüklenemedi"
+
+#: dialect/window.py:337
+msgid "Please report this in the Dialect bug tracker if the issue persists."
+msgstr "Sorun devam ederse lütfen hatayı Dialect hata izleyicisinde bildirin."
+
+#: dialect/window.py:339
+#, python-brace-format
+msgid ""
+"Failed loading \"{url}\", check if the instance address is correct or report "
+"in the Dialect bug tracker if the issue persists."
+msgstr ""
+"\"{url}\" yüklenemedi, örnek adresinin doğruluğunu denetleyin ya da sorun "
+"devam ederse Dialect hata izleyicisine bildirin."
+
+#: dialect/window.py:343
+msgid "Couldn’t connect to the translation service"
+msgstr "Çeviri hizmetine bağlanılamadı"
+
+#: dialect/window.py:344
+msgid "We can’t connect to the server. Please check for network issues."
+msgstr "Sunucuya bağlanamıyor. Lütfen ağ sorunlarını denetleyin."
+
+#: dialect/window.py:346
+#, python-brace-format
+msgid ""
+"We can’t connect to the {service} instance \"{url}\".\n"
+" Please check for network issues or if the address is correct."
+msgstr ""
+"{service} örneği \"{url}\" adresine bağlanamıyoruz.\n"
+" Lütfen ağ sorunlarını ya da adresin doğruluğunu denetleyin."
+
+#: dialect/window.py:369
 msgid "A network issue has occured. Retry?"
 msgstr "Ağ sorunu oluştu. Yeniden denensin mi?"
 
-#: dialect/window.py:238
-msgid ""
-"A network issue has occured.\n"
-"Please try again."
-msgstr ""
-"Ağ sorunu oluştu.\n"
-"Lütfen tekrar deneyin."
+#: dialect/window.py:382
+msgid "A network issue has occured. Please try again."
+msgstr "Ağ sorunu oluştu. Lütfen tekrar deneyin."
 
-#: dialect/window.py:498 dialect/window.py:502
+#: dialect/window.py:666 dialect/window.py:673 dialect/window.py:1126
 msgid "Auto"
 msgstr "Otomatik"
 
-#: dialect/window.py:775
-msgid "5000 characters limit reached!"
-msgstr "5000 karakter sınırına ulaşıldı!"
+#: dialect/window.py:870
+msgid "New translation has been suggested!"
+msgstr "Yeni çeviri önerildi!"
 
-#: dialect/window.py:877
-msgid ""
-"Translation failed.\n"
-"Please check for network issues."
-msgstr ""
-"Çeviri başarısız oldu.\n"
-"Lütfen ağ sorunlarını denetleyin."
+#: dialect/window.py:872
+msgid "Suggestion failed."
+msgstr "Öneri başarısız oldu."
 
-#: dialect/window.py:893
+#: dialect/window.py:1012
+msgid "{} characters limit reached!"
+msgstr "{} karakter sınırına ulaşıldı!"
+
+#: dialect/window.py:1165
 msgid "Did you mean: "
 msgstr "Bunu mu demek istediniz: "
+
+#: dialect/window.py:1214
+msgid "Translation failed, check for network issues"
+msgstr "Çeviri başarısız oldu, ağ sorunlarını denetleyin"
+
+#: dialect/window.py:1238
+msgid "Translation failed"
+msgstr "Çeviri başarısız oldu"
 
 #: dialect/translators/__init__.py:26
 msgid "Afrikaans"
@@ -391,7 +477,7 @@ msgstr "Ermenice"
 
 #: dialect/translators/__init__.py:31
 msgid "Azerbaijani"
-msgstr "Azerbaycan dili"
+msgstr "Azerice"
 
 #: dialect/translators/__init__.py:32
 msgid "Basque"
@@ -419,11 +505,11 @@ msgstr "Katalanca"
 
 #: dialect/translators/__init__.py:38
 msgid "Cebuano"
-msgstr "Sebuano dili"
+msgstr "Sebuanoca"
 
 #: dialect/translators/__init__.py:39
 msgid "Chichewa"
-msgstr "Nyanja"
+msgstr "Çiçevaca"
 
 #: dialect/translators/__init__.py:40
 msgid "Chinese"
@@ -431,11 +517,11 @@ msgstr "Çince"
 
 #: dialect/translators/__init__.py:41
 msgid "Chinese (Simplified)"
-msgstr "Basitleştirilmiş Çince"
+msgstr "Çince (Basitleştirilmiş)"
 
 #: dialect/translators/__init__.py:42
 msgid "Chinese (Traditional)"
-msgstr "Geleneksel Çince"
+msgstr "Çince (Geleneksel)"
 
 #: dialect/translators/__init__.py:43
 msgid "Corsican"
@@ -511,11 +597,11 @@ msgstr "Haiti Kreyolu"
 
 #: dialect/translators/__init__.py:61
 msgid "Hausa"
-msgstr "Hausa dili"
+msgstr "Hausaca"
 
 #: dialect/translators/__init__.py:62
 msgid "Hawaiian"
-msgstr "Hawaii dili"
+msgstr "Havai'ice"
 
 #: dialect/translators/__init__.py:63 dialect/translators/__init__.py:64
 msgid "Hebrew"
@@ -527,7 +613,7 @@ msgstr "Hintçe"
 
 #: dialect/translators/__init__.py:66
 msgid "Hmong"
-msgstr "Hmong"
+msgstr "Hmongca"
 
 #: dialect/translators/__init__.py:67
 msgid "Hungarian"
@@ -559,11 +645,11 @@ msgstr "Japonca"
 
 #: dialect/translators/__init__.py:74
 msgid "Javanese"
-msgstr "Cava Dili"
+msgstr "Cavaca"
 
 #: dialect/translators/__init__.py:75
 msgid "Kannada"
-msgstr "Kannada dili"
+msgstr "Kannadaca"
 
 #: dialect/translators/__init__.py:76
 msgid "Kazakh"
@@ -583,7 +669,7 @@ msgstr "Korece"
 
 #: dialect/translators/__init__.py:80
 msgid "Kurdish (Kurmanji)"
-msgstr "Kürtçe"
+msgstr "Kürtçe (Kurmançça)"
 
 #: dialect/translators/__init__.py:81
 msgid "Kyrgyz"
@@ -591,7 +677,7 @@ msgstr "Kırgızca"
 
 #: dialect/translators/__init__.py:82
 msgid "Lao"
-msgstr "Lao dili"
+msgstr "Laoca"
 
 #: dialect/translators/__init__.py:83
 msgid "Latin"
@@ -623,7 +709,7 @@ msgstr "Malayca"
 
 #: dialect/translators/__init__.py:90
 msgid "Malayalam"
-msgstr "Malayalam dili"
+msgstr "Malayalamca"
 
 #: dialect/translators/__init__.py:91
 msgid "Maltese"
@@ -631,11 +717,11 @@ msgstr "Maltaca"
 
 #: dialect/translators/__init__.py:92
 msgid "Maori"
-msgstr "Maori dili"
+msgstr "Maorice"
 
 #: dialect/translators/__init__.py:93
 msgid "Marathi"
-msgstr "Marathi dili"
+msgstr "Maratice"
 
 #: dialect/translators/__init__.py:94
 msgid "Mongolian"
@@ -643,7 +729,7 @@ msgstr "Moğolca"
 
 #: dialect/translators/__init__.py:95
 msgid "Myanmar (Burmese)"
-msgstr "Birman dili"
+msgstr "Birmanca"
 
 #: dialect/translators/__init__.py:96
 msgid "Nepali"
@@ -655,7 +741,7 @@ msgstr "Norveççe"
 
 #: dialect/translators/__init__.py:98
 msgid "Odia (Oriya)"
-msgstr "Oriya dili"
+msgstr "Oriyaca"
 
 #: dialect/translators/__init__.py:99
 msgid "Pashto"
@@ -703,11 +789,11 @@ msgstr "Güney Sotho dili"
 
 #: dialect/translators/__init__.py:110
 msgid "Shona"
-msgstr "Şona dili"
+msgstr "Şonaca"
 
 #: dialect/translators/__init__.py:111
 msgid "Sindhi"
-msgstr "Sindhi dili"
+msgstr "Sindce"
 
 #: dialect/translators/__init__.py:112
 msgid "Sinhala"
@@ -731,11 +817,11 @@ msgstr "İspanyolca"
 
 #: dialect/translators/__init__.py:117
 msgid "Sundanese"
-msgstr "Sunda dili"
+msgstr "Sundaca"
 
 #: dialect/translators/__init__.py:118
 msgid "Swahili"
-msgstr "Svahili dili"
+msgstr "Svahilice"
 
 #: dialect/translators/__init__.py:119
 msgid "Swedish"
@@ -755,7 +841,7 @@ msgstr "Tatarca"
 
 #: dialect/translators/__init__.py:123
 msgid "Telugu"
-msgstr "Telugu dili"
+msgstr "Teluguca"
 
 #: dialect/translators/__init__.py:124
 msgid "Thai"
@@ -809,6 +895,24 @@ msgstr "Yorubaca"
 msgid "Zulu"
 msgstr "Zuluca"
 
+#~ msgid "Appearance"
+#~ msgstr "Görünüm"
+
+#~ msgid "Search Provider"
+#~ msgstr "Arama Sağlayıcısı"
+
+#~ msgid ""
+#~ "To reduce API abuse, the GNOME search provider in Dialect is turned off "
+#~ "when Live translation is. Ensure the search provider is also turned on in "
+#~ "the GNOME Settings."
+#~ msgstr ""
+#~ "API kötüye kullanımını azaltmak için, Canlı çeviri açıkken Dialect'teki "
+#~ "GNOME arama sağlayıcısı kapatılır. Arama sağlayıcısının GNOME ayarlarında "
+#~ "da açık olduğundan emin olun."
+
+#~ msgid "No network connection detected."
+#~ msgstr "Ağ bağlantısı algılanmadı."
+
 #~ msgid "Use Google for Text to Speech functionality."
 #~ msgstr "Metinden Sese işlevi için Google kullanın."
 
@@ -826,9 +930,6 @@ msgstr "Zuluca"
 
 #~ msgid "Translation in progress..."
 #~ msgstr "Çeviri devam ediyor..."
-
-#~ msgid "Translation seems to have failed"
-#~ msgstr "Görünüşe göre çeviri başarısız oldu"
 
 #~ msgid "gi-lom"
 #~ msgstr "gi-lom"
