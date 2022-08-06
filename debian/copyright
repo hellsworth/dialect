@@ -7,18 +7,19 @@ Source: https://github.com/dialect-app/dialect
 Files: *
 Copyright:
   2020       gi-lom
-  2020-2021  Mufeed Ali
+  2020       Manuel Genovés
+  2020-2022  Mufeed Ali
   2020       Nikita Kravets
-  2020-2021  Rafael Mardojai CM
-  2020-2021  The Dialect Authors
+  2020-2022  Rafael Mardojai CM
+  2020-2022  The Dialect Authors
 License-Grant:
  SPDX-License-Identifier: GPL-3.0-or-later
 License: GPL-3+
 
 Files: debian/*
 Copyright:
-  2021  Jonas Smedegaard <dr@jones.dk>
-  2021  Purism, SPC
+  2021-2022  Jonas Smedegaard <dr@jones.dk>
+  2021       Purism, SPC
 License-Grant:
  This packaging is free software;
  you can redistribute it and/or modify it
