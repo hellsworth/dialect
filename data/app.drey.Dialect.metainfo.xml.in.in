@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <component type="desktop-application">
-  <id>com.github.gi_lom.dialect</id>
+  <id>@app-id@</id>
   <metadata_license>CC0-1.0</metadata_license>
   <project_license>GPL-3.0-or-later</project_license>
   <name>Dialect</name>
@@ -13,8 +13,9 @@
       Features:
     </p>
     <ul>
-      <li>Translation based on an unofficial API for Google Translate</li>
-      <li>Translation based on the LibreTranslate API, allowing you use any instance available online</li>
+      <li>Translation based on Google Translate</li>
+      <li>Translation based on the LibreTranslate API, allowing you to use any public instance</li>
+      <li>Translation based on Lingva Translate API</li>
       <li>Text to speech</li>
       <li>Translation history</li>
       <li>Automatic language detection</li>
@@ -27,7 +28,7 @@
   <developer_name>The Dialect Authors</developer_name>
   <content_rating type="oars-1.1" />
 
-  <launchable type="desktop-id">com.github.gi_lom.dialect.desktop</launchable>
+  <launchable type="desktop-id">@app-id@.desktop</launchable>
   <translation type="gettext">dialect</translation>
 
   <screenshots>
@@ -42,6 +43,40 @@
     </screenshot>
   </screenshots>
   <releases>
+    <release version="2.0.2" date="2022-07-17">
+      <description>
+        <ul>
+          <li>Fixed responsive implementation</li>
+          <li>Fixed small stylings</li>
+          <li>Updated translations</li>
+        </ul>
+      </description>
+    </release>
+    <release version="2.0.1" date="2022-07-14">
+      <description>
+        <ul>
+          <li>Fixed an issue with scale factor</li>
+        </ul>
+      </description>
+    </release>
+    <release version="2.0.0" date="2022-07-13">
+      <description>
+        <ul>
+          <li>Ported to GTK4 and libadwaita</li>
+          <li>New in-app color scheme switcher</li>
+          <li>Added Lingva Translate support</li>
+          <li>Google Translate module rewritten from scratch to not rely on external libraries and improve reliability.</li>
+          <li>GNOME Search Provider improvements</li>
+          <li>APP ID changed to app.drey.Dialect</li>
+          <li>Added API keys support for LibreTranslate</li>
+          <li>Added translation suggestions support for LibreTranslate</li>
+          <li>Fixed proxies by rewriting the http backend</li>
+          <li>Character limit is now service-dependent</li>
+          <li>Major code base refactoring</li>
+          <li>Fixed several bugs</li>
+        </ul>
+      </description>
+    </release>
     <release version="1.4.1" date="2021-10-20">
       <description>
         <ul>
