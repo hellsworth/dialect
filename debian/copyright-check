@@ -2,7 +2,9 @@
 
 set -eu
 
+RE_img='preview-mobile\.png'
+
 # skip tedious Debian files
 RE_debian='debian/(changelog|copyright(-check|_hints)?|source/lintian-overrides)'
 
-licensecheck --copyright --deb-machine --recursive --lines 0 --check '.*' --ignore "^($RE_debian)$" -- * > debian/copyright_hints
+licensecheck --copyright --deb-machine --recursive --lines 0 --check '.*' --ignore "^($RE_img|$RE_debian)$" -- * > debian/copyright_hints
