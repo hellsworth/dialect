@@ -37,15 +37,14 @@ Depends:
  python3-gi,
  python3-gtts,
  python3-langdetect,
-Description: translation app for GTK environments
- Dialect is a simple translation app for GTK environments.
- -
+Description: translation app for GNOME
+ Dialect is a translation app for GNOME.
+ .
  Features:
-#  * Translation based on the googletrans Python API,
-#    an unofficial API for Google Translate
+  * Translation based on Google Translate
   * Translation based on the LibreTranslate API,
-    allowing you use any instance available online
+    allowing you to use any public instance
   * Translation history
   * Automatic language detection
-#  * Text to speech
+  * Text to speech
   * Clipboard buttons
