@@ -1,0 +1,24 @@
+From: James Westman <james@jwestman.net>
+Date: Thu, 6 Oct 2022 10:48:23 -0500
+Subject: window.blp: Remove quotes around number literals
+
+Fixes #285.
+---
+ data/resources/window.blp | 4 ++--
+ 1 file changed, 2 insertions(+), 2 deletions(-)
+
+diff --git a/data/resources/window.blp b/data/resources/window.blp
+index 5238f66..643bae5 100644
+--- a/data/resources/window.blp
++++ b/data/resources/window.blp
+@@ -38,8 +38,8 @@ menu app-menu {
+ }
+ 
+ template DialectWindow : Adw.ApplicationWindow {
+-  default-width: "800";
+-  default-height: "300";
++  default-width: 800;
++  default-height: 300;
+   focus-widget: src_text;
+ 
+   Stack main_stack {
